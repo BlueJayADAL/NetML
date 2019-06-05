@@ -84,3 +84,8 @@ The NetML project using the Intel Distribution for Python.
 ### 3. python daalCollectCommonTLS.py -i pathGen/TLS_JSON
 ### 4. python daalCollectCommonHTTP.py -i pathGen/HTTP_JSON
 ### 5. python daalClassifyWithTime.py --workDir=pathGen --select=pathGen/train.json --classify --output=pathGen/params.txt --http --tls
+## Additional Resources
+### daal4py Documentation Home
+#### - https://intelpython.github.io/daal4py/index.html
+### Intel DAAL Developer Guide
+#### - https://software.intel.com/en-us/download/intel-data-analytics-acceleration-library-developer-guide
