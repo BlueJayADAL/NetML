@@ -4,6 +4,7 @@ The NetML project using the Intel Distribution for Python.
 ## Walkthrough Guide
 1. It is recommended to have [Anaconda](https://docs.anaconda.com/anaconda/install/linux/) installed, as this guide will use Anaconda to create a virtual environment with Intel packages (**Python 3**).
 2. Install [Joy](https://github.com/cisco/joy) (with "-gzip-enabled") and run it successfully. Refer [here](sampleJoyInstall.md) for sample install steps for Ubuntu system.
+    - If `joy` is not automatically added to your system path after installing, you will need to do so manually.
 3. Note that the current Joy cannot generate the DNS data correctly when the 'bidir' is enabled which is required by TLS data. In order to fix this issue, please overwrite the current dns.c of Joy with the one in the JoyFix.
 4. Have the raw PCAP dataset folder ready. The following is only an example (CICAndMal2017/PCAPs), however our code is currently only tested with such tree structure (Only 1 "Benign" and multiple "ware" folders). Under each folder, it should contain the raw pcap files. Be sure that all folder names only include alphanumeric characters, or errors will arise down the road when the names are parsed (for CICAndMAL2017 rename AndroidSpy277 + FakeAppAL). In order to quickly run through this guide, let's call this ***pathRAW***.
 ```
@@ -77,3 +78,9 @@ The NetML project using the Intel Distribution for Python.
 12. Finally, we can train and test the model, and time the process for comparison using **daalClassifyWithTime.py** (Logistic Regression).
     - For example, `python daalClassifyWithTime.py --workDir=pathGen --select=pathGen/train.json --classify --output=pathGen/params.txt --http --tls` will train and test the model with datasets in the given **train.json** and with "http" and "tls" features.
     - This will also generate the output file ***params.txt*** which can be used to test other datasets. (*to be implemented/tested*)
+## Demo Steps
+### 1. python daalAnalyze.py -i pathRAW -o pathGen
+### 2. python daalSelectDataset.py --input pathGen/TLS_JSON/ --output pathGen/train.json --tls
+### 3. python daalCollectCommonTLS.py -i pathGen/TLS_JSON
+### 4. python daalCollectCommonHTTP.py -i pathGen/HTTP_JSON
+### 5. python daalClassifyWithTime.py --workDir=pathGen --select=pathGen/train.json --classify --output=pathGen/params.txt --http --tls
