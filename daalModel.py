@@ -1,4 +1,5 @@
-from daal4py import logistic_regression_training, logistic_regression_prediction
+from daal4py import logistic_regression_training, logistic_regression_prediction, logistic_regression_model
+from sklearn.externals import joblib
 from operator import itemgetter
 import numpy as np
 import pandas as pd
@@ -26,7 +27,7 @@ class LR:
 		tmp = list(zip(data, label))
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
-		data = pd.DataFrame(data, dtype=np.float64)
+		data = np.array(data)
 		label = pd.DataFrame(label, dtype=np.float64)
 		#begin train timing
 		#print("Beginning train timing...")
@@ -42,8 +43,9 @@ class LR:
 		testData = data[upperBound:]
 		testLabel = label[upperBound:]
 		#train model
+		#print("Training model...")
 		trainResult = trainAlg.compute(trainData, trainLabel)
-		#create prediction classes
+		#create prediction classe(s?)->[don't think second is needed]
 		predictAlgTrain = logistic_regression_prediction(nClasses=nClasses)
 		predictAlgTest = logistic_regression_prediction(nClasses=nClasses)
 		#make train and test predictions
@@ -74,22 +76,22 @@ class LR:
 		paramMap["feature"]["times"] = self.numTimesFeature
 		paramMap["feature"]["lengths"] = self.numLengthsFeature
 		paramMap["feature"]["dist"] = self.numDistFeature
-		paramMap["model"] = trainResult.model.Beta.tolist()
+		joblib.dump(trainResult.model, 'model.pkl')
 		json.dump(paramMap, open(outputFileName, 'w'))
 		#accuracy
 		return (trainAccu, testAccu)
 
-	def test(self, data, label, model):
-		#create trained model using previosly stored model data
-		trainAlg = logistic_regression_training(nClasses=nClasses, interceptFlag=True)
-		trainAlg.model.Beta = np.asarray(model)
+	def test(self, data, label):
+		startTime = time.time()
 		#create prediction class
-		predictAlg = logistic_regression_prediction(nClasses=nClasses)
+		predictAlg = logistic_regression_prediction(nClasses=2)
 		#make predictions
-		predictResultTest = predictAlg.compute(testData, trainAlg.model)
+		predictResultTest = predictAlg.compute(data, joblib.load('model.pkl'))
+		endTime = time.time()
+		print("Test elapsed in %s seconds" %(str(endTime - startTime)))
 		#assess accuracy
 		count = 0
 		for i in range(0, len(label)):
-			if label[i] == pLabel[i]:
+			if label[i] == predictResultTest.prediction[i]:
 				count += 1
 		return float(count)/len(label)*100
