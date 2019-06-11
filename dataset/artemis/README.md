@@ -1,4 +1,4 @@
-This folder contains the .pcap files for two captures.  Both captures were taken during the same session while Artemis infected NodeA.
+This folder contains the .pcap files for two captures.  Both captures were taken during the same session while Artemis infected NodeA.  It also contains the results of a DNS' capture and a web server's capture.
 
 Infected host: 
 NodeA
