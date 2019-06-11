@@ -1,15 +1,25 @@
-Second round testing artemis on DETERLab server.  Same setup as before (1 Windows XP machine and 1 Linux machine).
-Two pcap files: first is for monitoring over the eth0 interface (which is the connection specified by DETERLab); second
-is from monitoring over eth4 interface (which is not specified by DETERLab).  Below is DETERLab's printout of experiment details:
+This folder contains the .pcap files for two captures.  Both captures were taken during the same session while Artemis infected NodeA.
 
-Experiment: malwareml/windowsXPTest
+Infected host: 
+NodeA
+192.168.1.152
+10.1.1.3
+
+Second host:
+NodeB
+192.168.1.150
+10.1.1.2
+
+DETERLab details:
+
+Experiment: malwareml/MalwareTraffic
 State: swapped
 
 Virtual Node Info:
 ID              Type         OS              Qualified Name
 --------------- ------------ --------------- --------------------
-nodeA           pc           WINXP-UPDATE    nodeA.windowsXPTest.malwareml.isi.deterlab.net
-nodeB           pc                           nodeB.windowsXPTest.malwareml.isi.deterlab.net
+nodeA           pc           WINXP-UPDATE    nodeA.MalwareTraffic.malwareml.isi.deterlab.net
+nodeB           pc                           nodeB.MalwareTraffic.malwareml.isi.deterlab.net
 
 Virtual Lan/Link Info:
 ID              Member/Proto    IP/Mask         Delay     BW (Kbs)  Loss Rate
