@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import random
 import copy
-import json
+import ujson as json
 import math
 import time
 import os
@@ -707,12 +707,16 @@ def main():
 				return
 
 		#Get the flow feature data
+		processStart = time.time()
 		d = pullData(args.select)
+		processEnd = time.time()
+		print("Data prep elapsed in %s seconds" %(str(processEnd - processStart)))
 		# train the model
 		acc = mlModel.train(d[0], d[1], args.output)
 		print("Training and testing accuracy: " + str(acc))
 	#Test only
 	else:
+		processStart = time.time()
 		paramMap = json.load(open(args.input, 'r'))
 		numTLSFeatureT = paramMap["feature"]["tls"]
 		numDNSFeatureT = paramMap["feature"]["dns"]
@@ -788,7 +792,10 @@ def main():
 
 		#if args.analyze == False:
 		#Get the flow feature data
+		
 		d = pullData(args.select)
+		processEnd = time.time()
+		print("Data prep elapsed in %s seconds" %(str(processEnd - startTime)))
 		# test the model
 		acc = mlModel.test(np.array(d[0]), d[1])
 		print("Testing accuracy: " + str(acc))

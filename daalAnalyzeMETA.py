@@ -1,4 +1,5 @@
 import json
+import ujson
 import sys
 import gzip
 from collections import defaultdict
@@ -93,8 +94,8 @@ def getByteDist(flow):
 
 
 def ProcessMETA(inPathName, fileName, meta):
-	json_file = inPathName + fileName
-	print("processing META for %s" %(json_file))
+	json_file = "%s%s" % (inPathName, fileName)
+	#print("processing META for %s" %(json_file)) #verbose
 	#read each line and convert it into dict
 	lineno = 0
 	total = 0
@@ -102,36 +103,41 @@ def ProcessMETA(inPathName, fileName, meta):
 		for line in fp:
 			lineno = lineno + 1
 			try:
-				tmp = json.loads(line)
+				tmp = ujson.loads(line) #ujson
 			except:
 				continue
 			if ('version' in tmp) or ("tls" not in tmp) or (int(tmp["dp"]) != 443):
 				continue
 			total += 1
-			serverAddr = str(lineno)+"@"+tmp["sa"]+"@"+str(tmp["sp"])+"@"+tmp["da"]
+			serverAddr = "%s@%s@%s@%s" % (str(lineno), tmp["sa"], str(tmp["sp"]), tmp["da"])
 			#print serverAddr
-			if serverAddr not in meta:
+			try:
+				meta[serverAddr]['count'] += 1
+			#if serverAddr not in meta:
+			except KeyError:				
 				meta[serverAddr] = defaultdict()
 				meta[serverAddr]['count'] = 1
+				# Multithread to speed up Meta time?
 				#1 times
 				meta[serverAddr]['flowTimes'] = getTimes(tmp)
 				#2 lengths
 				meta[serverAddr]['flowLengths'] = getLengths(tmp)
 				#3 byte distribution
 				meta[serverAddr]['flowByteDist'] = getByteDist(tmp)
-			else:
-				meta[serverAddr]['count'] += 1
-	if "totalMETA" not in meta:
+				
+	try:
+		meta["totalMETA"] += total	
+	#if "totalMETA" not in meta:
+	except KeyError:		
 		meta["totalMETA"] = total
-	else:
-		meta["totalMETA"] += total
+		
 
 
 def saveToJson(outPathName, fileName, meta):
-	fname = outPathName + (fileName.split('.'))[0]+"_META.json"
-	print("save JSON to " + fname)
+	fname = "%s%s_META.json" % (outPathName, (fileName.split('.'))[0])
+	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		json.dump(meta, fp)
+		ujson.dump(meta, fp) #ujson
 
 def main():
 	parser = argparse.ArgumentParser(description="Probability Distribution of META Features in Dataset", add_help=True)
@@ -150,7 +156,7 @@ def main():
 	parentFolder = os.path.abspath(os.path.join(joyFolder, os.pardir))
 	if not parentFolder.endswith('/'):
 		parentFolder += '/'
-	META_JSON_Folder = parentFolder + "META_JSON/"
+	META_JSON_Folder = "%sMETA_JSON/" % (parentFolder)
 	if not os.path.exists(META_JSON_Folder):
 		os.mkdir(META_JSON_Folder)
 

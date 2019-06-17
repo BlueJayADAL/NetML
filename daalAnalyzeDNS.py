@@ -1,4 +1,5 @@
 import json
+import ujson
 import sys
 import gzip
 #import seolib as seo
@@ -18,7 +19,7 @@ def obtainAlexa(url):
 		return alexaMap[url]
 	try:
 		time.sleep(0.1)
-		inurl = 'http://data.alexa.com/data?cli=10&url=' + url
+		inurl = "http://data.alexa.com/data?cli=10&url=%s" % (url)
 		xml = urllib.request.urlopen(inurl).read().decode('utf-8')
 		alexa_rank = int(re.search(r'<POPULARITY[^>]*TEXT="(\d+)"', xml).groups()[0])
 	except:
@@ -69,14 +70,14 @@ def obtainIPAndTTL(rr):
 	return (ips, ttls)
 
 def ProcessDNS(inPathName, fileName, dns):
-	json_file = inPathName + fileName
-	print("processing DNS for %s" %(json_file))
+	json_file = "%s%s" % (inPathName, fileName)
+	#print("processing DNS for %s" %(json_file)) #verbose
 	#read each line and convert it into dict
 	total = 0
 	with gzip.open(json_file,'r') as fp:  
 		for line in fp:
 			try:
-				tmp = json.loads(line)
+				tmp = ujson.loads(line) #ujson
 			except:
 				continue
 			if ('version' in tmp) or ("dns" not in tmp):
@@ -87,8 +88,10 @@ def ProcessDNS(inPathName, fileName, dns):
 				rname = resp["rn"]
 				rrecord = resp["rr"]
 			except:
-				continue			
-			if rname not in dns:
+				continue
+			try: 
+				dns[rname]['count'] += 1			
+			except KeyError:
 				dns[rname] = defaultdict()
 				dns[rname]['count'] = 1
 				#1. length of the query name
@@ -108,18 +111,20 @@ def ProcessDNS(inPathName, fileName, dns):
 				dns[rname]['ttls'] = second
 				#7. Alexa rank
 				dns[rname]['rank'] = obtainAlexa(rname)
-			else:
-				dns[rname]['count'] += 1
-	if "totalDNS" not in dns:
-		dns["totalDNS"] = total
-	else:
+
+	try:
 		dns["totalDNS"] += total
+	#if "totalDNS" not in dns: 
+	except KeyError:
+		dns["totalDNS"] = total
+	#else:
+		
 
 def saveToJson(outPathName, fileName, dns):
-	fname = outPathName + (fileName.split('.'))[0]+"_DNS.json"
-	print("save JSON to " + fname)
+	fname = "%s%s_DNS.json" % (outPathName, (fileName.split('.'))[0])
+	#print("save JSON to %s" % (fname)) #verbose
 	with open(fname, 'w') as fp:
-		json.dump(dns, fp)	
+		ujson.dump(dns, fp) #ujson	
 
 def plotDNSFeature(dns, feature, ylabel, title, outFolder):
 	itemDict = {}
@@ -182,9 +187,9 @@ def plotDNS(dns, inPathName, fileName, outPathName):
 		count = dns[tup]['count']
 		total += count
 		for item in dns[tup]['ttls']:
-			if item in itemDict:
+			try:
 				itemDict[item] += count
-			else:
+			except KeyError:
 				itemDict[item] = count
 	for item in itemDict.keys():
 		itemList.append( (item, itemDict[item]/float(total)*100) )
@@ -212,7 +217,7 @@ def main():
 
 	#setup input folder and output folders
 	if args.input == None or not os.path.isdir(args.input):
-		print("No valid input folder!")
+		print("No valid input folder!") #verbose
 		return
 	else:
 		joyFolder = args.input
@@ -221,9 +226,9 @@ def main():
 	parentFolder = os.path.abspath(os.path.join(joyFolder, os.pardir))
 	if not parentFolder.endswith('/'):
 		parentFolder += '/'
-	DNS_JSON_Folder = parentFolder+"DNS_JSON/"
-	DNS_Figure_Folder = parentFolder+"DNS_Figure/" 
-	ALEXA_Folder = parentFolder+"ALEXA_JSON/"
+	DNS_JSON_Folder = "%sDNS_JSON/" % (parentFolder)
+	DNS_Figure_Folder = "%sDNS_Figure/" % (parentFolder) 
+	ALEXA_Folder = "%sALEXA_JSON/" % (parentFolder)
 	if not os.path.exists(DNS_JSON_Folder):
 		os.mkdir(DNS_JSON_Folder)
 	if args.figure:
@@ -231,11 +236,11 @@ def main():
 			os.mkdir(DNS_Figure_Folder)
 	if not os.path.exists(ALEXA_Folder):
 		os.mkdir(ALEXA_Folder)
-	alexaFileName = ALEXA_Folder+"alexa.json"
+	alexaFileName = "%salexa.json" % (ALEXA_Folder)
 	if os.path.exists(alexaFileName):
 		try:
 			with open(alexaFileName, 'r') as fp:
-				alexaMap = json.load(fp)
+				alexaMap = ujson.load(fp) #ujson
 		except:
 			pass
 
@@ -310,7 +315,7 @@ def main():
 
 	#save the alexaMap into JSON file
 	try:
-		json.dump(alexaMap, open(alexaFileName, 'w'))
+		ujson.dump(alexaMap, open(alexaFileName, 'w')) #ujson
 	except:
 		pass
 

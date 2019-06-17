@@ -52,8 +52,7 @@ class LR:
 		predictResultTrain = predictAlgTrain.compute(trainData, trainResult.model)
 		predictResultTest = predictAlgTest.compute(testData, trainResult.model)
 		#end train timing
-		endTime = time.time()
-		print("Training and test elapsed in %s seconds" %(str(endTime - startTime)))
+		
 		#compare train predictions
 		count = 0
 		for i in range(0, len(trainLabel)):
@@ -66,6 +65,8 @@ class LR:
 			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
 				count += 1
 		testAccu = float(count)/len(testLabel)*100
+		endTime = time.time()
+		print("Training and test elapsed in %s seconds" %(str(endTime - startTime)))
 		#save the model to the output
 		#print("saving model parameters into " + outputFileName)
 		paramMap = {}

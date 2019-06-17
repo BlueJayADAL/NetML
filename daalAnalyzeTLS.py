@@ -1,4 +1,5 @@
 import json
+import ujson
 import sys
 import gzip
 from collections import defaultdict
@@ -81,8 +82,8 @@ def obtainSANs(scerts):
 		return []
 
 def ProcessTLS(inPathName, fileName, tls):
-	json_file = inPathName + fileName
-	print("processing TLS for %s" %(json_file))
+	json_file = "%s%s" % (inPathName, fileName)
+	#print("processing TLS for %s" %(json_file)) #verbose
 	#read each line and convert it into dict
 	lineno = 0
 	total = 0
@@ -90,16 +91,19 @@ def ProcessTLS(inPathName, fileName, tls):
 		for line in fp:
 			lineno = lineno + 1
 			try:
-				tmp = json.loads(line)
+				tmp = ujson.loads(line) #ujson
 			except:
 				continue
 			if ('version' in tmp) or ("tls" not in tmp) or (int(tmp["dp"]) != 443):
 				continue
 			total += 1
-			serverAddr = str(lineno)+"@"+tmp["sa"]+"@"+str(tmp["sp"])+"@"+tmp["da"]
+			serverAddr = "%s@%s@%s@%s" % (str(lineno), tmp["sa"], str(tmp["sp"]), tmp["da"])
 			#print serverAddr
 			resp = tmp["tls"]
-			if serverAddr not in tls:
+			try:
+				tls[serverAddr]['count'] += 1
+			#if serverAddr not in tls:
+			except KeyError:
 				tls[serverAddr] = defaultdict()
 				tls[serverAddr]['count'] = 1
 				tls[serverAddr]['ts_start'] = tmp["time_start"]
@@ -147,18 +151,19 @@ def ProcessTLS(inPathName, fileName, tls):
 					tls[serverAddr]['certValidDays'] = []
 					tls[serverAddr]['certSelfSigned'] = 0
 					tls[serverAddr]['certSubAltNames'] = []
-			else:
-				tls[serverAddr]['count'] += 1
-	if "totalTLS" not in tls:
+
+	try:
+		tls["totalTLS"] += total	
+	#if "totalTLS" not in tls:
+	except KeyError:
 		tls["totalTLS"] = total
-	else:
-		tls["totalTLS"] += total
+		
 
 def saveToJson(outPathName, fileName, tls):
-	fname = outPathName + (fileName.split('.'))[0]+"_TLS.json"
-	print("save JSON to " + fname)
+	fname = "%s%s_TLS.json" % (outPathName, (fileName.split('.'))[0])
+	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		json.dump(tls, fp)
+		ujson.dump(tls, fp) #ujson
 
 def plotTLS(tls, inPathName, fileName, outPathName):
 	outFolder = outPathName + (fileName.split('.'))[0] + "/"
@@ -402,8 +407,8 @@ def main():
 	parentFolder = os.path.abspath(os.path.join(joyFolder, os.pardir))
 	if not parentFolder.endswith('/'):
 		parentFolder += '/'
-	TLS_JSON_Folder = parentFolder+"TLS_JSON/"
-	TLS_Figure_Folder = parentFolder+"TLS_Figure/" 
+	TLS_JSON_Folder = "%sTLS_JSON/" % parentFolder
+	TLS_Figure_Folder = "%sTLS_Figure" % parentFolder 
 	if not os.path.exists(TLS_JSON_Folder):
 		os.mkdir(TLS_JSON_Folder)
 	if args.figure:

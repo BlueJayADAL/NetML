@@ -1,4 +1,5 @@
 import json
+import ujson
 import sys
 import gzip
 from collections import defaultdict, OrderedDict
@@ -14,8 +15,8 @@ timeScale = 0
 
 def ProcessHTTP(inPathName, fileName, http):
 	global timeScale
-	json_file = inPathName + fileName
-	print("processing HTTP for %s" %(json_file))
+	json_file = "%s%s" % (inPathName, fileName)
+	#print("processing HTTP for %s" %(json_file)) #verbose
 	#read each line and convert it into dict
 	total = 0
 	lineno = 0
@@ -24,7 +25,7 @@ def ProcessHTTP(inPathName, fileName, http):
 			lineno = lineno + 1
 			#print lineno
 			try:
-				tmp = json.loads(line)
+				tmp = ujson.loads(line) #ujson
 			except:
 				continue
 			if ('version' in tmp) or ("http" not in tmp):
@@ -65,27 +66,32 @@ def ProcessHTTP(inPathName, fileName, http):
 								if value[0:19] == "multipart/form-data":
 									value = "multipart/form-data"
 							#record value
-							if value not in http[timeline][field]:
-								http[timeline][field][value] = 1
-							else:
-								http[timeline][field][value] += 1	
+							try:
+								http[timeline][field][value] += 1
+							#if value not in http[timeline][field]: 
+							except KeyError:
+								http[timeline][field][value] = 1	
 						else:
-							if field not in http[timeline]:
-								http[timeline][field] = 1
-							else:
+							try:
 								http[timeline][field] += 1
-	if "totalHTTP" not in http:
-		http["totalHTTP"] = total
-	else:
+							#if field not in http[timeline]:
+							except KeyError:
+								http[timeline][field] = 1
+								
+	try:
 		http["totalHTTP"] += total
+	#if "totalHTTP" not in http:
+	except KeyError:
+		http["totalHTTP"] = total
+		
 
 def saveToJson(outPathName, fileName, http):
 	#print(http[0].items())
 	#http = OrderedDict(sorted(http.items(), key=lambda t: t[0]))
-	fname = outPathName + (fileName.split('.'))[0] + "_"+str(timeScale) + "_HTTP.json"
-	print("save JSON to " + fname)
+	fname = "%s%s_%s_HTTP.json" % (outPathName, (fileName.split('.'))[0], str(timeScale))
+	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		json.dump(http, fp)
+		ujson.dump(http, fp) #ujson
 		
 
 def main():
@@ -109,8 +115,8 @@ def main():
 	parentFolder = os.path.abspath(os.path.join(joyFolder, os.pardir))
 	if not parentFolder.endswith('/'):
 		parentFolder += '/'
-	HTTP_JSON_Folder = parentFolder+"HTTP_JSON/"
-	HTTP_Figure_Folder = parentFolder+"HTTP_Figure/" 
+	HTTP_JSON_Folder = "%sHTTP_JSON/" % parentFolder
+	HTTP_Figure_Folder = "%sHTTP_Figure/" % parentFolder
 	if not os.path.exists(HTTP_JSON_Folder):
 		os.mkdir(HTTP_JSON_Folder)
 	if args.figure:
