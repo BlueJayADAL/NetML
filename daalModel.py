@@ -1,4 +1,5 @@
 from daal4py import logistic_regression_training, logistic_regression_prediction, logistic_regression_model
+from daal4py import decision_forest_classification_training, decision_forest_classification_prediction
 from sklearn.externals import joblib
 from operator import itemgetter
 import numpy as np
@@ -45,14 +46,14 @@ class LR:
 		#train model
 		#print("Training model...")
 		trainResult = trainAlg.compute(trainData, trainLabel)
-		#create prediction classe(s?)->[don't think second is needed]
+		#create prediction classes
 		predictAlgTrain = logistic_regression_prediction(nClasses=nClasses)
 		predictAlgTest = logistic_regression_prediction(nClasses=nClasses)
 		#make train and test predictions
 		predictResultTrain = predictAlgTrain.compute(trainData, trainResult.model)
 		predictResultTest = predictAlgTest.compute(testData, trainResult.model)
 		#end train timing
-		
+		endTime = time.time()
 		#compare train predictions
 		count = 0
 		for i in range(0, len(trainLabel)):
@@ -65,8 +66,7 @@ class LR:
 			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
 				count += 1
 		testAccu = float(count)/len(testLabel)*100
-		endTime = time.time()
-		print("Training and test elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Training and test (Logistic Regression) elapsed in %s seconds" %(str(endTime - startTime)))
 		#save the model to the output
 		#print("saving model parameters into " + outputFileName)
 		paramMap = {}
@@ -77,7 +77,7 @@ class LR:
 		paramMap["feature"]["times"] = self.numTimesFeature
 		paramMap["feature"]["lengths"] = self.numLengthsFeature
 		paramMap["feature"]["dist"] = self.numDistFeature
-		joblib.dump(trainResult.model, 'model.pkl')
+		joblib.dump(trainResult.model, 'LRmodel.pkl')
 		json.dump(paramMap, open(outputFileName, 'w'))
 		#accuracy
 		return (trainAccu, testAccu)
@@ -87,9 +87,92 @@ class LR:
 		#create prediction class
 		predictAlg = logistic_regression_prediction(nClasses=2)
 		#make predictions
-		predictResultTest = predictAlg.compute(data, joblib.load('model.pkl'))
+		predictResultTest = predictAlg.compute(data, joblib.load('LRmodel.pkl'))
 		endTime = time.time()
-		print("Test elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Test (Logistic Regression) elapsed in %s seconds" %(str(endTime - startTime)))
+		#assess accuracy
+		count = 0
+		for i in range(0, len(label)):
+			if label[i] == predictResultTest.prediction[i]:
+				count += 1
+		return float(count)/len(label)*100
+
+class DF:
+	def __init__(self, numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature):
+		self.numTLSFeature = numTLSFeature
+		self.numDNSFeature = numDNSFeature
+		self.numHTTPFeature = numHTTPFeature
+		self.numTimesFeature = numTimesFeature
+		self.numLengthsFeature = numLengthsFeature
+		self.numDistFeature = numDistFeature
+	def train(self, data, label, outputFileName):
+		#shuffle the data first
+		tmp = list(zip(data, label))
+		random.shuffle(tmp)
+		data[:], label[:] = zip(*tmp)
+		data = np.array(data)
+		label = pd.DataFrame(label, dtype=np.float64)
+		#begin train timing
+		#print("Beginning train timing...")
+		startTime = time.time()
+		#Decision Forest
+		trainAlg = decision_forest_classification_training(2, nTrees=100, maxTreeDepth=0)
+		#setup train/test data
+		dataLen = len(data)
+		mark = 0.8
+		upperBound = int(dataLen * mark)
+		trainData = data[0:upperBound]
+		trainLabel = label[0:upperBound]
+		testData = data[upperBound:]
+		testLabel = label[upperBound:]
+
+		#train model
+		#print("Training model...")
+		trainResult = trainAlg.compute(trainData, trainLabel) 
+		#create prediction classes
+		predictAlgTrain = decision_forest_classification_prediction(2) 
+		predictAlgTest = decision_forest_classification_prediction(2) 
+		#make train and test predictions
+		predictResultTrain = predictAlgTrain.compute(trainData, trainResult.model) 
+		predictResultTest = predictAlgTest.compute(testData, trainResult.model) 
+		#end train timing
+		endTime = time.time()
+		#compare train predictions
+		count = 0
+		for i in range(0, len(trainLabel)):
+			if trainLabel[0][i] == predictResultTrain.prediction[i]:
+				count += 1
+		trainAccu = float(count)/len(trainLabel)*100
+		#compare test predictions
+		count = 0
+		for i in range(0, len(testLabel)):
+			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
+				count += 1
+		testAccu = float(count)/len(testLabel)*100
+		print("Training and test (Decision Forest) elapsed in %s seconds" %(str(endTime - startTime)))
+		#save the model to the output
+		#print("saving model parameters into " + outputFileName)
+		paramMap = {}
+		paramMap["feature"] = {}
+		paramMap["feature"]["tls"] = self.numTLSFeature
+		paramMap["feature"]["dns"] = self.numDNSFeature
+		paramMap["feature"]["http"] = self.numHTTPFeature
+		paramMap["feature"]["times"] = self.numTimesFeature
+		paramMap["feature"]["lengths"] = self.numLengthsFeature
+		paramMap["feature"]["dist"] = self.numDistFeature
+		joblib.dump(trainResult.model, 'DFmodel.pkl')
+		json.dump(paramMap, open(outputFileName, 'w'))
+		#accuracy
+		return (trainAccu, testAccu)
+
+	def test(self, data, label):
+		startTime = time.time()
+		#create prediction class
+		predictAlg = decision_forest_classification_prediction(2)
+		#make predictions
+		predictResultTest = predictAlg.compute(data, joblib.load('DFmodel.pkl'))
+		endTime = time.time()
+		print("Test (Decision Forest) elapsed in %s seconds" %(str(endTime - startTime)))
 		#assess accuracy
 		count = 0
 		for i in range(0, len(label)):

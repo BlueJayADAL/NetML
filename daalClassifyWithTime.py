@@ -8,7 +8,7 @@ import time
 import os
 import argparse
 from collections import defaultdict, OrderedDict
-from daalModel import LR
+from daalModel import LR, DF
 from sklearn.externals import joblib
 #SVM, ANN, RF
 #from modelANNGPU import ANNGPU
@@ -699,9 +699,9 @@ def main():
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "ANNGPU":
 				mlModel = ANNGPU(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-			elif args.model == "RF":
-				mlModel = RF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
 				'''
+			elif args.model == "DF":
+				mlModel = DF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
 			else:
 				print(args.model + " is not supported!")
 				return
@@ -783,9 +783,9 @@ def main():
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "ANNGPU":
 				mlModel = ANNGPU(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-			elif args.model == "RF":
-				mlModel = RF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
 				'''
+			elif args.model == "DF":
+				mlModel = DF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
 			else:
 				print(args.model + " is not supported!")
 				return
