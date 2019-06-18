@@ -8,7 +8,7 @@ import time
 import os
 import argparse
 from collections import defaultdict, OrderedDict
-from daalModel import LR, DF
+from daalModel import LR, DF, SVM
 from sklearn.externals import joblib
 #SVM, ANN, RF
 #from modelANNGPU import ANNGPU
@@ -463,7 +463,7 @@ def prepFeature(tls, dns, http, meta):
 def prepData(select, dataType):
 	data = []
 	for dataset in select:
-		print('Prepare data for %s' %(dataset))
+		#print('Prepare data for %s' %(dataset)) #verbose
 		#tls
 		tlsFile = tlsDir + dataset + "_TLS.json"
 		with open(tlsFile, 'r') as fpTLS:
@@ -692,9 +692,9 @@ def main():
 		else:
 			if args.model == "LR":
 				mlModel = LR(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-				'''
 			elif args.model == "SVM":
 				mlModel = SVM(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
+				'''
 			elif args.model == "ANN":
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "ANNGPU":
@@ -776,9 +776,9 @@ def main():
 		else:
 			if args.model == "LR":
 				mlModel = LR(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-				'''
 			elif args.model == "SVM":
 				mlModel = SVM(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
+				'''
 			elif args.model == "ANN":
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "ANNGPU":
