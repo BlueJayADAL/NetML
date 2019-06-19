@@ -1,6 +1,7 @@
-from daal4py import logistic_regression_training, logistic_regression_prediction, logistic_regression_model
+from daal4py import logistic_regression_training, logistic_regression_prediction
 from daal4py import decision_forest_classification_training, decision_forest_classification_prediction
 from daal4py import svm_training, svm_prediction, kernel_function_linear
+from tensorflow import keras
 from sklearn.externals import joblib
 from operator import itemgetter
 import numpy as np
@@ -263,7 +264,7 @@ class SVM:
 				count += 1
 		return float(count)/len(label)*100
 
-'''
+
 class ANN:
 	def __init__(self, numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature):
 		self.numTLSFeature = numTLSFeature
@@ -273,17 +274,29 @@ class ANN:
 		self.numLengthsFeature = numLengthsFeature
 		self.numDistFeature = numDistFeature
 	def train(self, data, label, outputFileName):
+		epochs = 100
 		#shuffle the data first
 		tmp = list(zip(data, label))
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
 		data = np.array(data)
-		label = pd.DataFrame(label, dtype=np.float64)
+		label = np.array(label)
 		#begin train timing
 		#print("Beginning train timing...")
 		startTime = time.time()
 		#ANN
-
+		#initialize
+		model = keras.models.Sequential()
+		#add layers (23-13-11-7-5)
+		model.add(keras.layers.Dense(units=23, input_dim=331, activation='relu'))
+		model.add(keras.layers.Dense(units=13, activation='relu'))
+		model.add(keras.layers.Dense(units=11, activation='relu'))
+		model.add(keras.layers.Dense(units=7, activation='relu'))
+		model.add(keras.layers.Dense(units=5, activation='relu'))
+		#add output layer for binary
+		model.add(keras.layers.Dense(1, activation='sigmoid'))
+		#compile model
+		model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 		#setup train/test data
 		dataLen = len(data)
 		mark = 0.8
@@ -292,31 +305,47 @@ class ANN:
 		trainLabel = label[0:upperBound]
 		testData = data[upperBound:]
 		testLabel = label[upperBound:]
-
-		#train model
+		#train/fit model
 		#print("Training model...")
-		trainResult = trainAlg.compute(trainData, trainLabel) 
-		#create prediction classes
-		predictAlgTrain = decision_forest_classification_prediction(2) 
-		predictAlgTest = decision_forest_classification_prediction(2) 
+		model.fit(trainData, trainLabel, epochs=epochs, batch_size=1000)
 		#make train and test predictions
-		predictResultTrain = predictAlgTrain.compute(trainData, trainResult.model) 
-		predictResultTest = predictAlgTest.compute(testData, trainResult.model) 
+		predictResultTrain = model.predict_classes(trainData)
+		predictResultTest = model.predict_classes(testData)
 		#end train timing
 		endTime = time.time()
+		#sum prediction results
+		correctTrain = np.sum(trainLabel == predictResultTrain.flatten(), axis = 0)
+		correctTest = np.sum(testLabel == predictResultTest.flatten(), axis = 0)
 		#compare train predictions
-		count = 0
-		for i in range(0, len(trainLabel)):
-			if trainLabel[0][i] == predictResultTrain.prediction[i]:
-				count += 1
-		trainAccu = float(count)/len(trainLabel)*100
+		trainAccu = float(correctTrain)/len(trainLabel)*100
 		#compare test predictions
-		count = 0
-		for i in range(0, len(testLabel)):
-			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
-				count += 1
-		testAccu = float(count)/len(testLabel)*100
-		print("Training and test (Decision Forest) elapsed in %s seconds" %(str(endTime - startTime)))
+		testAccu = float(correctTest)/len(testLabel)*100
+		print("Training and test (Artificial Neural Network [%d epochs]) elapsed in %s seconds" %(epochs, str(endTime - startTime)))
+		#save model
+		modelJSON = model.to_json()
+		with open("ANNmodel.json", "w") as json_file:
+			json_file.write(modelJSON)
+		#serialize weights to HDF5
+		model.save_weights("ANNmodel.h5")
+		print("Saved model to disk.")
 		#accuracy
 		return (trainAccu, testAccu)
-'''
+	def test(self, data, label):
+		startTime = time.time()
+		#read in trained model
+		jsonFile = open('ANNmodel.json', 'r')
+		loadedModelJSON = jsonFile.read()
+		jsonFile.close()
+		loadedModel = keras.models.model_from_json(loadedModelJSON)
+		# load weights into new model
+		loadedModel.load_weights("ANNmodel.h5")
+		print("Loaded model from disk")
+		#compile model
+		loadedModel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+		#make predictions
+		predictResultTest = loadedModel.predict_classes(data)
+		endTime = time.time()
+		print("Test (Artificial Neural Network) elapsed in %s seconds" %(str(endTime - startTime)))
+		#assess accuracy
+		correctTest = np.sum(label == predictResultTest.flatten(), axis = 0)
+		return float(correctTest)/len(label)*100

@@ -8,7 +8,7 @@ import time
 import os
 import argparse
 from collections import defaultdict, OrderedDict
-from daalModel import LR, DF, SVM
+from daalModel import LR, DF, SVM, ANN
 from sklearn.externals import joblib
 #SVM, ANN, RF
 #from modelANNGPU import ANNGPU
@@ -694,9 +694,9 @@ def main():
 				mlModel = LR(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "SVM":
 				mlModel = SVM(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-				'''
 			elif args.model == "ANN":
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
+				'''
 			elif args.model == "ANNGPU":
 				mlModel = ANNGPU(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 				'''
@@ -778,9 +778,9 @@ def main():
 				mlModel = LR(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			elif args.model == "SVM":
 				mlModel = SVM(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
-				'''
 			elif args.model == "ANN":
 				mlModel = ANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
+				'''
 			elif args.model == "ANNGPU":
 				mlModel = ANNGPU(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 				'''
