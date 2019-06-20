@@ -56,7 +56,7 @@ def finalize(httpCommon):
 		presenceCount[field] = sum([x[1] for x in fieldList])
 		while (len(fieldList) > 0) and (float(fieldList[-1][1])/presenceCount[field] < threshHold):
 			tmp = fieldList.pop()
-			print("Remove field " + str(tmp[0]) + " with probability " + str(float(tmp[1])/presenceCount[field]) + " from " + field)
+			#print("Remove field " + str(tmp[0]) + " with probability " + str(float(tmp[1])/presenceCount[field]) + " from " + field) #verbose
 		fieldDict = defaultdict()
 		for i in range(0, len(fieldList)):
 			fieldDict[fieldList[i][0]] = i
@@ -74,7 +74,7 @@ def finalize(httpCommon):
 	fieldList.sort(key=lambda x: x[1], reverse=True)
 	while len(fieldList) > 0 and fieldList[-1][1] < threshHold:
 		tmp = fieldList.pop()
-		print("Remove field " + str(tmp[0]) + " with probability " + str(tmp[1]) + " from presence")
+		#print("Remove field " + str(tmp[0]) + " with probability " + str(tmp[1]) + " from presence") #verbose
 	fieldDict = defaultdict()
 	for i in range(0, len(fieldList)):
 		fieldDict[fieldList[i][0]] = i
@@ -113,7 +113,7 @@ def main():
 			candList = selMap["Benign"] + selMap["Malware"]
 			files = [x+"_HTTP.json" for x in candList]
 	for file in files:
-		print(file)
+		#print(file) #verbose
 		with open(httpFolder+file, 'r') as fp:
 			http = json.load(fp)
 			extractCommonHTTP(http, httpCommon)

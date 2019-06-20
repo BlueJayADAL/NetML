@@ -89,7 +89,7 @@ def main():
 
 	files = os.listdir(dnsFolder)
 	for file in files:
-		print(file)
+		#print(file) #verbose
 		with open(dnsFolder+file, 'r') as fp:
 			dns = json.load(fp)
 			extractCommonDNS(dns)

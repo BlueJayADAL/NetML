@@ -123,7 +123,7 @@ def main():
 
 	files = os.listdir(tlsFolder)
 	for file in files:
-		print(file)
+		#print(file) #verbose
 		with open(tlsFolder+file, 'r') as fp:
 			tls = json.load(fp)
 			extractCommonTLS(tls)
