@@ -20,7 +20,6 @@ dnsCommon = {"ttls": {"0": 9, "1": 1, "2": 36, "3": 39, "4": 37, "5": 32, "6": 3
 #115 common TLS ciphersuite and 22 Commnon TLS extensions
 tlsCommon = {"clientCS": {"cca9": 14, "c02b": 4, "c02c": 9, "cca8": 15, "c02f": 5, "c030": 8, "c009": 11, "c00a": 12, "c013": 0, "c014": 1, "009c": 6, "009d": 10, "002f": 2, "0035": 3, "cc14": 22, "cc13": 23, "cc15": 24, "009e": 18, "0039": 16, "0033": 17, "c011": 19, "c007": 20, "0005": 21, "0004": 25, "000a": 7, "00ff": 13, "009f": 28, "0032": 26, "0038": 27, "dada": 54, "c028": 29, "c024": 30, "00a5": 75, "00a3": 67, "00a1": 76, "006b": 68, "006a": 69, "0069": 77, "0068": 78, "0037": 79, "0036": 80, "ccaa": 91, "c032": 31, "c02e": 32, "c02a": 33, "c026": 34, "c00f": 35, "c005": 36, "003d": 37, "c027": 38, "c023": 39, "00a4": 81, "00a2": 70, "00a0": 82, "0067": 71, "0040": 72, "003f": 83, "003e": 84, "0031": 85, "0030": 86, "c031": 40, "c02d": 41, "c029": 42, "c025": 43, "c00e": 44, "c004": 45, "003c": 46, "c00c": 89, "c002": 90, "c012": 47, "c008": 48, "0016": 73, "0013": 74, "0010": 87, "000d": 88, "c00d": 49, "c003": 50, "eaea": 65, "1a1a": 60, "caca": 58, "5a5a": 64, "3a3a": 52, "4a4a": 57, "8a8a": 62, "fafa": 55, "2a2a": 66, "6a6a": 63, "9a9a": 61, "0a0a": 51, "7a7a": 56, "aaaa": 53, "baba": 59, "5600": 92, "0088": 93, "0087": 94, "0086": 103, "0085": 104, "0084": 95, "009a": 96, "0099": 97, "0098": 105, "0097": 106, "0045": 98, "0044": 99, "0043": 107, "0042": 108, "0096": 100, "0041": 101, "0007": 102, "0015": 109, "0012": 110, "0009": 111, "0014": 112, "0011": 113, "0008": 114, "0006": 115, "0003": 116}, "clientExt": {"ff01": 10, "0000": 3, "0017": 6, "0023": 4, "000d": 2, "0005": 5, "000b": 0, "000a": 1, "0015": 12, "3374": 11, "0012": 8, "0010": 7, "7550": 9, "eaea": 23, "7a7a": 14, "1a1a": 19, "caca": 13, "fafa": 28, "dada": 22, "3a3a": 16, "0a0a": 20, "aaaa": 25, "6a6a": 18, "2a2a": 21, "9a9a": 24, "5a5a": 26, "4a4a": 17, "baba": 27, "8a8a": 15, "000f": 29}, "serverCS": {"cca8": 3, "c02f": 0, "c02b": 1, "009c": 4, "cca9": 2, "c030": 5, "009d": 7, "c014": 6, "002f": 11, "0035": 8, "c028": 9, "cc14": 10, "cc13": 12, "0005": 14, "c013": 15, "c02c": 16, "009e": 13, "0039": 17, "0004": 18, "000a": 20, "0033": 19, "009f": 21}, "serverExt": {"ff01": 0, "0017": 5, "000b": 1, "0023": 3, "0005": 6, "0010": 2, "0000": 4, "0012": 8, "7550": 7, "3374": 9, "000f": 10}}
 #HTTP features
-#httpCommon = {"code": {"200": 0, "302": 1, "304": 2, "301": 3}, "accept-language": {"en-US,en;q=0.8": 0}, "presence": {"origin": 71, "x-nws-log-uuid": 68, "content-length": 10, "code": 2, "accept-language": 5, "x-requester": 62, "fw-via": 48, "x-cache-lookup": 51, "if-modified-since": 58, "vary": 23, "x-varnish-hits": 42, "accept": 6, "upgrade-insecure-requests": 41, "x-daa-tunnel": 70, "dpool_lb7_header": 53, "via": 19, "strict-transport-security": 75, "x-hits": 59, "p3p": 30, "served-from": 33, "x-via": 32, "access-control-allow-methods": 37, "poolpool4": 64, "x-varnish-cache": 43, "sina-lb": 40, "poolpool3": 65, "user-agent": 4, "transfer-encoding": 27, "etag": 22, "x-requestid": 61, "location": 28, "dpool_header": 54, "cache-control": 12, "x-qhcdn": 72, "x-filesize": 60, "access-control-allow-headers": 36, "fw-cache-status": 50, "x-px": 49, "x-swift-savetime": 56, "x-varnish": 29, "accept-encoding": 3, "x-cache": 26, "access-control-expose-headers": 44, "x-via-cdn": 24, "set-cookie": 21, "accept-ranges": 16, "expires": 14, "eagleid": 46, "fw-global-ttl": 55, "last-modified": 13, "host": 1, "x-xss-protection": 52, "referer": 11, "pragma": 35, "network_info": 25, "date": 8, "access-control-allow-origin": 20, "timing-allow-origin": 31, "x-amz-meta-crc32": 63, "x-amz-cf-id": 76, "x-client-ip": 66, "ohc-response-time": 45, "x-swift-cachetime": 57, "content-encoding": 18, "age": 17, "access-control-max-age": 38, "fss-proxy": 34, "server": 9, "fss-cache": 74, "connection": 0, "sina-ts": 39, "keep-alive": 69, "cookie": 15, "x-frame-options": 73, "x-powered-by": 47, "content-type": 7, "x-server-ip": 67}, "server": {"mws": 7, "gws": 12, "squid": 9, "PWS": 4, "Microsoft-IIS": 8, "NWS_Oversea_AP": 14, "X2_Platform": 13, "nginx": 0, "JSP3": 3, "ECS": 2, "Tengine": 1, "openresty": 11, "Apache": 10, "Suda": 15, "JDWS": 5, "Sina": 6}, "user-agent": {"Mozilla/5.0": 0, "Dalvik/2.1.0": 1}, "content-type": {"image/jpeg": 0, "text/html": 1, "text/html; charset=utf-8": 5, "image/png": 2, "application/octet-stream": 9, "image/gif": 3, "text/html;charset=UTF-8": 10, "application/x-javascript": 4, "text/html; charset=UTF-8": 6, "application/json": 8, "application/javascript;charset=UTF-8": 11, "text/plain": 7}}
 httpCommon = {"code": {"201": 9, "200": 0, "204": 4, "206": 8, "301": 3, "302": 1, "304": 2, "404": 7, "400": 5, "408": 6}, "accept-language": {"en-US,en;q=0.8": 0}, "presence": {"origin": 71, "fw-cache-status": 50, "content-length": 10, "code": 2, "accept-language": 5, "pragma": 35, "x-varnish-cache": 43, "x-cache-lookup": 51, "vary": 23, "fw-global-ttl": 55, "accept": 6, "upgrade-insecure-requests": 41, "x-daa-tunnel": 70, "dpool_lb7_header": 53, "via": 19, "x-hits": 59, "p3p": 30, "served-from": 33, "network_info": 25, "cookie": 15, "x-via": 32, "access-control-allow-methods": 37, "x-wap-profile": 78, "content-language": 83, "access-control-max-age": 38, "poolpool4": 64, "x-amz-expiration": 77, "fw-via": 48, "sina-lb": 40, "poolpool3": 65, "user-agent": 4, "x-via-cdn": 24, "lb_header": 79, "x-varnish-hits": 42, "location": 28, "dpool_header": 54, "cache-control": 12, "x-qhcdn": 72, "x-filesize": 60, "access-control-allow-headers": 36, "x-nws-log-uuid": 68, "x-px": 49, "x-varnish": 29, "accept-encoding": 3, "x-cache": 26, "access-control-expose-headers": 44, "transfer-encoding": 27, "set-cookie": 21, "accept-ranges": 16, "expires": 14, "eagleid": 46, "traceid": 82, "last-modified": 13, "host": 1, "x-xss-protection": 52, "x-requestid": 61, "x-requester": 62, "if-modified-since": 58, "date": 8, "access-control-allow-origin": 20, "x-li-pop": 80, "x-li-proto": 81, "timing-allow-origin": 31, "x-swift-cachetime": 57, "x-amz-cf-id": 76, "x-client-ip": 66, "x-swift-savetime": 56, "x-amz-meta-crc32": 63, "etag": 22, "content-encoding": 18, "age": 17, "strict-transport-security": 75, "fss-proxy": 34, "server": 9, "fss-cache": 74, "connection": 0, "sina-ts": 39, "keep-alive": 69, "referer": 11, "x-frame-options": 73, "x-powered-by": 47, "content-type": 7, "x-server-ip": 67, "ohc-response-time": 45}, "user-agent": {"Android": 2, "Mozilla/5.0": 0, "Dalvik/2.1.0": 1}, "server": {"Varnish": 22, "squid": 9, "X2_Platform": 13, "ATS": 18, "AmazonS3": 16, "mws": 7, "NWS_Oversea_AP": 14, "ECS": 2, "Apache": 10, "Sina": 6, "gws": 12, "proxygen": 19, "nginx": 0, "NWS_UGC_HY": 20, "Tengine": 1, "apache": 21, "JDWS": 5, "Suda": 15, "WeiBo": 17, "PWS": 4, "Microsoft-IIS": 8, "JSP3": 3, "openresty": 11}, "content-type": {"text/html; charset=GB2312": 14, "image/jpeg": 0, "application/json;charset=UTF-8": 18, "text/html; charset=UTF-8": 6, "image/png": 2, "text/html;charset=utf-8": 13, "text/html; charset=windows-1251": 12, "application/x-javascript": 4, "application/octet-stream": 9, "application/json": 8, "text/plain": 7, "application/javascript; charset=utf-8": 16, "text/html": 1, "text/html; charset=utf-8": 5, "application/javascript;charset=UTF-8": 11, "application/javascript": 17, "image/gif": 3, "text/html;charset=UTF-8": 10, "text/plain; charset=UTF-8": 19, "text/javascript": 20, "text/css": 15}}
 ##global variables for binary features
 #DNS
@@ -710,10 +709,10 @@ def main():
 		processStart = time.time()
 		d = pullData(args.select)
 		processEnd = time.time()
-		print("Data prep elapsed in %s seconds" %(str(processEnd - processStart)))
+		print("Data prep elapsed in %.3f seconds" %(processEnd - processStart))
 		# train the model
 		acc = mlModel.train(d[0], d[1], args.output)
-		print("Training and testing accuracy: " + str(acc))
+		print("Accuracy: %.3f%% train, %.3f%% test" %(acc[0], acc[1]))
 	#Test only
 	else:
 		processStart = time.time()
@@ -792,13 +791,12 @@ def main():
 
 		#if args.analyze == False:
 		#Get the flow feature data
-		
 		d = pullData(args.select)
 		processEnd = time.time()
-		print("Data prep elapsed in %s seconds" %(str(processEnd - startTime)))
+		print("Data prep elapsed in %.3f seconds" %(processEnd - startTime))
 		# test the model
 		acc = mlModel.test(np.array(d[0]), d[1])
-		print("Testing accuracy: " + str(acc))
+		print("Testing accuracy: %.3f%%" %(acc))
 		'''
 		else:
 			assert(len(impact) == len(paramMap["coef_"]))
@@ -820,7 +818,7 @@ def main():
 			print neg
 		'''
 	endTime = time.time()
-	print("Program elapsed in %s seconds" %(str(endTime - startTime)))
+	print("Program elapsed in %.3f seconds" %(endTime - startTime))
 
 
 if __name__ == "__main__":

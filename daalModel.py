@@ -30,7 +30,7 @@ class LR:
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
 		data = np.array(data)
-		label = pd.DataFrame(label, dtype=np.float64)
+		label = np.array(label).reshape((len(label), 1))
 		#begin train timing
 		#print("Beginning train timing...")
 		startTime = time.time()
@@ -55,19 +55,14 @@ class LR:
 		predictResultTest = predictAlgTest.compute(testData, trainResult.model)
 		#end train timing
 		endTime = time.time()
+		#sum prediction results
+		correctTrain = np.sum(trainLabel.flatten() == predictResultTrain.prediction.flatten())
+		correctTest = np.sum(testLabel.flatten() == predictResultTest.prediction.flatten())
 		#compare train predictions
-		count = 0
-		for i in range(0, len(trainLabel)):
-			if trainLabel[0][i] == predictResultTrain.prediction[i]:
-				count += 1
-		trainAccu = float(count)/len(trainLabel)*100
+		trainAccu = float(correctTrain)/len(trainLabel)*100
 		#compare test predictions
-		count = 0
-		for i in range(0, len(testLabel)):
-			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
-				count += 1
-		testAccu = float(count)/len(testLabel)*100
-		print("Training and test (Logistic Regression) elapsed in %s seconds" %(str(endTime - startTime)))
+		testAccu = float(correctTest)/len(testLabel)*100
+		print("Training and test (Logistic Regression) elapsed in %.3f seconds" %(endTime - startTime))
 		#save the model to the output
 		#print("saving model parameters into " + outputFileName)
 		paramMap = {}
@@ -89,7 +84,7 @@ class LR:
 		#make predictions
 		predictResultTest = predictAlg.compute(data, joblib.load('LRmodel.pkl'))
 		endTime = time.time()
-		print("Test (Logistic Regression) elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Test (Logistic Regression) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
 		count = 0
 		for i in range(0, len(label)):
@@ -111,7 +106,7 @@ class DF:
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
 		data = np.array(data)
-		label = pd.DataFrame(label, dtype=np.float64)
+		label = np.array(label).reshape((len(label), 1))
 		#begin train timing
 		#print("Beginning train timing...")
 		startTime = time.time()
@@ -125,7 +120,6 @@ class DF:
 		trainLabel = label[0:upperBound]
 		testData = data[upperBound:]
 		testLabel = label[upperBound:]
-
 		#train model
 		#print("Training model...")
 		trainResult = trainAlg.compute(trainData, trainLabel) 
@@ -137,19 +131,14 @@ class DF:
 		predictResultTest = predictAlgTest.compute(testData, trainResult.model) 
 		#end train timing
 		endTime = time.time()
+		#sum prediction results
+		correctTrain = np.sum(trainLabel.flatten() == predictResultTrain.prediction.flatten())
+		correctTest = np.sum(testLabel.flatten() == predictResultTest.prediction.flatten())
 		#compare train predictions
-		count = 0
-		for i in range(0, len(trainLabel)):
-			if trainLabel[0][i] == predictResultTrain.prediction[i]:
-				count += 1
-		trainAccu = float(count)/len(trainLabel)*100
+		trainAccu = float(correctTrain)/len(trainLabel)*100
 		#compare test predictions
-		count = 0
-		for i in range(0, len(testLabel)):
-			if testLabel[0][len(trainLabel) + i] == predictResultTest.prediction[i]:
-				count += 1
-		testAccu = float(count)/len(testLabel)*100
-		print("Training and test (Decision Forest) elapsed in %s seconds" %(str(endTime - startTime)))
+		testAccu = float(correctTest)/len(testLabel)*100
+		print("Training and test (Decision Forest) elapsed in %.3f seconds" %(endTime - startTime))
 		#save the model to the output
 		#print("saving model parameters into " + outputFileName)
 		paramMap = {}
@@ -171,13 +160,10 @@ class DF:
 		#make predictions
 		predictResultTest = predictAlg.compute(data, joblib.load('DFmodel.pkl'))
 		endTime = time.time()
-		print("Test (Decision Forest) elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Test (Decision Forest) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
-		count = 0
-		for i in range(0, len(label)):
-			if label[i] == predictResultTest.prediction[i]:
-				count += 1
-		return float(count)/len(label)*100
+		correctTest = np.sum(label == predictResultTest.prediction.flatten())
+		return float(correctTest)/len(label)*100
 
 class SVM:
 	def __init__(self, numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature):
@@ -195,7 +181,7 @@ class SVM:
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
 		data = np.array(data)
-		label = pd.DataFrame(label, dtype=np.float64)
+		label = np.array(label).reshape((len(label), 1))
 		#begin train timing
 		#print("Beginning train timing...")
 		startTime = time.time()
@@ -222,18 +208,16 @@ class SVM:
 		#end train timing
 		endTime = time.time()
 		#compare train predictions
-		count = 0
-		for i in range(0, len(trainLabel)):
-			if (trainLabel[0][i] > 0 and predictResultTrain.prediction[i] > 0) or (trainLabel[0][i] < 0 and predictResultTrain.prediction[i] < 0):
-				count += 1
-		trainAccu = float(count)/len(trainLabel)*100
+		predictionsTrain = predictResultTrain.prediction.flatten()
+		trainLabel = trainLabel.flatten()
+		correctTrain = np.sum(np.logical_or(np.logical_and(trainLabel > 0, predictionsTrain > 0), np.logical_and(trainLabel < 0, predictionsTrain < 0)))
+		trainAccu = float(correctTrain)/len(trainLabel)*100
 		#compare test predictions
-		count = 0
-		for i in range(0, len(testLabel)):
-			if (testLabel[0][len(trainLabel) + i] > 0 and predictResultTest.prediction[i] > 0) or (testLabel[0][len(trainLabel) + i] < 0 and predictResultTest.prediction[i] < 0):
-				count += 1
-		testAccu = float(count)/len(testLabel)*100
-		print("Training and test (Support Vector Machine) elapsed in %s seconds" %(str(endTime - startTime)))
+		predictionsTest = predictResultTest.prediction.flatten()
+		testLabel = testLabel.flatten()
+		correctTest = np.sum(np.logical_or(np.logical_and(testLabel > 0, predictionsTest > 0), np.logical_and(testLabel < 0, predictionsTest < 0)))
+		testAccu = float(correctTest)/len(testLabel)*100
+		print("Training and test (Support Vector Machine) elapsed in %.3f seconds" %(endTime - startTime))
 		#save the model to the output
 		#print("saving model parameters into " + outputFileName)
 		paramMap = {}
@@ -249,6 +233,8 @@ class SVM:
 		#accuracy
 		return (trainAccu, testAccu)
 	def test(self, data, label):
+		#make 0 values -1
+		label = np.array([-1 if i==0 else 1 for i in label])
 		startTime = time.time()
 		#create prediction class
 		kern = kernel_function_linear(method='defaultDense')
@@ -256,13 +242,11 @@ class SVM:
 		#make predictions
 		predictResultTest = predictAlg.compute(data, joblib.load('SVMmodel.pkl'))
 		endTime = time.time()
-		print("Test (Support Vector Machine) elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Test (Support Vector Machine) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
-		count = 0
-		for i in range(0, len(label)):
-			if (label[i] > 0 and predictResultTest.prediction[i] > 0) or (label[i] < 0 and predictResultTest.prediction[i] < 0):
-				count += 1
-		return float(count)/len(label)*100
+		predictions = predictResultTest.prediction.flatten()
+		correctTest = np.sum(np.logical_or(np.logical_and(label > 0, predictions > 0), np.logical_and(label < 0, predictions < 0)))
+		return float(correctTest)/len(label)*100
 
 
 class ANN:
@@ -314,13 +298,13 @@ class ANN:
 		#end train timing
 		endTime = time.time()
 		#sum prediction results
-		correctTrain = np.sum(trainLabel == predictResultTrain.flatten(), axis = 0)
-		correctTest = np.sum(testLabel == predictResultTest.flatten(), axis = 0)
+		correctTrain = np.sum(trainLabel == predictResultTrain.flatten())
+		correctTest = np.sum(testLabel == predictResultTest.flatten())
 		#compare train predictions
 		trainAccu = float(correctTrain)/len(trainLabel)*100
 		#compare test predictions
 		testAccu = float(correctTest)/len(testLabel)*100
-		print("Training and test (Artificial Neural Network [%d epochs]) elapsed in %s seconds" %(epochs, str(endTime - startTime)))
+		print("Training and test (Artificial Neural Network [%d epochs]) elapsed in %.3f seconds" %(epochs, endTime - startTime))
 		#save model
 		modelJSON = model.to_json()
 		with open("ANNmodel.json", "w") as json_file:
@@ -345,7 +329,7 @@ class ANN:
 		#make predictions
 		predictResultTest = loadedModel.predict_classes(data)
 		endTime = time.time()
-		print("Test (Artificial Neural Network) elapsed in %s seconds" %(str(endTime - startTime)))
+		print("Test (Artificial Neural Network) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
-		correctTest = np.sum(label == predictResultTest.flatten(), axis = 0)
+		correctTest = np.sum(label == predictResultTest.flatten())
 		return float(correctTest)/len(label)*100
