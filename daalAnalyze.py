@@ -88,28 +88,28 @@ def main():
 
 
 
-def analyzeMETA(joyFolder, dataFolder):
+def analyzeMETA(dataFolder):
 	print("Analyzing Metadata.....")
 	command4 = "python daalAnalyzeMETA.py -i %s -j" % (dataFolder)
 	#print(command4) #verbose
 	os.system(command4)
 	print("Done analyzing Metadata!")
 
-def analyzeHTTP(joyFolder, dataFolder):
+def analyzeHTTP(dataFolder):
 	print("Analyzing HTTP.....")
 	command3 = "python daalAnalyzeHTTPWithTime.py -i %s -j" % (dataFolder)
 	#print(command3) #verbose
 	os.system(command3)
 	print("Done analyzing HTTP!")
 
-def analyzeTLS(joyFolder, dataFolder):
+def analyzeTLS(dataFolder):
 	print("Analyzing TLS.....")
 	command2 = "python daalAnalyzeTLS.py -i %s -j" % (dataFolder)
 	#print(command2) #verbose
 	os.system(command2)
 	print("Done analyzing TLS!")
 
-def analyzeDNS(joyFolder, dataFolder):
+def analyzeDNS(dataFolder):
 	print("Analyzing DNS.....")
 	command1 = "python daalAnalyzeDNS.py -i %s -j" % (dataFolder)
 	#print(command1) #verbose
