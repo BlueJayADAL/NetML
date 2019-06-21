@@ -10,17 +10,8 @@ import argparse
 from collections import defaultdict, OrderedDict
 from daalModel import LR, DF, SVM, ANN
 from sklearn.externals import joblib
-#SVM, ANN, RF
 #from modelANNGPU import ANNGPU
 
-## Import (Copy and Paste) data from the collectCommonDNS.py, collectCommonTLS.py and collectCommonHTTP.py
-## The number of most common features could be varied
-#40 common DNS Suffixes and 64 Common DNS TTLS
-dnsCommon = {"ttls": {"0": 9, "1": 1, "2": 36, "3": 39, "4": 37, "5": 32, "6": 33, "7": 27, "8": 29, "9": 11, "10": 8, "11": 22, "12": 20, "13": 16, "14": 18, "15": 17, "16": 19, "17": 15, "18": 12, "19": 5, "20": 31, "21": 52, "22": 41, "23": 55, "24": 60, "25": 43, "26": 54, "27": 47, "52": 38, "29": 28, "30": 49, "51": 34, "32": 59, "33": 46, "35": 51, "37": 57, "40": 63, "28": 48, "42": 62, "299": 2, "300": 14, "45": 42, "46": 58, "47": 45, "48": 56, "49": 40, "178": 30, "179": 3, "180": 10, "53": 35, "54": 24, "55": 23, "56": 25, "57": 26, "58": 13, "59": 0, "60": 4, "41": 53, "599": 7, "50": 44, "44": 61, "119": 6, "125": 50, "126": 21}, "suffix": {"www": 14, "co": 15, "cn": 1, "do": 33, "cc": 34, "ca": 4, "site": 32, "io": 7, "in": 12, "cafe": 37, "COM": 31, "ru": 6, "pw": 25, "tv": 22, "top": 26, "net": 2, "gov": 39, "pro": 27, "website": 36, "me": 24, "fr": 8, "http": 35, "uk": 11, "club": 28, "de": 10, "jp": 3, "biz": 20, "br": 13, "x": 9, "org": 5, "ws": 18, "info": 21, "mobi": 19, "camp": 38, "us": 23, "ms": 17, "link": 16, "com": 0, "tt": 30, "se": 29}}
-#115 common TLS ciphersuite and 22 Commnon TLS extensions
-tlsCommon = {"clientCS": {"cca9": 14, "c02b": 4, "c02c": 9, "cca8": 15, "c02f": 5, "c030": 8, "c009": 11, "c00a": 12, "c013": 0, "c014": 1, "009c": 6, "009d": 10, "002f": 2, "0035": 3, "cc14": 22, "cc13": 23, "cc15": 24, "009e": 18, "0039": 16, "0033": 17, "c011": 19, "c007": 20, "0005": 21, "0004": 25, "000a": 7, "00ff": 13, "009f": 28, "0032": 26, "0038": 27, "dada": 54, "c028": 29, "c024": 30, "00a5": 75, "00a3": 67, "00a1": 76, "006b": 68, "006a": 69, "0069": 77, "0068": 78, "0037": 79, "0036": 80, "ccaa": 91, "c032": 31, "c02e": 32, "c02a": 33, "c026": 34, "c00f": 35, "c005": 36, "003d": 37, "c027": 38, "c023": 39, "00a4": 81, "00a2": 70, "00a0": 82, "0067": 71, "0040": 72, "003f": 83, "003e": 84, "0031": 85, "0030": 86, "c031": 40, "c02d": 41, "c029": 42, "c025": 43, "c00e": 44, "c004": 45, "003c": 46, "c00c": 89, "c002": 90, "c012": 47, "c008": 48, "0016": 73, "0013": 74, "0010": 87, "000d": 88, "c00d": 49, "c003": 50, "eaea": 65, "1a1a": 60, "caca": 58, "5a5a": 64, "3a3a": 52, "4a4a": 57, "8a8a": 62, "fafa": 55, "2a2a": 66, "6a6a": 63, "9a9a": 61, "0a0a": 51, "7a7a": 56, "aaaa": 53, "baba": 59, "5600": 92, "0088": 93, "0087": 94, "0086": 103, "0085": 104, "0084": 95, "009a": 96, "0099": 97, "0098": 105, "0097": 106, "0045": 98, "0044": 99, "0043": 107, "0042": 108, "0096": 100, "0041": 101, "0007": 102, "0015": 109, "0012": 110, "0009": 111, "0014": 112, "0011": 113, "0008": 114, "0006": 115, "0003": 116}, "clientExt": {"ff01": 10, "0000": 3, "0017": 6, "0023": 4, "000d": 2, "0005": 5, "000b": 0, "000a": 1, "0015": 12, "3374": 11, "0012": 8, "0010": 7, "7550": 9, "eaea": 23, "7a7a": 14, "1a1a": 19, "caca": 13, "fafa": 28, "dada": 22, "3a3a": 16, "0a0a": 20, "aaaa": 25, "6a6a": 18, "2a2a": 21, "9a9a": 24, "5a5a": 26, "4a4a": 17, "baba": 27, "8a8a": 15, "000f": 29}, "serverCS": {"cca8": 3, "c02f": 0, "c02b": 1, "009c": 4, "cca9": 2, "c030": 5, "009d": 7, "c014": 6, "002f": 11, "0035": 8, "c028": 9, "cc14": 10, "cc13": 12, "0005": 14, "c013": 15, "c02c": 16, "009e": 13, "0039": 17, "0004": 18, "000a": 20, "0033": 19, "009f": 21}, "serverExt": {"ff01": 0, "0017": 5, "000b": 1, "0023": 3, "0005": 6, "0010": 2, "0000": 4, "0012": 8, "7550": 7, "3374": 9, "000f": 10}}
-#HTTP features
-httpCommon = {"code": {"201": 9, "200": 0, "204": 4, "206": 8, "301": 3, "302": 1, "304": 2, "404": 7, "400": 5, "408": 6}, "accept-language": {"en-US,en;q=0.8": 0}, "presence": {"origin": 71, "fw-cache-status": 50, "content-length": 10, "code": 2, "accept-language": 5, "pragma": 35, "x-varnish-cache": 43, "x-cache-lookup": 51, "vary": 23, "fw-global-ttl": 55, "accept": 6, "upgrade-insecure-requests": 41, "x-daa-tunnel": 70, "dpool_lb7_header": 53, "via": 19, "x-hits": 59, "p3p": 30, "served-from": 33, "network_info": 25, "cookie": 15, "x-via": 32, "access-control-allow-methods": 37, "x-wap-profile": 78, "content-language": 83, "access-control-max-age": 38, "poolpool4": 64, "x-amz-expiration": 77, "fw-via": 48, "sina-lb": 40, "poolpool3": 65, "user-agent": 4, "x-via-cdn": 24, "lb_header": 79, "x-varnish-hits": 42, "location": 28, "dpool_header": 54, "cache-control": 12, "x-qhcdn": 72, "x-filesize": 60, "access-control-allow-headers": 36, "x-nws-log-uuid": 68, "x-px": 49, "x-varnish": 29, "accept-encoding": 3, "x-cache": 26, "access-control-expose-headers": 44, "transfer-encoding": 27, "set-cookie": 21, "accept-ranges": 16, "expires": 14, "eagleid": 46, "traceid": 82, "last-modified": 13, "host": 1, "x-xss-protection": 52, "x-requestid": 61, "x-requester": 62, "if-modified-since": 58, "date": 8, "access-control-allow-origin": 20, "x-li-pop": 80, "x-li-proto": 81, "timing-allow-origin": 31, "x-swift-cachetime": 57, "x-amz-cf-id": 76, "x-client-ip": 66, "x-swift-savetime": 56, "x-amz-meta-crc32": 63, "etag": 22, "content-encoding": 18, "age": 17, "strict-transport-security": 75, "fss-proxy": 34, "server": 9, "fss-cache": 74, "connection": 0, "sina-ts": 39, "keep-alive": 69, "referer": 11, "x-frame-options": 73, "x-powered-by": 47, "content-type": 7, "x-server-ip": 67, "ohc-response-time": 45}, "user-agent": {"Android": 2, "Mozilla/5.0": 0, "Dalvik/2.1.0": 1}, "server": {"Varnish": 22, "squid": 9, "X2_Platform": 13, "ATS": 18, "AmazonS3": 16, "mws": 7, "NWS_Oversea_AP": 14, "ECS": 2, "Apache": 10, "Sina": 6, "gws": 12, "proxygen": 19, "nginx": 0, "NWS_UGC_HY": 20, "Tengine": 1, "apache": 21, "JDWS": 5, "Suda": 15, "WeiBo": 17, "PWS": 4, "Microsoft-IIS": 8, "JSP3": 3, "openresty": 11}, "content-type": {"text/html; charset=GB2312": 14, "image/jpeg": 0, "application/json;charset=UTF-8": 18, "text/html; charset=UTF-8": 6, "image/png": 2, "text/html;charset=utf-8": 13, "text/html; charset=windows-1251": 12, "application/x-javascript": 4, "application/octet-stream": 9, "application/json": 8, "text/plain": 7, "application/javascript; charset=utf-8": 16, "text/html": 1, "text/html; charset=utf-8": 5, "application/javascript;charset=UTF-8": 11, "application/javascript": 17, "image/gif": 3, "text/html;charset=UTF-8": 10, "text/plain; charset=UTF-8": 19, "text/javascript": 20, "text/css": 15}}
 ##global variables for binary features
 #DNS
 numDNSFeature = 0
@@ -513,43 +504,41 @@ def pullData(select):
 	return (data, label)
 
 
-
-
 def main():
 	startTime = time.time()
+	# Read in common files
+	global dnsCommon
+	global tlsCommon
+	global httpCommon 
+	
 	## Get the number of the most Common Features, since it is copied from these other files
 	#DNS
 	global dnsDir
+	global dnsCommonPath
 	global numDNSFeature
 	global numCommonDNSTTL
 	global numCommonDNSSuffix
-	numCommonDNSTTL = len(list(dnsCommon["ttls"].keys()))
-	numCommonDNSSuffix = len(list(dnsCommon["suffix"].keys()))
+	
 	#TLS
 	global tlsDir
+	global tlsCommonPath
 	global enableTLS
 	global numTLSFeature
 	global numCommonTLSClientCS
 	global numCommonTLSClientExt
 	global numCommonTLSServerCS
 	global numCommonTLSServerExt
-	numCommonTLSClientCS = len(list(tlsCommon["clientCS"].keys()))
-	numCommonTLSClientExt = len(list(tlsCommon["clientExt"].keys()))
-	numCommonTLSServerCS = len(list(tlsCommon["serverCS"].keys()))
-	numCommonTLSServerExt = len(list(tlsCommon["serverExt"].keys()))
+	
 	#HTTP
 	global httpDir
+	global httpCommonPath
 	global numHTTPFeature
 	global numCommonHTTPPresence
 	global numCommonHTTPContentType
 	global numCommonHTTPUserAgent
 	global numCommonHTTPServer
 	global numCommonHTTPCode
-	numCommonHTTPPresence = len(list(httpCommon["presence"].keys()))
-	numCommonHTTPContentType = len(list(httpCommon["content-type"].keys()))
-	numCommonHTTPUserAgent = len(list(httpCommon["user-agent"].keys()))
-	numCommonHTTPServer = len(list(httpCommon["server"].keys()))
-	numCommonHTTPCode = len(list(httpCommon["code"].keys()))
+	
 	#META
 	global metaDir
 	global timesDir
@@ -589,13 +578,11 @@ def main():
 	#command example
 	#python classify.py --workDir=./ --select=./selection/testc.json --classify --output=params.txt  --tls --dns --http
 	#python classify.py --workDir=./ --select=./selection/testc.json --test --input=params.txt
-
 	#check the time scale for http flows
 	if args.timeScale == None:
 		timeScale = 0
 	else:
 		timeScale = args.timeScale
-
 	#check if the filter exists
 	if args.filterOut != None:
 		if not os.path.isfile(args.filterOut):
@@ -604,7 +591,6 @@ def main():
 		else:
 			filterOut = json.load(open(args.filterOut, 'r'))
 			filterOut = set(filterOut)
-
 	#check the work directory
 	if args.workDir == None or not os.path.isdir(args.workDir):
 		print('No valid work directory')
@@ -613,12 +599,45 @@ def main():
 		workDir = args.workDir
 		if not workDir.endswith('/'):
 			workDir += '/'
+	#Setup common feature paths
+	tlsCommonPath = workDir + "TLS_COMMON/tlsCommon.json"
+	if not os.path.isfile(tlsCommonPath):
+		print("No valid tlsCommon.json path")
+		return
+	with open(tlsCommonPath, 'r') as fpTLS:
+		tlsCommon = json.load(fpTLS)
+	
+	dnsCommonPath = workDir + "DNS_COMMON/dnsCommon.json"
+	if not os.path.isfile(dnsCommonPath):
+		print("No valid dnsCommon.json path")
+		return
+	with open(dnsCommonPath, 'r') as fpDNS:
+		dnsCommon = json.load(fpDNS)
+	
+	httpCommonPath = workDir + "HTTP_COMMON/httpCommon.json"
+	if not os.path.isfile(httpCommonPath):
+		print("No valid httpCommon.json path")
+		return
+	with open(httpCommonPath, 'r') as fpHTTP:
+		httpCommon = json.load(fpHTTP)
+	#Setup corresponding features
+	numCommonDNSTTL = len(list(dnsCommon["ttls"].keys()))
+	numCommonDNSSuffix = len(list(dnsCommon["suffix"].keys()))
+	numCommonTLSClientCS = len(list(tlsCommon["clientCS"].keys()))
+	numCommonTLSClientExt = len(list(tlsCommon["clientExt"].keys()))
+	numCommonTLSServerCS = len(list(tlsCommon["serverCS"].keys()))
+	numCommonTLSServerExt = len(list(tlsCommon["serverExt"].keys()))
+	numCommonHTTPPresence = len(list(httpCommon["presence"].keys()))
+	numCommonHTTPContentType = len(list(httpCommon["content-type"].keys()))
+	numCommonHTTPUserAgent = len(list(httpCommon["user-agent"].keys()))
+	numCommonHTTPServer = len(list(httpCommon["server"].keys()))
+	numCommonHTTPCode = len(list(httpCommon["code"].keys()))
+
 	#We use the TLS_JSON as the iteration standard, hence TLS_JSON directory must exist
 	tlsDir = workDir + "TLS_JSON/" 
 	if not os.path.isdir(tlsDir):
 		print("No valid TLS_JSON directory")
 		return
-
 	#Check for classify and test
 	if args.classify == False and args.test == False:
 		print('At least test or classify')
