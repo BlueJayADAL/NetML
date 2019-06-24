@@ -1,5 +1,4 @@
-import json
-import ujson
+import ujson as json
 import sys
 import gzip
 from collections import defaultdict
@@ -103,7 +102,7 @@ def ProcessMETA(inPathName, fileName, meta):
 		for line in fp:
 			lineno = lineno + 1
 			try:
-				tmp = ujson.loads(line) #ujson
+				tmp = json.loads(line)
 			except:
 				continue
 			if ('version' in tmp) or ("tls" not in tmp) or (int(tmp["dp"]) != 443):
@@ -137,7 +136,7 @@ def saveToJson(outPathName, fileName, meta):
 	fname = "%s%s_META.json" % (outPathName, (fileName.split('.'))[0])
 	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		ujson.dump(meta, fp) #ujson
+		json.dump(meta, fp)
 
 def main():
 	parser = argparse.ArgumentParser(description="Probability Distribution of META Features in Dataset", add_help=True)

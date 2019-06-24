@@ -1,5 +1,4 @@
-import json
-import ujson
+import ujson as json
 import sys
 import gzip
 from collections import defaultdict
@@ -91,7 +90,7 @@ def ProcessTLS(inPathName, fileName, tls):
 		for line in fp:
 			lineno = lineno + 1
 			try:
-				tmp = ujson.loads(line) #ujson
+				tmp = json.loads(line)
 			except:
 				continue
 			if ('version' in tmp) or ("tls" not in tmp) or (int(tmp["dp"]) != 443):
@@ -163,7 +162,7 @@ def saveToJson(outPathName, fileName, tls):
 	fname = "%s%s_TLS.json" % (outPathName, (fileName.split('.'))[0])
 	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		ujson.dump(tls, fp) #ujson
+		json.dump(tls, fp) 
 
 def plotTLS(tls, inPathName, fileName, outPathName):
 	outFolder = outPathName + (fileName.split('.'))[0] + "/"

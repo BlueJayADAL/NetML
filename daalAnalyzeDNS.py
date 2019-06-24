@@ -1,5 +1,4 @@
-import json
-import ujson
+import ujson as json
 import sys
 import gzip
 #import seolib as seo
@@ -77,7 +76,7 @@ def ProcessDNS(inPathName, fileName, dns):
 	with gzip.open(json_file,'r') as fp:  
 		for line in fp:
 			try:
-				tmp = ujson.loads(line) #ujson
+				tmp = json.loads(line) 
 			except:
 				continue
 			if ('version' in tmp) or ("dns" not in tmp):
@@ -124,7 +123,7 @@ def saveToJson(outPathName, fileName, dns):
 	fname = "%s%s_DNS.json" % (outPathName, (fileName.split('.'))[0])
 	#print("save JSON to %s" % (fname)) #verbose
 	with open(fname, 'w') as fp:
-		ujson.dump(dns, fp) #ujson	
+		json.dump(dns, fp)	
 
 def plotDNSFeature(dns, feature, ylabel, title, outFolder):
 	itemDict = {}
@@ -240,7 +239,7 @@ def main():
 	if os.path.exists(alexaFileName):
 		try:
 			with open(alexaFileName, 'r') as fp:
-				alexaMap = ujson.load(fp) #ujson
+				alexaMap = json.load(fp)
 		except:
 			pass
 
@@ -315,7 +314,7 @@ def main():
 
 	#save the alexaMap into JSON file
 	try:
-		ujson.dump(alexaMap, open(alexaFileName, 'w')) #ujson
+		json.dump(alexaMap, open(alexaFileName, 'w'))
 	except:
 		pass
 

@@ -1,5 +1,4 @@
-import json
-import ujson
+import ujson as json
 import sys
 import gzip
 from collections import defaultdict, OrderedDict
@@ -25,7 +24,7 @@ def ProcessHTTP(inPathName, fileName, http):
 			lineno = lineno + 1
 			#print lineno
 			try:
-				tmp = ujson.loads(line) #ujson
+				tmp = json.loads(line)
 			except:
 				continue
 			if ('version' in tmp) or ("http" not in tmp):
@@ -91,7 +90,7 @@ def saveToJson(outPathName, fileName, http):
 	fname = "%s%s_%s_HTTP.json" % (outPathName, (fileName.split('.'))[0], str(timeScale))
 	#print("save JSON to " + fname) #verbose
 	with open(fname, 'w') as fp:
-		ujson.dump(http, fp) #ujson
+		json.dump(http, fp)
 		
 
 def main():

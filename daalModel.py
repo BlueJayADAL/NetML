@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import random
 import copy
-import json
+import ujson as json
 import math
 import time
 import os
@@ -23,7 +23,7 @@ class LR:
 		self.numTimesFeature = numTimesFeature
 		self.numLengthsFeature = numLengthsFeature
 		self.numDistFeature = numDistFeature
-	def train(self, data, label, outputFileName):		
+	def train(self, data, label, outputFileName, workDir):		
 		nClasses = 2
 		#shuffle the data first
 		tmp = list(zip(data, label))
@@ -73,16 +73,21 @@ class LR:
 		paramMap["feature"]["times"] = self.numTimesFeature
 		paramMap["feature"]["lengths"] = self.numLengthsFeature
 		paramMap["feature"]["dist"] = self.numDistFeature
-		joblib.dump(trainResult.model, 'LRmodel.pkl')
-		json.dump(paramMap, open(outputFileName, 'w'))
+		#create work dir paths
+		outPKL = "%sLRmodel.pkl" % workDir
+		outFile = "%s%s" % (workDir, outputFileName)
+		joblib.dump(trainResult.model, outPKL)
+		json.dump(paramMap, open(outFile, 'w'))
 		#accuracy
 		return (trainAccu, testAccu)
-	def test(self, data, label):
+	def test(self, data, label, workDir):
+		#create work dir path
+		inPKL = "%sLRmodel.pkl" % workDir
 		startTime = time.time()
 		#create prediction class
 		predictAlg = logistic_regression_prediction(nClasses=2)
 		#make predictions
-		predictResultTest = predictAlg.compute(data, joblib.load('LRmodel.pkl'))
+		predictResultTest = predictAlg.compute(data, joblib.load(inPKL))
 		endTime = time.time()
 		print("Test (Logistic Regression) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
@@ -100,7 +105,7 @@ class DF:
 		self.numTimesFeature = numTimesFeature
 		self.numLengthsFeature = numLengthsFeature
 		self.numDistFeature = numDistFeature
-	def train(self, data, label, outputFileName):
+	def train(self, data, label, outputFileName, workDir):
 		#shuffle the data first
 		tmp = list(zip(data, label))
 		random.shuffle(tmp)
@@ -149,16 +154,22 @@ class DF:
 		paramMap["feature"]["times"] = self.numTimesFeature
 		paramMap["feature"]["lengths"] = self.numLengthsFeature
 		paramMap["feature"]["dist"] = self.numDistFeature
-		joblib.dump(trainResult.model, 'DFmodel.pkl')
-		json.dump(paramMap, open(outputFileName, 'w'))
+		#create work dir paths
+		outPKL = "%sDFmodel.pkl" % workDir
+		outFile = "%s%s" % (workDir, outputFileName)
+		#save files
+		joblib.dump(trainResult.model, outPKL)
+		json.dump(paramMap, open(outFile, 'w'))
 		#accuracy
 		return (trainAccu, testAccu)
-	def test(self, data, label):
+	def test(self, data, label, workDir):
+		#create work dir paths
+		inPKL = "%sDFmodel.pkl" % workDir
 		startTime = time.time()
 		#create prediction class
 		predictAlg = decision_forest_classification_prediction(2)
 		#make predictions
-		predictResultTest = predictAlg.compute(data, joblib.load('DFmodel.pkl'))
+		predictResultTest = predictAlg.compute(data, joblib.load(inPKL))
 		endTime = time.time()
 		print("Test (Decision Forest) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
@@ -173,7 +184,7 @@ class SVM:
 		self.numTimesFeature = numTimesFeature
 		self.numLengthsFeature = numLengthsFeature
 		self.numDistFeature = numDistFeature
-	def train(self, data, label, outputFileName):
+	def train(self, data, label, outputFileName, workDir):
 		#make 0 values -1
 		label = [-1 if i==0 else 1 for i in label]
 		#shuffle the data first
@@ -228,11 +239,16 @@ class SVM:
 		paramMap["feature"]["times"] = self.numTimesFeature
 		paramMap["feature"]["lengths"] = self.numLengthsFeature
 		paramMap["feature"]["dist"] = self.numDistFeature
-		joblib.dump(trainResult.model, 'SVMmodel.pkl')
-		json.dump(paramMap, open(outputFileName, 'w'))
+		#create work dir paths
+		outPKL = "%sSVMmodel.pkl" % workDir
+		outFile = "%s%s" % (workDir, outputFileName)
+		joblib.dump(trainResult.model, outPKL)
+		json.dump(paramMap, open(outFile, 'w'))
 		#accuracy
 		return (trainAccu, testAccu)
-	def test(self, data, label):
+	def test(self, data, label, workDir):
+		#create work dir path
+		inPKL = "%sSVMmodel.pkl" % workDir
 		#make 0 values -1
 		label = np.array([-1 if i==0 else 1 for i in label])
 		startTime = time.time()
@@ -240,7 +256,7 @@ class SVM:
 		kern = kernel_function_linear(method='defaultDense')
 		predictAlg = svm_prediction(nClasses=2, kernel=kern)
 		#make predictions
-		predictResultTest = predictAlg.compute(data, joblib.load('SVMmodel.pkl'))
+		predictResultTest = predictAlg.compute(data, joblib.load(inPKL))
 		endTime = time.time()
 		print("Test (Support Vector Machine) elapsed in %.3f seconds" %(endTime - startTime))
 		#assess accuracy
@@ -257,13 +273,14 @@ class ANN:
 		self.numTimesFeature = numTimesFeature
 		self.numLengthsFeature = numLengthsFeature
 		self.numDistFeature = numDistFeature
-	def train(self, data, label, outputFileName):
+	def train(self, data, label, outputFileName, workDir):
 		epochs = 100
 		#shuffle the data first
 		tmp = list(zip(data, label))
 		random.shuffle(tmp)
 		data[:], label[:] = zip(*tmp)
 		data = np.array(data)
+		inputShape = data.shape[1]
 		label = np.array(label)
 		#begin train timing
 		#print("Beginning train timing...")
@@ -272,7 +289,7 @@ class ANN:
 		#initialize
 		model = keras.models.Sequential()
 		#add layers (23-13-11-7-5)
-		model.add(keras.layers.Dense(units=23, input_dim=331, activation='relu'))
+		model.add(keras.layers.Dense(units=23, input_dim=inputShape, activation='relu'))
 		model.add(keras.layers.Dense(units=13, activation='relu'))
 		model.add(keras.layers.Dense(units=11, activation='relu'))
 		model.add(keras.layers.Dense(units=7, activation='relu'))
@@ -305,24 +322,40 @@ class ANN:
 		#compare test predictions
 		testAccu = float(correctTest)/len(testLabel)*100
 		print("Training and test (Artificial Neural Network [%d epochs]) elapsed in %.3f seconds" %(epochs, endTime - startTime))
+		paramMap = {}
+		paramMap["feature"] = {}
+		paramMap["feature"]["tls"] = self.numTLSFeature
+		paramMap["feature"]["dns"] = self.numDNSFeature
+		paramMap["feature"]["http"] = self.numHTTPFeature
+		paramMap["feature"]["times"] = self.numTimesFeature
+		paramMap["feature"]["lengths"] = self.numLengthsFeature
+		paramMap["feature"]["dist"] = self.numDistFeature
+		#create work dir paths
+		outFile = "%s%s" % (workDir, outputFileName)
+		outJSON = "%sANNmodel.json" % workDir
+		outH5 = "%sANNmodel.h5" % workDir
 		#save model
 		modelJSON = model.to_json()
-		with open("ANNmodel.json", "w") as json_file:
+		with open(outJSON, "w") as json_file:
 			json_file.write(modelJSON)
+		json.dump(paramMap, open(outFile, 'w'))
 		#serialize weights to HDF5
-		model.save_weights("ANNmodel.h5")
+		model.save_weights(outH5)
 		print("Saved model to disk.")
 		#accuracy
 		return (trainAccu, testAccu)
-	def test(self, data, label):
+	def test(self, data, label, workDir):
+		#create work dir paths
+		inJSON = "%sANNmodel.json" % workDir
+		inH5 = "%sANNmodel.h5" % workDir
 		startTime = time.time()
 		#read in trained model
-		jsonFile = open('ANNmodel.json', 'r')
+		jsonFile = open(inJSON, 'r')
 		loadedModelJSON = jsonFile.read()
 		jsonFile.close()
 		loadedModel = keras.models.model_from_json(loadedModelJSON)
 		# load weights into new model
-		loadedModel.load_weights("ANNmodel.h5")
+		loadedModel.load_weights(inH5)
 		print("Loaded model from disk")
 		#compile model
 		loadedModel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])

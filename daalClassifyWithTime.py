@@ -730,12 +730,13 @@ def main():
 		processEnd = time.time()
 		print("Data prep elapsed in %.3f seconds" %(processEnd - processStart))
 		# train the model
-		acc = mlModel.train(d[0], d[1], args.output)
+		acc = mlModel.train(d[0], d[1], args.output, workDir)
 		print("Accuracy: %.3f%% train, %.3f%% test" %(acc[0], acc[1]))
 	#Test only
 	else:
 		processStart = time.time()
-		paramMap = json.load(open(args.input, 'r'))
+		inputParam = "%s%s" % (workDir, args.input)
+		paramMap = json.load(open(inputParam, 'r'))
 		numTLSFeatureT = paramMap["feature"]["tls"]
 		numDNSFeatureT = paramMap["feature"]["dns"]
 		numHTTPFeatureT = paramMap["feature"]["http"]
@@ -814,7 +815,7 @@ def main():
 		processEnd = time.time()
 		print("Data prep elapsed in %.3f seconds" %(processEnd - startTime))
 		# test the model
-		acc = mlModel.test(np.array(d[0]), d[1])
+		acc = mlModel.test(np.array(d[0]), d[1], workDir)
 		print("Testing accuracy: %.3f%%" %(acc))
 		'''
 		else:
