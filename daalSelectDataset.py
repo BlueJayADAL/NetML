@@ -1,4 +1,4 @@
-import json
+import ujson as json
 import sys
 import gzip
 from collections import defaultdict
