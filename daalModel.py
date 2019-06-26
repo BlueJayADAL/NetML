@@ -332,33 +332,20 @@ class ANN:
 		paramMap["feature"]["dist"] = self.numDistFeature
 		#create work dir paths
 		outFile = "%s%s" % (workDir, outputFileName)
-		outJSON = "%sANNmodel.json" % workDir
 		outH5 = "%sANNmodel.h5" % workDir
-		#save model
-		modelJSON = model.to_json()
-		with open(outJSON, "w") as json_file:
-			json_file.write(modelJSON)
 		json.dump(paramMap, open(outFile, 'w'))
-		#serialize weights to HDF5
-		model.save_weights(outH5)
+		#serialize model to HDF5
+		model.save(outH5)
 		print("Saved model to disk.")
 		#accuracy
 		return (trainAccu, testAccu)
 	def test(self, data, label, workDir):
 		#create work dir paths
-		inJSON = "%sANNmodel.json" % workDir
 		inH5 = "%sANNmodel.h5" % workDir
 		startTime = time.time()
-		#read in trained model
-		jsonFile = open(inJSON, 'r')
-		loadedModelJSON = jsonFile.read()
-		jsonFile.close()
-		loadedModel = keras.models.model_from_json(loadedModelJSON)
-		# load weights into new model
-		loadedModel.load_weights(inH5)
+		#read in trained model (also automatically compiles)
+		loadedModel = keras.models.load_model(inH5)
 		print("Loaded model from disk")
-		#compile model
-		loadedModel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 		#make predictions
 		predictResultTest = loadedModel.predict_classes(data)
 		endTime = time.time()
