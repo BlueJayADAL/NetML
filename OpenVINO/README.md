@@ -12,7 +12,7 @@ The OpenVINO implementation of the NetML project for deep learning.
     - cmd: `sudo ./install.sh`
 7. Follow on screen instructions to install.
 8. Traverse to the new `install_prerequisites` directory (by default `/opt/intel/openvino/deployment_tools/model_optimizer/install_prerequisites`) to setup the prerequisites for the model framework you will be using (for this guide we will be using TensorFlow).
-9. Run prereq install script: `sudo ./install_prerequisites.sh`
+9. Run prereq install script: `sudo ./install_prerequisites_tf.sh`
 10. In order to compile and run OpenVINO applications, we must update several environment variables.
     - Run following script script to temporarily set env variables: `source /opt/intel/openvino/bin/setupvars.sh`
     - Add this line to the end of your .bashrc to permanently set your env variables: `source /opt/intel/openvino/bin/setupvars.sh`
