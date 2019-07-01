@@ -15,8 +15,10 @@ The OpenVINO implementation of the NetML project for deep learning.
 8. Follow on screen instructions to install.
 9. Go to the Model Optimizer Directory
     - `cd <INSTALL_DIR>/deployment_tools/model_optimizer/`
+    - *INSTALL_DIR by default will be `/opt/intel/openvino`.*
 10. Next, we will create a new `virtualenv` to install further requirements into a sandbox environment. To do this we will give it a path to the directory we will create it in, a path to the python interpreter we will use (*Tested with Python 3.7*), and specify to inherit the global system python packages.
     - `virtualenv DESTDIR -p /path/to/python/interpreter --system-site-packages` 
+    - *DESTDIR in this walkthrough will be referred to as `/vinoEnv`.*
 11. Activate the `virtualenv`.
     - `source /vinoEnv/bin/activate`
     - *NOTE: The above command will be needed everytime you wish to work in this environment when you start a new shell. The `virtualenvwrapper` tool may be used to aid with the management of virtual environments. Read more about this [here](https://realpython.com/python-virtual-environments-a-primer/).*
@@ -36,4 +38,5 @@ The OpenVINO implementation of the NetML project for deep learning.
 18. Using the pre-built Artificial Neural Network (ANN) from the DAAL walkthrough, we will construct an optimized OpenVINO ANN using OpenVINO's Model Optimizer and Inference Engine.
 19. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
     - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/train.json --classify --output=params.txt --model=vinoANN --http --tls`
-    
+    - *NOTE: The current implementation contains a minor inconvenience that will require this step to be run again after one failed test*
+20. Once the network
