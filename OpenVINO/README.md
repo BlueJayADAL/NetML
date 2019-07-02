@@ -32,8 +32,8 @@ The OpenVINO implementation of the NetML project for deep learning.
     - `cd <PATH>/NetML/`
 16. Using the pre-built Artificial Neural Network (ANN) from the DAAL walkthrough, we will construct an optimized OpenVINO ANN using OpenVINO's Model Optimizer and Inference Engine.
 17. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the input data file being your test.json file (to properly setup input dimensions) and the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
-    - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/test.json --classify --output=params.txt --model=vinoANN --http --tls`
+    - `python daalClassifyWithTime.py --workDir=pathGen --select=pathGen/test.json --classify --output=params.txt --model=vinoANN --http --tls`
 18. You should now find in the specified working directory 4 new ANNmodel files. The xml and bin files contain the network information that will be provided to the Inference Engine, the mapping file contains meta information about the model, and the pb file contains the frozen TensorFlow model that was optimized by the Model Optimizer.
 19. Once the network is successfully optimized, we can use the optimized model for inference on our test data.
-    - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/test.json --test --input=params.txt --model=vinoANN --http --tls`
+    - `python daalClassifyWithTime.py --workDir=pathGen --select=pathGen/test.json --test --input=params.txt --model=vinoANN --http --tls`
 20. The test dataset accuracy and inference time should be output, and steps 17-19 can be repeated for any new dataset.
