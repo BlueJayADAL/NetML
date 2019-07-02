@@ -13,30 +13,26 @@ The OpenVINO implementation of the NetML project for deep learning.
     - GUI: `sudo ./install_GUI.sh`
     - cmd: `sudo ./install.sh`
 8. Follow on screen instructions to install.
-9. Go to the Model Optimizer Directory
+9. Go to the Model Optimizer *Install Prerequisites* Directory
     - `cd <INSTALL_DIR>/deployment_tools/model_optimizer/`
     - *INSTALL_DIR by default will be `/opt/intel/openvino`.*
-10. Next, we will create a new `virtualenv` to install further requirements into a sandbox environment. To do this we will give it a path to the directory we will create it in, a path to the python interpreter we will use (*Tested with Python 3.7*), and specify to inherit the global system python packages.
-    - `virtualenv DESTDIR -p /path/to/python/interpreter --system-site-packages` 
-    - *DESTDIR in this walkthrough will be referred to as `/vinoEnv`.*
-11. Activate the `virtualenv`.
-    - `source /vinoEnv/bin/activate`
-    - *NOTE: The above command will be needed everytime you wish to work in this environment when you start a new shell. The `virtualenvwrapper` tool may be used to aid with the management of virtual environments. Read more about this [here](https://realpython.com/python-virtual-environments-a-primer/).*
-12. Install framework dependencies into the `virtualenv`, for this demo we will be using TensorFlow.
-    - `pip3 install -r requirements_tf.txt`
-13. In order to compile and run OpenVINO applications, we must update several environment variables.
+10. Run the install prerequisites script required for TensorFlow. Take note of into which python these libraries are installed, most likely it will be a python3.5+.
+    - `./install_prerequisites_tf.sh`
+    - *NOTE: For the sake of simplicity, we use the default configuration of installing the Model Optimizer dependencies globally. If you would like to do a manual installation using a virtualenv, the documentation to do so is located [here](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_Config_Model_Optimizer.html).*
+11. In order to compile and run OpenVINO applications, we must update several environment variables.
     - Run following script script to temporarily set env variables: `source /opt/intel/openvino/bin/setupvars.sh`
     - Add this line to the end of your .bashrc to set your env variables on shell startup: `source /opt/intel/openvino/bin/setupvars.sh`
-14. Run the following command to retreive the absolute path for the environment python.
+12. Run the following command to retrieve the absolute path for the environment python. Be sure to deactivate all conda envs using `conda deactivate`.
     - `which python`
-15. Using this absolute path, modify the shebang interpreter path in the `vinoInference.py` and `mo_tf.py` scripts.
-16. Deactivate the openVINO environment, and activate the Anaconda Intel environment.
-    - `deactivate`
+    - This may potentially give the path to a default `/usr/bin/python`. You will want to ensure for the next step that you add the appropriate version designation found from the install prerequisites script e.g. `/usr/bin/python3.5`.
+13. Using this absolute path, modify the shebang interpreter path in the `vinoInference.py` and `mo_tf.py` scripts. This ensures that the scripts will properly use the openVINO installed python upon running.
+14. Activate the Anaconda Intel environment.
     - `conda activate idp`
-17. Navigate to the directory containing all of the DAAL scripts.
+15. Navigate to the directory containing all of the DAAL scripts.
     - `cd <PATH>/NetML/`
-18. Using the pre-built Artificial Neural Network (ANN) from the DAAL walkthrough, we will construct an optimized OpenVINO ANN using OpenVINO's Model Optimizer and Inference Engine.
-19. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
+16. Using the pre-built Artificial Neural Network (ANN) from the DAAL walkthrough, we will construct an optimized OpenVINO ANN using OpenVINO's Model Optimizer and Inference Engine.
+17. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
     - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/train.json --classify --output=params.txt --model=vinoANN --http --tls`
     - *NOTE: The current implementation contains a minor inconvenience that will require this step to be run again after one failed test*
-20. Once the network
+18. You should now find in the specified working directory 4 new ANNmodel files. The xml and bin files contain the network information that will be provided to the Inference Engine.
+18. Once the network
