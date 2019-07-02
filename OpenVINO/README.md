@@ -31,8 +31,7 @@ The OpenVINO implementation of the NetML project for deep learning.
 15. Navigate to the directory containing all of the DAAL scripts.
     - `cd <PATH>/NetML/`
 16. Using the pre-built Artificial Neural Network (ANN) from the DAAL walkthrough, we will construct an optimized OpenVINO ANN using OpenVINO's Model Optimizer and Inference Engine.
-17. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
-    - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/train.json --classify --output=params.txt --model=vinoANN --http --tls`
-    - *NOTE: The current implementation contains a minor inconvenience that will require this step to be run again after one failed test*
+17. The "training" of the OpenVINO ANN entails transforming the current (trained) TensorFlow model into an optimized format that the OpenVINO Inference Engine can work with. To do this, we will use the same `daalClassifyWithTime.py` script used before, but with the input data file being your test.json file (to properly setup input dimensions) and the vinoANN spec for the model. The command will run the `mo_tf.py` script, which invokes the Model Optimizer for a TensorFlow model.
+    - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/test.json --classify --output=params.txt --model=vinoANN --http --tls`
 18. You should now find in the specified working directory 4 new ANNmodel files. The xml and bin files contain the network information that will be provided to the Inference Engine.
-18. Once the network
+19. Once the network
