@@ -4,7 +4,7 @@ The NetML project using the Intel Distribution for Python.
 ## Walkthrough Guide
 1. It is recommended to have [Anaconda](https://docs.anaconda.com/anaconda/install/linux/) installed, as this guide will use Anaconda to create a virtual environment with Intel packages (**Python 3**).
 
-2. Install [Joy](https://github.com/cisco/joy) (with "-gzip-enabled") and run it successfully. Refer [here](sampleJoyInstall.md) for sample install steps for Ubuntu system.
+2. Install [Joy](https://github.com/cisco/joy) (with "-gzip-enabled") and run it successfully. Refer [here](docs/sampleJoyInstall.md) for sample install steps for Ubuntu system.
     - If `joy` is not automatically added to your system path after installing, you will need to do so manually.
     
 3. Note that the current Joy cannot generate the DNS data correctly when the 'bidir' is enabled which is required by TLS data. In order to fix this issue, please overwrite the current dns.c of Joy with the one in the JoyFix.
@@ -12,7 +12,7 @@ The NetML project using the Intel Distribution for Python.
 4. Have the raw PCAP dataset folder ready. The following is only an example ([CICAndMal2017/PCAPs](https://www.unb.ca/cic/datasets/andmal2017.html)), however our code is currently only tested with such tree structure (Only 1 "Benign" and multiple "ware" folders). Under each folder, it should contain the raw pcap files. Be sure that all folder names only include alphanumeric characters, or errors will arise down the road when the names are parsed (for CICAndMAL2017 rename AndroidSpy277 + FakeAppAL). In order to quickly run through this guide, let's call this ***pathRAW***.
 
 5. Setup Python virtualenv using `conda` to install Intel Python. 
-    - Sample Ubuntu [setup](sampleVirtualEnvSetup.md).
+    - Sample Ubuntu [setup](docs/sampleVirtualEnvSetup.md).
     - Official Intel `conda` install [documentatation](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda).
     
 6. Other ways of setting up Intel Distribution for Python can be found on Intel's dedicated [page](https://software.intel.com/en-us/distribution-for-python).
