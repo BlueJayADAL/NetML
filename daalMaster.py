@@ -14,6 +14,9 @@ def main():
 	parser.add_argument('-v', '--verbose', action="store_true", help="Print all actions to the stdout") #not yet implemented
 	parser.add_argument('-j', '--joy', action="store_true", help="Process raw PCAPs and generate output zip files using Cisco Joy")
 	parser.add_argument('-f', '--files', action="store_true", help="Generate output feature JSON files from Joy output")
+	parser.add_argument('-s', '--selectData', action="store_true", help="Generate train and test JSON files")
+	parser.add_argument('-t', '--train', action="store", help="Train specified model")
+	parser.add_argument('-e', '--test', action="store", help="Test specified model")
 	args = parser.parse_args()
 	
 	#setup input folder and output folders
@@ -31,6 +34,7 @@ def main():
 		dataFolder = "%sdata/" % (joyFolder)
 		if not os.path.exists(dataFolder):
 			os.mkdir(dataFolder)
+	# Process data using Joy
 	if args.joy:
 		print("Processing data using joy.....")
 		for dirpath, dirnames, filenames in os.walk(pcapFolder): #opt?
@@ -49,6 +53,7 @@ def main():
 					#print(command) #verbose
 					os.system(command)
 					idx += 1
+	# Analyze Joy data and create feature JSON files
 	if args.files:
 		# Multithread to accelerate
 		# create threads	
@@ -56,6 +61,7 @@ def main():
 		http = threading.Thread(target=analyzeHTTP, args=(dataFolder,))
 		tls = threading.Thread(target=analyzeTLS, args=(dataFolder,))
 		dns = threading.Thread(target=analyzeDNS, args=(dataFolder,))
+	# Collect most common features from TLS, HTTP, and DNS
 	if args.collect:
 		ctls = threading.Thread(target=collectTLS, args=(joyFolder,))
 		chttp = threading.Thread(target=collectHTTP, args=(joyFolder,))
@@ -83,57 +89,72 @@ def main():
 		cdns.join()
 	if args.files or args.collect:
 		print("All threads complete!")
+	if args.selectData:
+		sdcommand1 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %strain.json --tls" % (joyFolder, joyFolder)
+		print(sdcommand1)
+		os.system(sdcommand1)
+		sdcommand2 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %stest.json --tls" % (joyFolder, joyFolder)
+		print(sdcommand2)
+		os.system(sdcommand2)
+	if args.train:
+		traincommand = "python daalClassifyWithTime.py --workDir=%s --select=%strain.json --classify --output=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, args.train)
+		print(traincommand)
+		os.system(traincommand)
+	if args.test:
+		testcommand = "python daalClassifyWithTime.py --workDir=%s --select=%stest.json --test --input=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, args.test)
+		print(testcommand)
+		os.system(testcommand)
 	endTime = time.time()
-	print("Analyze elapsed in %.3f seconds" %(endTime - startTime))
+	print("Master elapsed in %.3f seconds" %(endTime - startTime))
 
 
 
 def analyzeMETA(dataFolder):
 	print("Analyzing Metadata.....")
 	command4 = "python daalAnalyzeMETA.py -i %s -j" % (dataFolder)
-	#print(command4) #verbose
+	print(command4) #verbose
 	os.system(command4)
 	print("Done analyzing Metadata!")
 
 def analyzeHTTP(dataFolder):
 	print("Analyzing HTTP.....")
 	command3 = "python daalAnalyzeHTTPWithTime.py -i %s -j" % (dataFolder)
-	#print(command3) #verbose
+	print(command3) #verbose
 	os.system(command3)
 	print("Done analyzing HTTP!")
 
 def analyzeTLS(dataFolder):
 	print("Analyzing TLS.....")
 	command2 = "python daalAnalyzeTLS.py -i %s -j" % (dataFolder)
-	#print(command2) #verbose
+	print(command2) #verbose
 	os.system(command2)
 	print("Done analyzing TLS!")
 
 def analyzeDNS(dataFolder):
 	print("Analyzing DNS.....")
 	command1 = "python daalAnalyzeDNS.py -i %s -j" % (dataFolder)
-	#print(command1) #verbose
+	print(command1) #verbose
 	os.system(command1)
 	print("Done analyzing DNS!")
 
 def collectTLS(joyFolder):
 	print("Collecting common TLS features...")
 	command5 = "python daalCollectCommonTLS.py -i %sTLS_JSON" % (joyFolder)
-	#print(command5) #verbose
+	print(command5) #verbose
 	os.system(command5)
 	print("Done collecting common TLS features!")
 
 def collectHTTP(joyFolder):
 	print("Collecting common HTTP features...")
 	command6 = "python daalCollectCommonHTTP.py -i %sHTTP_JSON" % (joyFolder)
-	#print(command6) #verbose
+	print(command6) #verbose
 	os.system(command6)
 	print("Done collecting common HTTP features!")
 
 def collectDNS(joyFolder):
 	print("Collecting common DNS features...")
 	command7 = "python daalCollectCommonDNS.py -i %sDNS_JSON" % (joyFolder)
-	#print(command1) #verbose
+	print(command7) #verbose
 	os.system(command7)
 	print("Done collecting common DNS features!")
 
