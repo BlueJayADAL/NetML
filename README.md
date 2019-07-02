@@ -19,7 +19,7 @@ The NetML project using the Intel Distribution for Python.
 
 7. Now we will begin processing the data, but first you may want to create a dedicated test output folder, whose path we will refer to as ***pathGen***.
 
-8. Our main script ***daalMaster.py*** provides functionality to streamline the entire data processing to training process by providing the dedicated commands, listed below.
+8. Our main script ***daalMaster.py*** provides functionality to streamline the entire data processing to training process by providing dedicated commands, listed below.
     - -i, --input [INPATH]: Path to input folder containing raw PCAPs (**pathRAW**)
     - -o, --output [OUTPATH]: Output folder for processed files from Cisco Joy (**pathGen**)
     - -j, --joy: Process raw PCAPs and generate output zip files using Cisco Joy
