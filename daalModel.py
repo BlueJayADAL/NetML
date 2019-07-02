@@ -275,6 +275,7 @@ class ANN:
 		self.numDistFeature = numDistFeature
 	def train(self, data, label, outputFileName, workDir):
 		epochs = 100
+		batch = 1000
 		#shuffle the data first
 		tmp = list(zip(data, label))
 		random.shuffle(tmp)
@@ -289,7 +290,7 @@ class ANN:
 		#initialize
 		model = keras.models.Sequential()
 		#add layers (23-13-11-7-5)
-		model.add(keras.layers.Dense(units=23, input_dim=inputShape, activation='relu'))
+		model.add(keras.layers.Dense(units=23, input_shape=(inputShape,), activation='relu'))
 		model.add(keras.layers.Dense(units=13, activation='relu'))
 		model.add(keras.layers.Dense(units=11, activation='relu'))
 		model.add(keras.layers.Dense(units=7, activation='relu'))
@@ -308,7 +309,7 @@ class ANN:
 		testLabel = label[upperBound:]
 		#train/fit model
 		#print("Training model...")
-		model.fit(trainData, trainLabel, epochs=epochs, batch_size=1000)
+		model.fit(trainData, trainLabel, epochs=epochs, batch_size=batch)
 		#make train and test predictions
 		predictResultTrain = model.predict_classes(trainData)
 		predictResultTest = model.predict_classes(testData)

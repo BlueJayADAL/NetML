@@ -9,6 +9,7 @@ import os
 import argparse
 from collections import defaultdict, OrderedDict
 from daalModel import LR, DF, SVM, ANN
+from vinoANN import vinoANN
 from sklearn.externals import joblib
 #from modelANNGPU import ANNGPU
 
@@ -720,6 +721,8 @@ def main():
 				'''
 			elif args.model == "DF":
 				mlModel = DF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
+			elif args.model == "vinoANN":
+				mlModel = vinoANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			else:
 				print(args.model + " is not supported!")
 				return
@@ -731,7 +734,8 @@ def main():
 		print("Data prep elapsed in %.3f seconds" %(processEnd - processStart))
 		# train the model
 		acc = mlModel.train(d[0], d[1], args.output, workDir)
-		print("Accuracy: %.3f%% train, %.3f%% test" %(acc[0], acc[1]))
+		if args.model != 'vinoANN':
+			print("Accuracy: %.3f%% train, %.3f%% test" %(acc[0], acc[1]))
 	#Test only
 	else:
 		processStart = time.time()
@@ -805,6 +809,8 @@ def main():
 				'''
 			elif args.model == "DF":
 				mlModel = DF(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)	
+			elif args.model == "vinoANN":
+				mlModel = vinoANN(numTLSFeature, numDNSFeature, numHTTPFeature, numTimesFeature, numLengthsFeature, numDistFeature)
 			else:
 				print(args.model + " is not supported!")
 				return
@@ -816,7 +822,8 @@ def main():
 		print("Data prep elapsed in %.3f seconds" %(processEnd - startTime))
 		# test the model
 		acc = mlModel.test(np.array(d[0]), d[1], workDir)
-		print("Testing accuracy: %.3f%%" %(acc))
+		if args.model != "vinoANN":
+			print("Testing accuracy: %.3f%%" %(acc))
 		'''
 		else:
 			assert(len(impact) == len(paramMap["coef_"]))
@@ -838,7 +845,7 @@ def main():
 			print neg
 		'''
 	endTime = time.time()
-	print("Program elapsed in %.3f seconds" %(endTime - startTime))
+	print("Classify elapsed in %.3f seconds" %(endTime - startTime))
 
 
 if __name__ == "__main__":
