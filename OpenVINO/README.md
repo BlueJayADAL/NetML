@@ -36,4 +36,4 @@ The OpenVINO implementation of the NetML project for deep learning.
 18. You should now find in the specified working directory 4 new ANNmodel files. The xml and bin files contain the network information that will be provided to the Inference Engine, the mapping file contains meta information about the model, and the pb file contains the frozen TensorFlow model that was optimized by the Model Optimizer.
 19. Once the network is successfully optimized, we can use the optimized model for inference on our test data.
     - `python daalClassifyWithTime.py --workDir=<PATH>/daalTestJoy --select=<PATH>/daalTestJoy/test.json --test --input=params.txt --model=vinoANN --http --tls`
-20. The test dataset accuracy and inference time should be output, and steps 17-20 can be repeated for any new dataset.
+20. The test dataset accuracy and inference time should be output, and steps 17-19 can be repeated for any new dataset.
