@@ -10,7 +10,7 @@ Using Intel VTUNE to analyze performance efficiency and bottlenecks.
 4. Navigate to directory containing extracted files.
 5. Launch the installer:
     - `sudo ./install_GUI.sh` (**There is also CL version**)
-6. After installation succeeds, run following command to establish the VTUNE Ampflifier environment:
+6. After installation succeeds, run following command to establish the VTUNE Amplifier environment:
     - `source <install-dir>/amplxe-vars.sh`
 7. Launch VTUNE Amplifier
     - Run: `amplxe-gui` (**There is also CL version**)
