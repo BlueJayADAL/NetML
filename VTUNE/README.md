@@ -16,5 +16,5 @@ Using Intel VTUNE to analyze performance efficiency and bottlenecks.
     - Run: `amplxe-gui` (**There is also CL version**)
 8. If running in Ubuntu, and get error on main screen regarding data collection, in `/etc/sysctl.d/10-ptrace.conf` set *kernel.yama.ptrace_scope* to 0 using root permissions and reboot.
 9. Be sure to be in Intel environment:
-    - `conda activate idp`
-<br\>*Analysis discontinued for now in favor of cProfile, see [DAALPerformanceAnalysis](../DAALPerformanceAnalysis).*
+    - `conda activate idp`\
+*Analysis discontinued for now in favor of cProfile, see [DAALPerformanceAnalysis](../DAALPerformanceAnalysis).*
