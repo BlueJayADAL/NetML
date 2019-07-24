@@ -5,7 +5,6 @@ from tensorflow import keras
 from sklearn.externals import joblib
 from operator import itemgetter
 import numpy as np
-import pandas as pd
 import random
 import copy
 import ujson as json

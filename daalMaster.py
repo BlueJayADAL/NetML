@@ -3,7 +3,9 @@ import os
 import argparse
 import time
 import threading
+import multiprocessing
 
+### MAIN FUNCTION ###
 def main():
 	print("Time started...")
 	startTime = time.time()
@@ -19,95 +21,150 @@ def main():
 	parser.add_argument('-e', '--test', action="store", help="Test specified model")
 	args = parser.parse_args()
 	
-	#setup input folder and output folders
-	if args.input == None or not os.path.isdir(args.input) or args.output == None or not os.path.isdir(args.output):
+	#setup input folder and output folders (pcap=rawData, joyfolder=working dir of all outputs, datafolder=joy output data)
+	pcapFolder, joyFolder, dataFolder = setupFolders(args.input, args.output)
+
+	# Process data using Joy
+	if args.joy:
+		print("Processing data using joy. . .")
+		multiprocessJoy(pcapFolder, dataFolder)
+		print("Joy processing complete!")
+
+	# Analyze Joy data and create feature JSON files
+	if args.files:
+		print("Generating JSON files. . .")
+		generateJSON(dataFolder)
+
+	# Collect most common features from TLS, HTTP, and DNS
+	if args.collect:
+		print("Collecting common features. . .")
+		collectAllCommon(joyFolder)
+
+	# Notify when threads are complete
+	if args.files or args.collect:
+		print("All threads complete!")
+
+	# Generate train and test JSON files
+	if args.selectData:
+		print("Selecting datasets. . .")
+		selectDataset(joyFolder)
+		print("Train/Test datasets generated!")
+
+	# Train specified model	
+	if args.train:
+		print("Training model. . .")
+		train(joyFolder, args.train)
+		print("Done model training!")
+
+	# Test specified model
+	if args.test:
+		print("Testing model. . .")
+		test(joyFolder, args.test)
+		print("Done model testing!")
+		
+	# End of program logistics
+	endTime = time.time()
+	print("Master elapsed in %.3f seconds" %(endTime - startTime))
+### END MAIN FUNCTION ###
+
+### INITIAL SETUP FUNCTIONS ### 
+def setupFolders(inputFolder, outputFolder):
+	if inputFolder == None or not os.path.isdir(inputFolder) or outputFolder == None or not os.path.isdir(outputFolder):
 		print("No valid input or output folder!")
-		return
+		exit()
 	else:
-		pcapFolder = args.input
+		pcapFolder = inputFolder
 		if not pcapFolder.endswith('/'):
 			pcapFolder += '/'
 
-		joyFolder = args.output
+		joyFolder = outputFolder
 		if not joyFolder.endswith('/'):
 			joyFolder += '/'
 		dataFolder = "%sdata/" % (joyFolder)
 		if not os.path.exists(dataFolder):
 			os.mkdir(dataFolder)
-	# Process data using Joy
-	if args.joy:
-		print("Processing data using joy.....")
-		for dirpath, dirnames, filenames in os.walk(pcapFolder): #opt?
-			if not dirnames:
-				if not dirpath.endswith('/'):
-					dirpath += '/'
-				dirNames = dirpath.split('/')
-				outName =  "%s_%s" % (dirNames[-3], dirNames[-2]) 
-				fileCount = len(filenames)
-				bound = 1
-				count = (fileCount+(bound-1))/bound
-				idx = 0
-				while idx < count:
-					fileToBeProcessedString = ' '.join(["%s%s" % (dirpath,x) for x in filenames[idx*bound: min((idx+1)*bound, fileCount)]])
-					command = "joy bidir=1 dns=1 tls=1 http=1 dist=1 %s > %s%s_%s.gz" % (fileToBeProcessedString, dataFolder, outName, str(idx))
-					#print(command) #verbose
-					os.system(command)
-					idx += 1
-	# Analyze Joy data and create feature JSON files
-	if args.files:
-		# Multithread to accelerate
-		# create threads	
-		meta = threading.Thread(target=analyzeMETA, args=(dataFolder,))
-		http = threading.Thread(target=analyzeHTTP, args=(dataFolder,))
-		tls = threading.Thread(target=analyzeTLS, args=(dataFolder,))
-		dns = threading.Thread(target=analyzeDNS, args=(dataFolder,))
-	# Collect most common features from TLS, HTTP, and DNS
-	if args.collect:
-		ctls = threading.Thread(target=collectTLS, args=(joyFolder,))
-		chttp = threading.Thread(target=collectHTTP, args=(joyFolder,))
-		cdns = threading.Thread(target=collectDNS, args=(joyFolder,))
-	# start threads
-	if args.files or args.collect:
-		print("Starting threads...")
-	# Generate JSON files if specified
-	if args.files:
-		meta.start()
-		tls.start()
-		http.start()
-		dns.start()
-		dns.join()
-		http.join()
-		tls.join()
-		meta.join()
-	# Collect common if specified
-	if args.collect:
-		ctls.start()
-		chttp.start()
-		cdns.start()
-		ctls.join()
-		chttp.join()
-		cdns.join()
-	if args.files or args.collect:
-		print("All threads complete!")
-	if args.selectData:
-		sdcommand1 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %strain.json --tls" % (joyFolder, joyFolder)
-		print(sdcommand1)
-		os.system(sdcommand1)
-		sdcommand2 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %stest.json --tls" % (joyFolder, joyFolder)
-		print(sdcommand2)
-		os.system(sdcommand2)
-	if args.train:
-		traincommand = "python daalClassifyWithTime.py --workDir=%s --select=%strain.json --classify --output=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, args.train)
-		print(traincommand)
-		os.system(traincommand)
-	if args.test:
-		testcommand = "python daalClassifyWithTime.py --workDir=%s --select=%stest.json --test --input=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, args.test)
-		print(testcommand)
-		os.system(testcommand)
-	endTime = time.time()
-	print("Master elapsed in %.3f seconds" %(endTime - startTime))
+	return (pcapFolder, joyFolder, dataFolder)
+## END INITIAL SETUP FUNCTIONS ###
 
+### JOY PROCESSING FUNCTIONS ###
+def processJoy(pcapFolder, dataFolder):
+	# Process all pcap files in given dir
+	for dirpath, dirnames, filenames in os.walk(pcapFolder): 
+		if not dirnames:
+			if not dirpath.endswith('/'):
+				dirpath += '/'
+			dirNames = dirpath.split('/')
+			outName =  "%s_%s" % (dirNames[-3], dirNames[-2]) 
+			fileCount = len(filenames)
+			bound = 1
+			count = (fileCount+(bound-1))/bound
+			idx = 0
+			while idx < count:
+				fileToBeProcessedString = ' '.join(["%s%s" % (dirpath,x) for x in filenames[idx*bound: min((idx+1)*bound, fileCount)]])
+				command = "joy bidir=1 dns=1 tls=1 http=1 dist=1 %s > %s%s_%s.gz" % (fileToBeProcessedString, dataFolder, outName, str(idx))
+				print(command) #verbose
+				os.system(command)
+				idx += 1
 
+def multiprocessJoy(pcapFolder, dataFolder):
+	# Divide folders in pcap directory to be threaded
+	paths = []
+	for folder in os.listdir(pcapFolder):
+		# Split Benign folder into its year based sub-folders
+		#if folder == "Benign":
+		#	for subFolder in os.listdir("%s%s/" % (pcapFolder,folder)):
+		#		paths.append("%s%s/%s/" % (pcapFolder, folder, subFolder))
+		#	continue
+		paths.append("%s%s/" % (pcapFolder, folder))
+	# Make threads
+	threads = []
+	for path in paths:
+		threads.append(multiprocessing.Process(target=joyThread, args=(path, dataFolder)))
+	# Start threads
+	print("Starting Joy threads. . .")
+	for thread in threads:
+		thread.start()
+	# Join threads
+	for thread in threads:
+		thread.join()
+	print("Joy processes complete!")
+
+def joyThread(typeFolder, dataFolder):
+	# Process all pcap files in given dir
+	for dirpath, dirnames, filenames in os.walk(typeFolder): 
+		if not dirnames:
+			if not dirpath.endswith('/'):
+				dirpath += '/'
+			dirNames = dirpath.split('/')
+			outName =  "%s_%s" % (dirNames[-3], dirNames[-2]) 
+			fileCount = len(filenames)
+			bound = 1
+			count = (fileCount+(bound-1))/bound
+			idx = 0
+			while idx < count:
+				fileToBeProcessedString = ' '.join(["%s%s" % (dirpath,x) for x in filenames[idx*bound: min((idx+1)*bound, fileCount)]])
+				command = "joy bidir=1 dns=1 tls=1 http=1 dist=1 %s > %s%s_%s.gz" % (fileToBeProcessedString, dataFolder, outName, str(idx))
+				print(command) #verbose
+				os.system(command)
+				idx += 1
+### END JOY PROCESSING FUNCTIONS ###
+
+### JSON RELATED FUNCTIONS ###
+def generateJSON(dataFolder):
+	# Multithread to accelerate
+	# create threads
+	meta = multiprocessing.Process(target=analyzeMETA, args=(dataFolder,))
+	http = multiprocessing.Process(target=analyzeHTTP, args=(dataFolder,))
+	tls = multiprocessing.Process(target=analyzeTLS, args=(dataFolder,))
+	dns = multiprocessing.Process(target=analyzeDNS, args=(dataFolder,))
+	meta.start()
+	tls.start()
+	http.start()
+	dns.start()
+	dns.join()
+	http.join()
+	tls.join()
+	meta.join()
 
 def analyzeMETA(dataFolder):
 	print("Analyzing Metadata.....")
@@ -136,6 +193,19 @@ def analyzeDNS(dataFolder):
 	print(command1) #verbose
 	os.system(command1)
 	print("Done analyzing DNS!")
+### END JSON RELATED FUNCTIONS ###
+
+### COLLECT COMMON RELATED FUNCTIONS ###
+def collectAllCommon(joyFolder):
+	ctls = multiprocessing.Process(target=collectTLS, args=(joyFolder,))
+	chttp = multiprocessing.Process(target=collectHTTP, args=(joyFolder,))
+	cdns = multiprocessing.Process(target=collectDNS, args=(joyFolder,))
+	ctls.start()
+	chttp.start()
+	cdns.start()
+	ctls.join()
+	chttp.join()
+	cdns.join()
 
 def collectTLS(joyFolder):
 	print("Collecting common TLS features...")
@@ -157,6 +227,32 @@ def collectDNS(joyFolder):
 	print(command7) #verbose
 	os.system(command7)
 	print("Done collecting common DNS features!")
+### END COLLECT COMMON RELATED FUNCTIONS ###
+
+### SELECT DATASET RELATED FUNCTIONS ###
+def selectDataset(joyFolder):
+	sdcommand1 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %strain.json --tls" % (joyFolder, joyFolder)
+	print(sdcommand1)
+	os.system(sdcommand1)
+	sdcommand2 = "python daalSelectDataset.py --input %sTLS_JSON/ --output %stest.json --tls" % (joyFolder, joyFolder)
+	print(sdcommand2)
+	os.system(sdcommand2)
+
+### END SELECT DATASET RELATED FUNCTIONS ###
+
+### TRAIN RELATED FUNCTIONS ###
+def train(joyFolder, modelType):
+	traincommand = "python daalClassifyWithTime.py --workDir=%s --select=%strain.json --classify --output=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, modelType)
+	print(traincommand)
+	os.system(traincommand)
+### END TRAIN RELATED FUNCTIONS ###
+
+### TEST RELATED FUNCTIONS ###
+def test(joyFolder, modelType):
+	testcommand = "python daalClassifyWithTime.py --workDir=%s --select=%stest.json --test --input=params.txt --model=%s --http --tls" % (joyFolder, joyFolder, modelType)
+	print(testcommand)
+	os.system(testcommand)
+### END TEST RELATED FUNCTIONS ###
 
 if __name__ == "__main__":
 	main()
