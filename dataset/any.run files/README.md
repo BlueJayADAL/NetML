@@ -13,6 +13,6 @@ For those files that do pass the filtering stage, there are three possibilities:
 I save all of the sample files, including those that didn't pass the filtering stage.  any.run also keeps track of each analysis, so I can go back and look at each analysis again and re-download pcap files.
 
 **UPDATE**  
-After the original pull of 1300 samples, I refined the technique.  I customized use of the API endpoints so that the file type could be specified.  Pe32 files produce the most pcaps, so I went with those for download.  I also account for API limits so there are no more error files included.  You can see the tools I used in the tools folder, as well as a record of each sample's hash and other information.
+After the original pull of 1300 samples, I've updated the method a bit.  I customized use of the API endpoints so that the file type could be specified.  Pe32 files produce the most pcaps, so I went with those for download.  I also account for API limits so there are no more error files included.  You can see the tools I used in the tools folder, as well as a record of each sample's hash and other information.
 
 I also updated the technique a bit.  I let each sample run for about 2 minutes now before deciding wether not to continue.  I also reduced the threshold of detections from 50% to at least 10 detections.
