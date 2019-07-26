@@ -27,22 +27,21 @@ def main():
     logging.info(f'Estimated time: {length / 4} minutes')
 
     for md5_hash in malwares[malwares['scanned'] == False].index:       # Only submit samples that have not been previously submitted
-        count = count + 1       # Another file has been scanned
-
         file_path = malware_folder + f'/{md5_hash}'
         files = {'file': (file_path, open(file_path, 'rb'))}
         try:
             response = requests.post(url, files=files, params=params)       # Submit sample using API endpoint and get response
+            if response.status_code == 200:  # Successful submission
+                count = count + 1  # Another file has been scanned
+                logging.info(f'{count} files have been submitted; {length - count} files remaining')
+                malwares.loc[md5_hash, 'scanned'] = True  # Sample has been submitted
+            else:  # Error with submission (ex. incorrect API key)
+                logging.error(f"PROBLEM SUBMITTING {md5_hash} FOR SCAN.  MAY WANT TO RUN AGAIN")
+                malwares.to_csv()  # Save submission status of files
         except:
-            logging.error(f'PROBLEM SUBMITTING {md5_hash} FOR SCAN')
-
-        if response.status_code == 200:     # Successful submission
-            logging.info(f'{count} files have been submitted; {length - count} files remaining')
-            malwares.loc[md5_hash, 'scanned'] = True        # Sample has been submitted
-        else:       # Error with submission (ex. incorrect API key)
-            logging.error(f"PROBLEM SUBMITTING {md5_hash} FOR SCAN")
-            malwares.to_csv()       # Save submission status of files
-            return
+            logging.error(f'PROBLEM POSTING {md5_hash} FOR SCAN.  VIRUSTOTAL WILL NOT ACCEPT.  DROPPING SAMPLE...')
+            malwares.drop(index = md5_hash, inplace = True)
+            malwares.to_csv()  # Save submission status of files
 
         time.sleep(15)      # API requests limited to four per minute
 

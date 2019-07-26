@@ -34,7 +34,7 @@ def main():
         logging.info(f'{limit} API requests remaining')  # Display number of API requests remaining
 
     limit = limit - 1  # One API request has already been used to get number of remaining requests
-    if run_type == 0:  # Creating new csv file
+    if run_type == 0:
         logging.info("Creating new CSV file...")
         new_malwares = update_csv(api_key, file_type)
     elif run_type == 1:     # Using existing csv file
@@ -64,8 +64,7 @@ def main():
     # md5 hash)
     file_names = listdir(malware_folder)  # Get all file names in malware sample directory
     for name in file_names:
-        err = check_hash(name, malware_folder)
-        if err == -1:  # Something has gone wrong with the download
+        if check_hash(name, malware_folder) == -1:  # Something has gone wrong with the download.  Return without saving
             logging.error(f'{name} does not match given hash')
             return
 

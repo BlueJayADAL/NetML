@@ -27,7 +27,6 @@ def main():
 
     while length > 0:       # Condition ensures that files that were initially still being scanned are still retrieved
         for md5_hash in malwares[(malwares["scanned"] == True) & (malwares["retrieved"] == False)].index:
-            count = count + 1       # Another report retrieved
             params = {'apikey': api_key, 'resource': md5_hash}
 
             try:
@@ -40,6 +39,7 @@ def main():
             if response.status_code == 200 and response.json()['response_code'] == 1:       # Scan has finished; get report
                 malwares.loc[md5_hash, 'scan_results'] = response.json()['positives']        # Number of detections for sample
                 malwares.loc[md5_hash, 'retrieved'] = True      # Sample's report has been retrieved
+                count = count + 1  # Another report retrieved
 
                 with open(label_file, 'a') as f:        # Export detected labels
                     for scan in response.json()['scans']:
@@ -52,13 +52,11 @@ def main():
             else:       # Error with retrieving file
                 logging.error(f"Error with file {md5_hash}")
                 malwares.to_csv(csv_path)       # Export progress
-                return
 
             logging.info(f'{count} files have been retrieved; {length} files remaining')
             time.sleep(15)      # API requests limited to 4 per minute
 
     malwares.to_csv(csv_path)
-    f.close()
 
 
 if __name__ == "__main__":
