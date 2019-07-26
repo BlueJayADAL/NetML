@@ -35,4 +35,5 @@ Used to submit all new samples to VirusTotal.  VirusTotal has an API limit of 4 
 Used to retrieve scan results of all new samples.  Usually used right after vt_submission.py.  I accounted for files that might still be being scanned, so that all results are retrieved.  The total number of detections is recorded and the detected labels are appended to labels.txt.  API request limit still applies, so takes a long time.
 
 **anyrun_simulate.py**  
-Tool for interacting with the csv file when analyzing samples on any.run.  Will record the total number of files submitted in the session, as well as how many pcap files have been produced.  Useful for keeping track of which sample to submit and for automatically updating information about the sample.
+Tool for interacting with the csv file when analyzing samples on any.run.  Will record the total number of files submitted in the session, as well as how many pcap files have been produced.  Useful for keeping track of which sample to submit and for automatically updating information about the sample.  Here's how it looks:
+![Analyzing](https://github.com/BlueJayADAL/NetML/raw/master/dataset/tools/images/anyrun_simulate.png)
