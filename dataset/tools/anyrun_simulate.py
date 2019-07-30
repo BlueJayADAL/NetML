@@ -36,7 +36,7 @@ def main():
             n_pcap = n_pcap + 1
             malwares.loc[md5_hash, 'pcap_success'] = True
 
-        print(f'{n_analyzed} files analyzed\n{n_pcap} pcaps produced')
+        print(f'\n{n_analyzed} files analyzed\n{n_pcap} pcaps produced\n')
 
     logging.info('Exporting to csv...')
     malwares.to_csv(csv_path)

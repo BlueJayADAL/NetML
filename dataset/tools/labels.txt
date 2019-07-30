@@ -64972,3 +64972,6778 @@ Win32:Stihat [Wrm]
 Generic Malware
 win/malicious_confidence_100% (W)
 Worm.Win32.Delf.A
+W32/Damaged_File.B.gen!Eldorado
+Heur.Corrupt.PE@1z141z3
+heuristic
+suspicious.low.ml.score
+W32/Damaged_File.B.gen!Eldorado
+W32/Agent.B4E6!tr
+Trojan[Dropper]/Win32.AGeneric
+win/malicious_confidence_70% (W)
+Gen:Trojan.Heur.FU.cuW@aadf5wf
+Generic.mg.e12b557f9d251e60
+RDN/Generic PWS.y
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanBanker:Win32/Gozi.53480aec
+Trojan ( 00553b581 )
+Trojan ( 00553b581 )
+TROJ_GEN.R007C0DG619
+Trojan.Win32.Gozi.fnqiku
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Trojan-Banker.Win32.Gozi.dii
+Gen:Trojan.Heur.FU.cuW@aadf5wf
+Trojan.Win32.Gozi.7!c
+Win32:CrypterX-gen [Trj]
+Win32.Trojan-banker.Gozi.Agkp
+malicious (high confidence)
+Gen:Trojan.Heur.FU.cuW@aadf5wf (B)
+Trojan.TR/Crypt.ZPACK.Gen8
+Trojan.Gozi.400
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.pc
+W32/Ursnif.BP!tr.spy
+malicious.high.ml.score
+Troj/Ursnif-CL
+Trojan.SuspectCRC
+Trojan.Banker.Gozi.rg
+TR/Crypt.ZPACK.Gen8
+malware (ai score=100)
+Trojan[Banker]/Win32.Gozi
+Trojan.Heur.FU.EFD19FD
+Trojan.Win32.Z.Ursnif.41472.Q
+Trojan-Banker.Win32.Gozi.dii
+TrojanSpy:Win32/Ursnif.KD!bit
+Trojan/Win32.Ursnif.R279446
+suspicious
+Gen:Trojan.Heur.FU.cuW@aadf5wf
+a variant of Generik.KPKSHVD
+TROJ_GEN.R007C0DG619
+Spyware.Ursnif!8.1DEF (TFE:2:HISaHtevCUP)
+Trojan.PWS.Gozi!
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.cuW@aadf5wf
+Win32:CrypterX-gen [Trj]
+malicious.f9d251
+Win32/Trojan.09d
+Gen:Trojan.Heur.FU.buW@aCBSYVp
+Generic.mg.0253b5bb3a96bef1
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R03AC0PGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aCBSYVp
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Crb
+malicious (high confidence)
+Mal/Generic-S
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+Gen:Trojan.Heur.FU.buW@aCBSYVp (B)
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E579A8
+Trojan.Win32.Z.Icedid.28672.IG
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Tiggre!rfn
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@aCBSYVp
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R03AC0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aCBSYVp
+Win32:Malware-gen
+malicious.b3a96b
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4F1.Malware.Gen
+W32.HfsAutoB.
+Gen:Variant.Zusy.261404
+Generic.mg.5233b5cdb346133a
+Trojan.Dynamer.S1580942
+GenericRXDL-PE!5233B5CDB346
+Unsafe
+Trojan.Kryptik.Win32.1277031
+Trojan.Agent/Gen-Tiggre
+Trojan:Win32/Kryptik.ea63c26a
+Trojan ( 004d1b071 )
+Trojan ( 004d1b071 )
+Trojan.Zusy.D3FD1C
+TROJ_TINY.SMHU
+W32/S-bad1d0dc!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Zusy.261404
+Trojan.Win32.Kryptik.etrzbm
+Trojan.Win32.Generic.4!c
+Win32:Trojan-gen
+Win32.Trojan.Generic.Ssql
+Gen:Variant.Zusy.261404
+Gen:Variant.Zusy.261404 (B)
+TrojWare.Win32.TrojanDownloader.Tiny.GOK@7gqs5d
+Trojan.TR/ATRAPS.Gen
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Generic.xz
+Mal/Generic-S
+Trojan.Win32.Tiny
+W32/S-bad1d0dc!Eldorado
+TrojanDownloader.TinyLoader.u
+W32.Malware.gen
+TR/ATRAPS.Gen
+W32/Agent.RYN!tr
+malicious (high confidence)
+Trojan:Win32/Occamy.C
+Trojan.Win32.Z.Zusy.4096.BZV
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.Packed.R211578
+suspicious
+Malware-Cryptor.General.3
+Gen:Variant.Zusy.261404
+malware (ai score=100)
+a variant of Win32/Kryptik.QO
+TROJ_TINY.SMHU
+Trojan.Kryptik!8.8 (TFE:1:PxJlcABIjcN)
+DFI - Malicious PE
+Gen:Variant.Zusy.261404
+Win32:Trojan-gen
+malicious.db3461
+Trj/GdSda.A
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4B9.Malware.Gen
+Gen:Trojan.Heur.FU.buW@auCvG3i
+Generic.mg.37abea6491533bec
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.EA4B91
+TROJ_GEN.R060C0PGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@auCvG3i
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Llhr
+Gen:Trojan.Heur.FU.buW@auCvG3i
+Gen:Trojan.Heur.FU.buW@auCvG3i (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Iceid.SD!MTB
+Trojan.Win32.Z.Icedid.28672.HO
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R060C0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@auCvG3i
+Win32:Malware-gen
+malicious.491533
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4B9.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aePnhVm
+Generic.mg.4cc0cf5a186646ef
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Unsafe
+Trojan.Win32.Generic.4!c
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.a18664
+TROJ_GEN.R060C0PGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aePnhVm
+Trojan.Win32.IcedId.fqzhnu
+Win32:Malware-gen
+Win32.Trojan.Generic.Pgwu
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aePnhVm (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EDAE18
+Trojan.Win32.Z.Icedid.28672.HH
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Iceid.SD!MTB
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@aePnhVm
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R060C0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aePnhVm
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4F1.Malware.Gen
+Gen:Trojan.Heur.FU.buW@auZwpyh
+Generic.mg.3799bd4f485c9041
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Unsafe
+Trojan.Win32.Generic!BT
+Trojan.Win32.Generic.4!c
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.f485c9
+heuristic
+Trojan.Win32.IcedId.fqzhnu
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@auZwpyh
+Win32:Malware-gen
+Win32.Trojan.Generic.Lkxt
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@auZwpyh (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0PGS19
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E7C2C3
+Trojan.Win32.Z.Icedid.28672.HK
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Tiggre!rfn
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@auZwpyh
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@auZwpyh
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4B9.Malware.Gen
+HW32.Packed.
+Gen:Variant.Razy.475910
+Generic.mg.7778ba85a815e5ba
+Gen:Variant.Razy.475910
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 0054c39c1 )
+Spyware ( 0054c39c1 )
+Trojan.Razy.D74306
+TROJ_GEN.R023C0WGC19
+W32/IceID.A.gen!Eldorado
+Trojan.Gen.MBT
+Malicious
+generic.ml
+Win.Dropper.Icedid-6952342-0
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Razy.475910
+Trojan.Win32.Inject3.fpdsia
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Ahym
+Gen:Variant.Razy.475910
+Gen:Variant.Razy.475910 (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.13817
+heuristic
+BehavesLike.Win32.Emotet.mc
+W32/IcedId.K!tr
+suspicious.low.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IceID.A.gen!Eldorado
+Trojan.Banker.IcedID.hi
+TR/Dropper.Gen
+malware (ai score=100)
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Z.Razy.30208.AHG
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.IcedID.R265636
+suspicious
+RDN/Generic PWS.y
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.K
+TROJ_GEN.R023C0WGC19
+Spyware.IcedId!1.B744 (CLASSIC)
+DFI - Malicious PE
+Gen:Variant.Razy.475910
+Win32:Malware-gen
+malicious.5a815e
+Trj/GdSda.A
+HEUR/QVM20.1.D4F1.Malware.Gen
+Gen:Trojan.Heur.FU.buW@am1mEDo
+Generic.mg.47540c82021ac9e2
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Unsafe
+Spyware ( 005500541 )
+TrojanSpy:Win32/IcedId.d0a58184
+Spyware ( 005500541 )
+malicious.2021ac
+TROJ_GEN.R002C0PGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@am1mEDo
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Z.Icedid.28672.HM
+Win32.Trojan.Generic.Pciu
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@am1mEDo (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E9E113
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Iceid.SD!MTB
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@am1mEDo
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@am1mEDo
+Trojan.Malware.300983.susgen
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4F1.Malware.Gen
+Gen:Trojan.Heur.FU.buW@am330Vg
+Generic.mg.5ace527f9cf8c785
+Trojan.GenericPMF.S6489832
+RDN/Generic PWS.y
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E14C9D
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@am330Vg
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Szcg
+Gen:Trojan.Heur.FU.buW@am330Vg
+Gen:Trojan.Heur.FU.buW@am330Vg (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+TROJ_GEN.R060C0PGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Tiggre!rfn
+Trojan.Win32.Z.Icedid.28672.HS
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R060C0PGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan-Spy.Agent
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@am330Vg
+Win32:Malware-gen
+malicious.f9cf8c
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D4F1.Malware.Gen
+Trojan.GenericKD.32197642
+Generic.mg.c73cff9e8afd6941
+GenericRXID-ZE!C73CFF9E8AFD
+win/malicious_confidence_60% (W)
+Trojan:Win32/Zonidel.2aeff9c7
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+Trojan.Gen.MBT
+Malicious
+generic.ml
+Trojan.Win32.Zonidel.emv
+Trojan.GenericKD.32197642
+Trojan.Multi.Generic.4!c
+Win32:Dropper-gen [Drp]
+malicious (moderate confidence)
+Mal/Generic-S
+Trojan.Inject3.21501
+TROJ_GEN.R049C0WGT19
+Artemis!Trojan
+W32/GenKryptik.DOPZ!tr
+Trojan.GenericKD.32197642 (B)
+Trojan.Win32.Krypt
+W32.Trojan.Gen
+TR/Kryptik.sspbp
+malware (ai score=86)
+Trojan/Win32.Wacatac
+Trojan.Generic.D1EB4C0A
+Trojan.Win32.Zonidel.emv
+Trojan:Win32/Wacatac.B!ml
+suspicious
+Trojan.GenericKD.32197642
+Trojan.GenericKD.32197642
+Unsafe
+a variant of Win32/Kryptik.GVAR
+TROJ_GEN.R049C0WGT19
+Trojan.GenericKD.32197642
+Win32:Dropper-gen [Drp]
+Trj/GdSda.A
+Win32/Trojan.Dropper.c9f
+Gen:Variant.VB.Crypt.2
+Generic.mg.6952e32d0919879d
+Fareit-FPN!6952E32D0919
+Trojan.MalPack.VB
+Trojan:Win32/VBKryjetor.29c8412e
+Trojan ( 00553da11 )
+malicious.d09198
+ML.Attribute.HighConfidence
+Malicious
+Trojan.Win32.VBKryjetor.ccbg
+Gen:Variant.VB.Crypt.2
+generic.ml
+Win32.Trojan.Vbkryjetor.Wozq
+malicious (high confidence)
+Gen:Variant.VB.Crypt.2 (B)
+Trojan.Inject3.21582
+heuristic
+BehavesLike.Win32.Fareit.jh
+suspicious.low.ml.score
+Mal/Generic-S
+DFI - Suspicious PE
+W32/Injector.EGWD!tr
+Trojan.VB.Crypt.2
+Trojan.Win32.VBKryjetor.4!c
+Trojan.Win32.VBKryjetor.ccbg
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.VBKrypt.R283980
+suspicious
+Gen:Variant.VB.Crypt.2
+malware (ai score=100)
+Gen:Variant.VB.Crypt.2
+Unsafe
+a variant of Win32/GenKryptik.DORA
+Trojan.Injector!1.B459 (CLASSIC)
+Gen:Variant.VB.Crypt.2
+FileRepMetagen [Malware]
+Trj/CI.A
+win/malicious_confidence_100% (W)
+Win32/Trojan.e4f
+Gen:Trojan.Heur.FU.buW@a4gGr9n
+Generic.mg.8fef093409e981d0
+Trojan.GenericPMF.S6489832
+Artemis!8FEF093409E9
+Unsafe
+TrojanSpy:Win32/IcedId.ccc603a8
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a4gGr9n
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Egpb
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@a4gGr9n (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EA734D
+Trojan.Win32.Z.Icedid.28672.GZ
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@a4gGr9n
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@a4gGr9n
+Win32:Malware-gen
+malicious.409e98
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a8B5KKk
+Generic.mg.d48831e042d24ccc
+Trojan.GenericPMF.S6489832
+Artemis!D48831E042D2
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TrojanSpy.Win32.ICEDID.THGBIAI
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a8B5KKk
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Wqwm
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@a8B5KKk (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E530A7
+Trojan.Win32.Z.Icedid.28672.HR
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Ditertag.A
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@a8B5KKk
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TrojanSpy.Win32.ICEDID.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@a8B5KKk
+Win32:Malware-gen
+malicious.042d24
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aut7IVd
+Trojan.GenericPMF.S6489832
+Artemis!A802D9643DBD
+Unsafe
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.43dbd3
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+Gen:Trojan.Heur.FU.buW@aut7IVd
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Lkna
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aut7IVd (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+Trojan.Win32.WACATAC.THGBIAI
+BehavesLike.Win32.Suspiciousatg.mc
+Generic.mg.a802d9643dbd3e8c
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E02EEF
+Trojan.Win32.Z.Icedid.28672.IO
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@aut7IVd
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+Trojan.Win32.WACATAC.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aut7IVd
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aOfrCde
+Generic.mg.1fa7ef25fc4c5817
+Trojan.GenericPMF.S6489832
+Artemis!1FA7EF25FC4C
+Trojan.Agent
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.5fc4c5
+Trojan.Heur.FU.ED12364
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aOfrCde
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Eclb
+Gen:Trojan.Heur.FU.buW@aOfrCde
+Gen:Trojan.Heur.FU.buW@aOfrCde (B)
+Trojan.Inject3.16722
+TrojanSpy.Win32.ICEDID.THGBIAI
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Z.Icedid.28672.ID
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TrojanSpy.Win32.ICEDID.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aOfrCde
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aGCIZ0i
+Generic.mg.b3415c8adad4b3cc
+Trojan.GenericPMF.S6489832
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E62ECB
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGCIZ0i
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Pdbt
+Gen:Trojan.Heur.FU.buW@aGCIZ0i
+Gen:Trojan.Heur.FU.buW@aGCIZ0i (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+TROJ_GEN.R002C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Occamy.C
+Trojan.Win32.Z.Icedid.28672.HD
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!B3415C8ADAD4
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aGCIZ0i
+Win32:Malware-gen
+malicious.adad4b
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@amL7rJl
+Generic.mg.185913939d59ce16
+Trojan.GenericPMF.S6489832
+Artemis!185913939D59
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E7E982
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@amL7rJl
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Dxwz
+malicious (high confidence)
+Mal/Generic-S
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Gen:Trojan.Heur.FU.buW@amL7rJl (B)
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HC
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@amL7rJl
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@amL7rJl
+Win32:Malware-gen
+malicious.39d59c
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aSDz8H
+Generic.mg.95d440c3b75d6fc7
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E102D3
+Trojan.Win32.IcedId.fqzhnu
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+a variant of Win32/Spy.IcedId.L
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aSDz8H
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Hviy
+Gen:Trojan.Heur.FU.buW@aSDz8H
+Gen:Trojan.Heur.FU.buW@aSDz8H (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HX
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!95D440C3B75D
+malware (ai score=100)
+TScope.Malware-Cryptor.SB
+Unsafe
+Trojan.Win32.WACATAC.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aSDz8H
+Win32:Malware-gen
+malicious.3b75d6
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@amzdDSm
+Generic.mg.81509456f3adc38a
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E8FA76
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@amzdDSm
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Z.Icedid.28672.HB
+Win32:Malware-gen
+Win32.Trojan.Generic.Dxwa
+Gen:Trojan.Heur.FU.buW@amzdDSm
+Gen:Trojan.Heur.FU.buW@amzdDSm (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!81509456F3AD
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@amzdDSm
+Win32:Malware-gen
+malicious.6f3adc
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a4WHR5l
+Generic.mg.400d7c905d2e075e
+Trojan.GenericPMF.S6489832
+Artemis!400D7C905D2E
+Trojan.Agent
+Trojan.Win32.Generic!BT
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E5E550
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a4WHR5l
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Oxuz
+Gen:Trojan.Heur.FU.buW@a4WHR5l
+Gen:Trojan.Heur.FU.buW@a4WHR5l (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Occamy.C
+Trojan.Win32.Z.Icedid.28672.IQ
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@a4WHR5l
+Win32:Malware-gen
+malicious.05d2e0
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aanmD@b
+Generic.mg.ecd289295e9abea8
+Trojan.GenericPMF.S6489832
+Artemis!ECD289295E9A
+Unsafe
+Trojan.Win32.Generic!BT
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aanmD@b
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Aosw
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aanmD@b (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EDCB62
+Trojan.Win32.Z.Icedid.28672.HL
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@aanmD@b
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aanmD@b
+Win32:Malware-gen
+malicious.95e9ab
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D525.Malware.Gen
+W32.OnGamesLTKVPOV.Trojan
+Trojan.Generic.3842741
+Generic.mg.86d4c2e67e280c11
+W32.Lamer.ZZ8
+Trojan.Generic.3842741
+Worm.AutoRun
+Virus:Win32/Lamer.4129b640
+P2PWorm ( 004d32291 )
+P2PWorm ( 004d32291 )
+heuristic
+W32/Trojan2.MJYK
+SMG.Heur!gen
+Win32/SillyAutorun.ETA
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.Generic.3842741
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cf
+malicious (high confidence)
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.~A@uagfp
+Win32.HLLP.Stone.2
+Trojan.Mepaow.Win32.18
+TROJ_GEN.R002C0DGS19
+BehavesLike.Win32.Autorun.tm
+malicious.high.ml.score
+Virus.Win32.Lamer!O
+Trojan.Generic.3842741 (B)
+DFI - Malicious PE
+W32/Trojan.MPVD-5563
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Lamer.VB!tr
+Virus/Win32.Lamer.cb
+Win32.Troj.StiHatT.a.506478
+Trojan.Generic.D3AA2B5
+Virus.Win32.Lamer.cb
+Virus:Win32/Autorun.NE
+Trojan/Win32.Stonelv.R2831
+suspicious
+Artemis!86D4C2E67E28
+malware (ai score=100)
+Worm.Autorun.2013
+Unsafe
+Win32/AutoRun.Delf.RO
+TROJ_GEN.R002C0DGS19
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Win32.Mepaow
+Trojan.Generic.3842741
+Trojan.Generic.3842741
+Win32:Stihat [Wrm]
+malicious.67e280
+Generic Malware
+win/malicious_confidence_100% (W)
+Win32/Virus.947
+Gen:Trojan.Heur.FU.buW@aycrabm
+TScope.Malware-Cryptor.SB
+Generic.mg.bd6bdf757c73e2a0
+Trojan.GenericPMF.S6489832
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.ED1EE3B
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aycrabm
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Phqh
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aycrabm (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R049C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HP
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!BD6BDF757C73
+Gen:Trojan.Heur.FU.buW@aycrabm
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R049C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aycrabm
+Win32:Malware-gen
+malicious.57c73e
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aGhiB4p
+Trojan.GenericPMF.S6489832
+Artemis!7171FB90943B
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E8C62C
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGhiB4p
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Afrd
+Gen:Trojan.Heur.FU.buW@aGhiB4p
+Gen:Trojan.Heur.FU.buW@aGhiB4p (B)
+Trojan.Inject3.16722
+TROJ_GEN.R049C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Generic.mg.7171fb90943ba1dc
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=83)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HT
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R049C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aGhiB4p
+Win32:Malware-gen
+malicious.0943ba
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Trojan.Spy.IcedId.C
+Generic.mg.261a7bb0e3bb5dad
+Trojan.Mauvaise.SL1
+Trojan.Spy.IcedId.C
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanSpy:Win32/IcedId.f7d4404a
+Spyware ( 0053a3c61 )
+Spyware ( 0053a3c61 )
+Trojan.Spy.IcedId.C
+TROJ_GEN.R049C0DGS19
+W32/IcedId.C.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7051385-0
+HEUR:Trojan.Win32.Generic
+Trojan.Spy.IcedId.C
+Trojan.Win32.IcedID.fjyqob
+Trojan.Win32.Generic.4!c
+Win32:BankerX-gen [Trj]
+Win32.Trojan.Generic.Hooo
+Trojan.Spy.IcedId.C
+Trojan.Spy.IcedId.C (B)
+TrojWare.Win32.TrojanSpy.IcedId.HA@83pr5o
+Trojan.TR/Dropper.Gen
+Trojan.IcedID.15
+heuristic
+BehavesLike.Win32.VTFlooder.mc
+W32/IcedId.H!tr
+malicious.high.ml.score
+Troj/BokBot-F
+Trojan-Spy.Agent
+W32/IcedId.C.gen!Eldorado
+Trojan.Banker.IcedID.dy
+TR/Dropper.Gen
+malware (ai score=84)
+malicious (high confidence)
+TrojanSpy:Win32/IcedId.B!dha
+Trojan.Win32.Z.Icedid.26112.D
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.Agent.R249043
+suspicious
+GenericRXGP-YC!261A7BB0E3BB
+TScope.Malware-Cryptor.SB
+Trojan.IcedID
+a variant of Win32/Spy.IcedId.H
+TROJ_GEN.R049C0DGS19
+Spyware.IcedId!8.F061 (TFE:4:kVxjJTGaufE)
+DFI - Malicious PE
+Trojan.Spy.IcedId.C
+Win32:BankerX-gen [Trj]
+malicious.0e3bb5
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aKUNzPk
+Generic.mg.6b2fb922c0d74019
+Trojan.GenericPMF.S6489832
+Artemis!6B2FB922C0D7
+Unsafe
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+TROJ_GEN.R049C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aKUNzPk
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Woqh
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aKUNzPk (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E3BDB7
+Trojan.Win32.Z.Icedid.28672.HZ
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=89)
+Gen:Trojan.Heur.FU.buW@aKUNzPk
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R049C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aKUNzPk
+Win32:Malware-gen
+malicious.2c0d74
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aGOFwhc
+Generic.mg.a31c7b96be003053
+Trojan.GenericPMF.S6489832
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.ED25B5E
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGOFwhc
+Trojan.Win32.IcedId.fqzhnu
+Win32:Malware-gen
+Win32.Trojan.Generic.Ljaa
+Gen:Trojan.Heur.FU.buW@aGOFwhc
+Gen:Trojan.Heur.FU.buW@aGOFwhc (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R049C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=82)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!A31C7B96BE00
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R049C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aGOFwhc
+Win32:Malware-gen
+malicious.6be003
+Trj/Genetic.gen
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@amrTR2m
+Generic.mg.5fc9b31c0f780c61
+Trojan.GenericPMF.S6489832
+Artemis!5FC9B31C0F78
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R049C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@amrTR2m
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Z.Icedid.28672.IJ
+Win32.Trojan.Generic.Tazh
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@amrTR2m (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E274AC
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Ditertag.A
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=87)
+Gen:Trojan.Heur.FU.buW@amrTR2m
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R049C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@amrTR2m
+Win32:Malware-gen
+malicious.c0f780
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aiEbbnf
+Generic.mg.ee0d3a7fca739815
+Trojan.GenericPMF.S6489832
+Artemis!EE0D3A7FCA73
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E2B169
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aiEbbnf
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Akoz
+Gen:Trojan.Heur.FU.buW@aiEbbnf
+Gen:Trojan.Heur.FU.buW@aiEbbnf (B)
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+TrojanSpy.Win32.ICEDID.THGBIAI
+BehavesLike.Win32.Suspiciousatg.mc
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Occamy.C
+Trojan.Win32.Z.Icedid.28672.HN
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+malware (ai score=84)
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TrojanSpy.Win32.ICEDID.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aiEbbnf
+Win32:Malware-gen
+malicious.fca739
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a8wVKFh
+Generic.mg.3e66806c1f7da181
+Trojan.GenericPMF.S6489832
+Artemis!3E66806C1F7D
+Unsafe
+Trojan.Win32.Generic!BT
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a8wVKFh
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Lmla
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@a8wVKFh (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=87)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EED2661
+Trojan.Win32.Z.Icedid.28672.IF
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@a8wVKFh
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@a8wVKFh
+Win32:Malware-gen
+malicious.c1f7da
+Trj/Genetic.gen
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a0aW00n
+Generic.mg.5564515843cadc6d
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TrojanSpy.Win32.ICEDID.THGBIAI
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a0aW00n
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Suxo
+Gen:Trojan.Heur.FU.buW@a0aW00n
+Gen:Trojan.Heur.FU.buW@a0aW00n (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HU
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!5564515843CA
+malware (ai score=88)
+TScope.Malware-Cryptor.SB
+Unsafe
+Trj/Genetic.gen
+a variant of Win32/Spy.IcedId.L
+TrojanSpy.Win32.ICEDID.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Gen:Trojan.Heur.FU.buW@a0aW00n
+Win32:Malware-gen
+malicious.843cad
+generic.ml
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D559.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aKN39Co
+Generic.mg.087c9f1fdd4292ed
+Trojan.GenericPMF.S6489832
+Artemis!087C9F1FDD42
+Unsafe
+Trojan.Win32.Generic!BT
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E41A94
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aKN39Co
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Fse
+Gen:Trojan.Heur.FU.buW@aKN39Co
+Gen:Trojan.Heur.FU.buW@aKN39Co (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=85)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Occamy.C
+Trojan.Win32.Z.Icedid.28672.HG
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aKN39Co
+Trojan.Malware.300983.susgen
+Win32:Malware-gen
+malicious.fdd429
+Trj/Genetic.gen
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aSfqLsm
+Generic.mg.0c30ef0d481e2399
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.D581.Malware.Gen
+Artemis!0C30EF0D481E
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Win32.WACATAC.THGBIAI
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aSfqLsm
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Z.Icedid.28672.HJ
+Win32:Malware-gen
+Win32.Trojan.Generic.Frs
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aSfqLsm (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=86)
+Trojan/Win32.Fuery
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@aSfqLsm
+Unsafe
+a variant of Win32/Spy.IcedId.L
+Trojan.Win32.WACATAC.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aSfqLsm
+Win32:Malware-gen
+malicious.d481e2
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aitTKjj
+Generic.mg.934090dd2e27e531
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E1BE76
+Trojan.Win32.WACATAC.THGBIAI
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aitTKjj
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Hrem
+Gen:Trojan.Heur.FU.buW@aitTKjj
+Gen:Trojan.Heur.FU.buW@aitTKjj (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=89)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IC
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!934090DD2E27
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+Trojan.Win32.WACATAC.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aitTKjj
+Win32:Malware-gen
+malicious.d2e27e
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Trojan.Heur.FU.buW@auc!qFf
+Trojan.GenericPMF.S6489832
+Artemis!D6B1594E84F3
+Unsafe
+Trojan.Win32.Generic!BT
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.e84f3e
+TrojanSpy.Win32.ICEDID.THGBIAI
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@auc!qFf
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Z.Icedid.28672.HY
+Win32.Trojan.Generic.Wstl
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@auc!qFf (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Generic.mg.d6b1594e84f3e13e
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=81)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EAD943
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Occamy.C
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@auc!qFf
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TrojanSpy.Win32.ICEDID.THGBIAI
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@auc!qFf
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aax!Gbh
+Trojan.GenericPMF.S6489832
+Artemis!CACADC8F07AB
+Unsafe
+Trojan.Win32.Generic!BT
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aax!Gbh
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Tbsk
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aax!Gbh (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Generic.mg.cacadc8f07ab9dbc
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=94)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E856F1
+Trojan.Win32.Z.Icedid.28672.IK
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Occamy.C
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@aax!Gbh
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aax!Gbh
+Win32:Malware-gen
+malicious.f07ab9
+Trj/Genetic.gen
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aeYGglo
+Generic.mg.52e2bbab3303d917
+Trojan.GenericPMF.S6489832
+Artemis!52E2BBAB3303
+Unsafe
+TrojanSpy:Win32/IcedId.406bffea
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aeYGglo
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Swus
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aeYGglo (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=94)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E949F7
+Trojan.Win32.Z.Icedid.28672.IE
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@aeYGglo
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aeYGglo
+Win32:Malware-gen
+malicious.b3303d
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D5E7.Malware.Gen
+Gen:Trojan.Heur.FU.buW@auYEWRg
+Generic.mg.780f8e31fb0ac4f9
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.1fb0ac
+Trojan.Heur.FU.E65ACC
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@auYEWRg
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Afrr
+Gen:Trojan.Heur.FU.buW@auYEWRg
+Gen:Trojan.Heur.FU.buW@auYEWRg (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+Trojan.Malware.300983.susgen
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IW
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!780F8E31FB0A
+malware (ai score=100)
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@auYEWRg
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Trojan.Heur.FU.buW@ayDBf2o
+Generic.mg.4af59923d15bc100
+Trojan.GenericPMF.S6489832
+Artemis!4AF59923D15B
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E3BAAC
+TROJ_GEN.R002C0GGS19
+Trojan.Win32.IcedId.fqzhnu
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@ayDBf2o
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Phgv
+Gen:Trojan.Heur.FU.buW@ayDBf2o
+Gen:Trojan.Heur.FU.buW@ayDBf2o (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HE
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=88)
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@ayDBf2o
+Win32:Malware-gen
+malicious.3d15bc
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D5E7.Malware.Gen
+Spyware ( 005500541 )
+Gen:Trojan.Heur.FU.buW@aC@Nbxb
+Generic.mg.8c736a1fa3ab60e9
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.D5E7.Malware.Gen
+Artemis!8C736A1FA3AB
+Trojan.Agent
+TrojanSpy:Win32/IcedId.5808b815
+Spyware ( 005500541 )
+win/malicious_confidence_100% (W)
+Trojan.Heur.FU.EFF1DB
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aC@Nbxb
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Ecud
+Gen:Trojan.Heur.FU.buW@aC@Nbxb
+Gen:Trojan.Heur.FU.buW@aC@Nbxb (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Z.Icedid.28672.HA
+HEUR:Trojan.Win32.Generic
+DFI - Malicious PE
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=85)
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Gen:Trojan.Heur.FU.buW@aC@Nbxb
+Win32:Malware-gen
+malicious.fa3ab6
+Trj/Genetic.gen
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aSUrtGh
+Generic.mg.ca54ddec204662d9
+Trojan.GenericPMF.S6489832
+Artemis!CA54DDEC2046
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aSUrtGh
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Z.Icedid.28672.IB
+Win32:Malware-gen
+Win32.Trojan.Generic.Szbg
+Gen:Trojan.Heur.FU.buW@aSUrtGh
+Gen:Trojan.Heur.FU.buW@aSUrtGh (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+Mal/Generic-S
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=88)
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aSUrtGh
+Win32:Malware-gen
+malicious.c20466
+Trj/Genetic.gen
+HEUR/QVM20.1.D5E7.Malware.Gen
+Gen:Trojan.Heur.FU.buW@ae3SnIm
+Generic.mg.2caf91befeec0bf6
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E95B00
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@ae3SnIm
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Hugl
+Gen:Trojan.Heur.FU.buW@ae3SnIm
+Gen:Trojan.Heur.FU.buW@ae3SnIm (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0GGS19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=87)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HI
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!2CAF91BEFEEC
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@ae3SnIm
+Win32:Malware-gen
+malicious.efeec0
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D5E7.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aKl5XWd
+Generic.mg.679ef3dba10f63a3
+Trojan.GenericPMF.S6489832
+Artemis!679EF3DBA10F
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aKl5XWd
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Wptu
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@aKl5XWd (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=83)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EEC9B8
+Trojan.Win32.Z.Icedid.28672.IL
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Ditertag.A
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@aKl5XWd
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aKl5XWd
+Win32:Malware-gen
+malicious.ba10f6
+Trj/Genetic.gen
+HEUR/QVM20.1.D5E7.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aGt2org
+Generic.mg.44c1c0f11acbeebb
+Trojan.GenericPMF.S6489832
+Artemis!44C1C0F11ACB
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.EF5B94
+TROJ_GEN.R002C0GGS19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGt2org
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Pdwb
+Gen:Trojan.Heur.FU.buW@aGt2org
+Gen:Trojan.Heur.FU.buW@aGt2org (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=83)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.HV
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGS19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aGt2org
+Win32:Malware-gen
+malicious.11acbe
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D5E7.Malware.Gen
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+Generic.mg.f9a0b82ee0595a3a
+GenericRXHW-XS!F9A0B82EE059
+Unsafe
+win/malicious_confidence_100% (D)
+Trojan:Win32/DelShad.095afc3f
+Trojan ( 0054d99c1 )
+Trojan ( 0054d99c1 )
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Ransomware.Sodinokibi-7013612-0
+Trojan.Win32.DelShad.sw
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+Virus.Win32.Gen.ccmw
+generic.ml
+Trojan.Win32.DelShad.4!c
+Win32.Trojan.Delshad.Efki
+malicious (high confidence)
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A (B)
+Trojan.TR/Crypt.XPACK.Gen
+Trojan.Encoder.28831
+Trojan.Filecoder.Win32.9596
+Ransom.Win32.SODINOKIBI.SMTH
+BehavesLike.Win32.PUPXDW.cc
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Suspicious PE
+TR/Crypt.XPACK.Gen
+W32/Sodinokibi.B!tr.ransom
+Trojan/Win32.Wacatac
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+Trojan.Win32.Z.Sodinokibi.167936.T
+Trojan.Win32.DelShad.sw
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Ransom.C3330765
+suspicious
+BScope.Trojan.DelShad
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+malware (ai score=80)
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+Ransom.Sodinokibi
+a variant of Win32/Filecoder.Sodinokibi.B
+Ransom.Win32.SODINOKIBI.SMTH
+Ransom.Sodinokibi!8.10C26 (TFE:5:yCY4pb475pS)
+Trojan.DelShad!
+Trojan-Ransom.Sodinokibi
+Trojan.Malware.74421993.susgen
+DeepScan:Generic.Ransom.Sodinokibi.04123F8A
+Win32:Malware-gen
+Trj/CI.A
+Win32/Trojan.d22
+Spyware ( 005500541 )
+Gen:Trojan.Heur.FU.buW@ausIApb
+Generic.mg.b7620a7418ac5608
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.D611.Malware.Gen
+Trojan.Agent
+TrojanSpy:Win32/IcedId.44590a1d
+Spyware ( 005500541 )
+win/malicious_confidence_100% (W)
+Trojan.Heur.FU.EBDE04
+heuristic
+Trojan.Win32.IcedId.fqzhnu
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@ausIApb
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Pfiw
+Gen:Trojan.Heur.FU.buW@ausIApb
+Gen:Trojan.Heur.FU.buW@ausIApb (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+TROJ_GEN.R002C0GGT19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Z.Icedid.28672.HW
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!B7620A7418AC
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@ausIApb
+Win32:Malware-gen
+malicious.418ac5
+Trj/Genetic.gen
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@a8PkN5k
+TScope.Malware-Cryptor.SB
+Generic.mg.efea08830b4fb4e7
+Trojan.GenericPMF.S6489832
+Unsafe
+TrojanSpy:Win32/IcedId.11c1da40
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.EE879A
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a8PkN5k
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Z.Icedid.28672.HQ
+Win32:Malware-gen
+Win32.Trojan.Generic.Aqgo
+malicious (high confidence)
+Mal/Generic-S
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Gen:Trojan.Heur.FU.buW@a8PkN5k (B)
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=94)
+Trojan/Win32.Fuery
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!EFEA08830B4F
+Gen:Trojan.Heur.FU.buW@a8PkN5k
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@a8PkN5k
+Win32:Malware-gen
+malicious.30b4fb
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D611.Malware.Gen
+Spyware ( 005500541 )
+Gen:Trojan.Heur.FU.buW@aKlndNh
+Generic.mg.3c99a1c205e8b2bd
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.7D16.Malware.Gen
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+win/malicious_confidence_100% (W)
+Trojan.Heur.FU.E74D25
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aKlndNh
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Lmuz
+Gen:Trojan.Heur.FU.buW@aKlndNh
+Gen:Trojan.Heur.FU.buW@aKlndNh (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IM
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!3C99A1C205E8
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aKlndNh
+Win32:Malware-gen
+malicious.205e8b
+Trj/Genetic.gen
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aC5I83j
+Generic.mg.edae038634412b97
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.D663.Malware.Gen
+Artemis!EDAE03863441
+Trojan.Agent
+Spyware ( 005500541 )
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+malicious.634412
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aC5I83j
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Anzq
+malicious (high confidence)
+Mal/Generic-S
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Gen:Trojan.Heur.FU.buW@aC5I83j (B)
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EBD2FB
+Trojan.Win32.Z.Icedid.28672.II
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@aC5I83j
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aC5I83j
+Win32:Malware-gen
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@a4QXLU
+Generic.mg.79d7257219d12cc3
+Trojan.GenericPMF.S6489832
+HEUR/QVM20.1.D663.Malware.Gen
+Artemis!79D7257219D1
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.ED1169C
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a4QXLU
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Akzf
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@a4QXLU (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IN
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@a4QXLU
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@a4QXLU
+Win32:Malware-gen
+malicious.219d12
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aiY!OGj
+Generic.mg.245185af06664883
+Trojan.GenericPMF.S6489832
+Unsafe
+Trojan.Win32.Generic.4!c
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.ED4AE
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aiY!OGj
+Trojan.Win32.IcedId.fqzhnu
+Win32:Malware-gen
+Win32.Trojan.Generic.Hphx
+Gen:Trojan.Heur.FU.buW@aiY!OGj
+Gen:Trojan.Heur.FU.buW@aiY!OGj (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IA
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!245185AF0666
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aiY!OGj
+Win32:Malware-gen
+malicious.f06664
+Trj/Genetic.gen
+HEUR/QVM20.1.D663.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a0b@dBb
+Generic.mg.aafd893e50d5255d
+Trojan.GenericPMF.S6489832
+Artemis!AAFD893E50D5
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a0b@dBb
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Z.Icedid.28672.IP
+Win32.Trojan.Generic.Lqyv
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@a0b@dBb (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E6BB97
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Ditertag.A
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@a0b@dBb
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@a0b@dBb
+Win32:Malware-gen
+malicious.e50d52
+Trj/Genetic.gen
+HEUR/QVM20.1.D663.Malware.Gen
+Gen:Trojan.Heur.FU.buW@au6oSdp
+Generic.mg.b9d63388380d633b
+Trojan.GenericPMF.S6489832
+Unsafe
+Trojan.Win32.Generic!BT
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E061CA
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@au6oSdp
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Pitq
+Gen:Trojan.Heur.FU.buW@au6oSdp
+Gen:Trojan.Heur.FU.buW@au6oSdp (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=83)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IR
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!B9D63388380D
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@au6oSdp
+Win32:Malware-gen
+malicious.8380d6
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D663.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aqCqNke
+Generic.mg.5d8d14cd193e34b8
+Trojan.GenericPMF.S6489832
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.EDE672
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aqCqNke
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Sysj
+Gen:Trojan.Heur.FU.buW@aqCqNke
+Gen:Trojan.Heur.FU.buW@aqCqNke (B)
+Malware@#1h90p3r5vghuy
+Trojan.Inject3.16722
+Trojan.Win32.Generic!BT
+TROJ_GEN.R002C0GGT19
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+Trojan.Malware.300983.susgen
+TR/Dropper.Gen
+malware (ai score=86)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Ditertag.A
+Trojan.Win32.Z.Icedid.28672.IT
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!5D8D14CD193E
+TScope.Malware-Cryptor.SB
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aqCqNke
+Win32:Malware-gen
+malicious.d193e3
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D663.Malware.Gen
+Trojan.GenericKD.32199546
+BScope.Trojan.AET.281105
+Generic.mg.0d98be5766d1d446
+Unsafe
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+malicious.b1b6ab
+Trojan.Generic.D1EB537A
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Trojan.Win32.Zenpak.gco
+Trojan.GenericKD.32199546
+Adware.Win32.Generic.mCzN
+Win32:Trojan-gen
+malicious (high confidence)
+Mal/Generic-S
+Trojan.TR/Kryptik.sxmpf
+Trojan.Siggen8.38242
+BehavesLike.Win32.BadFile.dh
+malicious.high.ml.score
+Trojan.GenericKD.32199546 (B)
+DFI - Malicious PE
+W32.Malware.Gen
+TR/Kryptik.sxmpf
+W32/Zenpak.DORB!tr
+Trojan:Win32/Gandcrab.AF
+Trojan.Win32.Zenpak.gco
+suspicious
+Artemis!0D98BE5766D1
+malware (ai score=82)
+Trojan.GenericKD.32199546
+Trojan.MalPack.GS
+a variant of Win32/GenKryptik.DORB
+TROJ_GEN.R020H0DGT19
+Malware.Obscure/Heur!1.9E03 (CLASSIC)
+PUA.Wajam
+Win32.Packed.Kryptik.4HAD98
+Win32:Trojan-gen
+win/malicious_confidence_90% (W)
+Win32/Trojan.4af
+Gen:Variant.Graftor.624381
+Generic.mg.fc8e6523abb70a28
+Gen:Variant.Graftor.624381
+Unsafe
+RiskTool:Win32/BitMiner.f2c674c7
+Trojan ( 005246d51 )
+Trojan ( 005246d51 )
+Trojan.Graftor.D986FD
+TROJ_GEN.R015C0WGQ19
+W32/S-47c1ea66!Eldorado
+Trojan.Gen.6
+Win32:HarHarMiner-A [Trj]
+Multios.Coinminer.Miner-6781728-2
+not-a-virus:RiskTool.Win32.BitMiner.rsq
+Gen:Variant.Graftor.624381
+Riskware.Win32.BitMiner.fufasn
+generic.ml
+Gen:Variant.Graftor.624381
+Generic PUA EK (PUA)
+Worm.Win32.Dropper.RA@1qraug
+Tool.BtcMine.2110
+heuristic
+BehavesLike.Win32.Generic.vh
+W32/Agent.65CA!tr
+Gen:Variant.Graftor.624381 (B)
+DFI - Malicious PE
+W32/S-47c1ea66!Eldorado
+RiskTool.BitMiner.bvks
+malware (ai score=100)
+GrayWare/Win32.FlyStudio.a
+malicious (high confidence)
+PUA:Win32/CoinMiner
+Trojan.Win32.Generic.liRL
+not-a-virus:RiskTool.Win32.BitMiner.rsq
+Malware/Win32.Generic.C3242903
+suspicious
+Artemis!FC8E6523ABB7
+Trojan.BitCoinMiner
+a variant of Win32/Packed.FlyStudio.AA potentially unwanted
+TROJ_GEN.R015C0WGQ19
+Trojan.CoinMiner!1.BAA3 (CLASSIC)
+Trojan.Pasta.Gen.1
+Trojan.Win32.Taobatuo
+Win32.Application.FlyStudio.F
+Win32:HarHarMiner-A [Trj]
+malicious.a397c6
+Trj/GdSda.A
+win/malicious_confidence_90% (W)
+Win32/Virus.RiskTool.435
+Gen:Trojan.Heur.FU.buW@aGpavRm
+Generic.mg.57f5db0f34368df5
+Trojan.GenericPMF.S6489832
+Artemis!57F5DB0F3436
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E5B8C9
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGpavRm
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Szbx
+Gen:Trojan.Heur.FU.buW@aGpavRm
+Gen:Trojan.Heur.FU.buW@aGpavRm (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IU
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aGpavRm
+Win32:Malware-gen
+malicious.f34368
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D6A5.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aWunfll
+Generic.mg.b18093590aff02c9
+Trojan.GenericPMF.S6489832
+Artemis!B18093590AFF
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.E83A0E
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aWunfll
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Pdvk
+Gen:Trojan.Heur.FU.buW@aWunfll
+Gen:Trojan.Heur.FU.buW@aWunfll (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IV
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+Trojan-Spy.Agent
+Gen:Trojan.Heur.FU.buW@aWunfll
+Win32:Malware-gen
+malicious.90aff0
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D6A5.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aupZm!j
+Generic.mg.e0a62a8382159b33
+Trojan.GenericPMF.S6489832
+Trojan.Agent
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+Trojan.Heur.FU.EA4F22
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aupZm!j
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Ajbi
+Gen:Trojan.Heur.FU.buW@aupZm!j
+Gen:Trojan.Heur.FU.buW@aupZm!j (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Trojan.Win32.Z.Icedid.28672.IS
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+Artemis!E0A62A838215
+malware (ai score=100)
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@aupZm!j
+Win32:Malware-gen
+malicious.382159
+Trj/Genetic.gen
+HEUR/QVM20.1.D6A5.Malware.Gen
+Gen:Trojan.Heur.FU.buW@aGCL7@o
+Generic.mg.8ab5e8be1869e9f9
+Trojan.GenericPMF.S6489832
+Artemis!8AB5E8BE1869
+Trojan.Agent
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aGCL7@o
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Ednx
+Gen:Trojan.Heur.FU.buW@aGCL7@o
+Gen:Trojan.Heur.FU.buW@aGCL7@o (B)
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E898C2
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aGCL7@o
+Win32:Malware-gen
+malicious.e1869e
+Trj/Genetic.gen
+HEUR/QVM20.1.D6E7.Malware.Gen
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.3888ee790c952cd7
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+win/malicious_confidence_100% (W)
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+generic.ml
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.bh
+W32/Mepaow.HWL
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+Trojan.Win32.Mepaow
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=84)
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.90c952
+Generic Malware
+Worm.Win32.Delf.A
+Trojan.GenericKD.32199566
+Generic.mg.62194ba442453d4d
+Artemis!62194BA44245
+Trojan ( 005519d41 )
+Trojan ( 005532e31 )
+generic.ml
+Win.Packed.addsub-6963063-0
+Trojan.Win32.Chapak.dxaf
+Trojan.GenericKD.32199566
+malicious (high confidence)
+Trojan.GenericKD.32199566 (B)
+heuristic
+Artemis
+W32/GenKryptik.GUZG!tr
+Mal/Generic-S
+Trojan.Win32.Krypt
+malware (ai score=82)
+Trojan.Generic.D1EB538E
+Trojan.Win32.Chapak.dxaf
+Trojan:Win32/Wacatac.B!ml
+Win-Trojan/MalPe19.Suspicious
+Trojan.GenericKD.32199566
+a variant of Win32/GenKryptik.DORR
+Exploit.UAC!8.107CD (TFE:6:U3DKQk4Ha2C)
+DFI - Suspicious PE
+Win32.Packed.Kryptik.3QUJRV
+FileRepMalware
+win/malicious_confidence_60% (W)
+HEUR/QVM10.2.D6E7.Malware.Gen
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.3171c521442efc3e
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+Trojan ( 000fa6611 )
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+malicious.1442ef
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+generic.ml
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.bh
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=86)
+Trojan.GenericKD.30594223
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+Gen:Variant.Mikey.84566
+Generic.mg.0ec4e950525a4904
+Hacktool.Flystudio.16558
+Artemis!0EC4E950525A
+Unsafe
+Backdoor:Win32/Generic.b28a2652
+Trojan ( 005246d51 )
+Trojan ( 005246d51 )
+TROJ_GEN.R002C0DGS19
+W32/Agent.EW.gen!Eldorado
+Trojan.Gen.6
+Malicious
+generic.ml
+Win.Malware.Zusy-6840460-0
+HEUR:Backdoor.Win32.Generic
+Gen:Variant.Mikey.84566
+Trojan.Win32.Sdbot.ftywgj
+Trojan.Win32.Generic.le0z
+Win32:Trojan-gen
+Win32.Trojan.Obfuscator.Jwe
+malicious (high confidence)
+Gen:Variant.Mikey.84566 (B)
+Worm.Win32.Dropper.RA@1qraug
+Trojan:W32/DelfInject.R
+Trojan.DownLoader19.40928
+Trojan.Win32.Generic!BT
+heuristic
+BehavesLike.Win32.Generic.ch
+Mal/Generic-S
+DFI - Malicious PE
+W32/Agent.EW.gen!Eldorado
+Backdoor.Generic.avzz
+BDS/Nanocore.EV
+W32/Agent.65CA!tr
+Trojan[Backdoor]/Win32.AGeneric
+Trojan.Mikey.D14A56
+Trojan.Win32.Z.Mikey.901120.V
+HEUR:Backdoor.Win32.Generic
+Backdoor:Win32/Zegost.CL!bit
+Trojan/Win32.Zegost.C2566258
+suspicious
+Trojan-Downloader.EIC.7121
+Gen:Variant.Mikey.84566
+malware (ai score=100)
+Gen:Variant.Mikey.84566
+Backdoor.Farfli
+a variant of Win32/Packed.FlyStudio.AA potentially unwanted
+TROJ_GEN.R002C0DGS19
+Backdoor.Generic!8.CE (TFE:5:ffSnWmEdfxQ)
+Trojan.Pasta.Gen.1
+Win32.Application.FlyStudio.F
+W32.Trojan.Gen
+Win32:Trojan-gen
+malicious.0525a4
+Trj/GdSda.A
+win/malicious_confidence_90% (W)
+Win32/Backdoor.d55
+Trojan.Agent.EBEP
+Generic.mg.30057ec6fcca1c04
+Trojan.Agent
+GenericRXID-ZV!30057EC6FCCA
+Unsafe
+Trojan.Agent/Gen-TrickBot
+win/malicious_confidence_80% (D)
+Trojan ( 005539b61 )
+Trojan ( 005539b61 )
+TrojanSpy.Win32.ICEDID.SMKA
+Win32:BankerX-gen [Trj]
+Win.Trojan.TrickBot-7083675-0
+Trojan.Agent.EBEP
+Trojan.Win32.Dapato.fudqwn
+malicious (moderate confidence)
+TrojWare.Win32.Totbrick.AA@8bmt9z
+Trojan.Inject3.21109
+Trojan.Agent.EBEP (B)
+W32/GenKryptik.DONU!tr
+Trojan[Dropper]/Win32.Dapato
+Trojan.Agent.EBEP
+UDS:DangerousObject.Multi.Generic
+Malware/Win32.RL_Trojanspy.R283764
+Trojan.Agent.EBEP
+malware (ai score=88)
+Trojan.Agent.EBEP
+Win32/TrickBot.CJ
+TrojanSpy.Win32.ICEDID.SMKA
+Virus.Win32.Poison.HJ
+Trojan.Agent.EBEP
+W32.Trojan.Gen
+Win32:BankerX-gen [Trj]
+malicious.9b0230
+Trj/GdSda.A
+Trojan.Spy.IcedId.C
+Generic.mg.51f9d7d14b753e9b
+Trojan.Mauvaise.SL1
+GenericRXGP-YC!51F9D7D14B75
+Unsafe
+Spyware ( 0053a3c61 )
+TrojanSpy:Win32/IcedId.fe5e5bc2
+Spyware ( 0053a3c61 )
+heuristic
+W32/IcedId.C.gen!Eldorado
+Trojan.Gen.MBT
+Malicious
+generic.ml
+Win.Dropper.IcedID-7051385-0
+HEUR:Trojan.Win32.Generic
+Trojan.Spy.IcedId.C
+Trojan.Win32.IcedID.fjyqob
+Trojan.Win32.Generic.4!c
+Win32:BankerX-gen [Trj]
+Win32.Trojan.Generic.Swuz
+malicious (high confidence)
+Trojan.Spy.IcedId.C (B)
+TrojWare.Win32.TrojanSpy.IcedId.HA@83pr5o
+Trojan.TR/Dropper.Gen
+Trojan.IcedID.15
+TROJ_GEN.R020C0DGR19
+BehavesLike.Win32.Upatre.lz
+malicious.high.ml.score
+Troj/BokBot-F
+DFI - Malicious PE
+W32/IcedId.C.gen!Eldorado
+Trojan.Banker.IcedID.dw
+TR/Dropper.Gen
+W32/IcedId.H!tr
+Trojan.Spy.IcedId.C
+HEUR:Trojan.Win32.Generic
+TrojanSpy:Win32/IcedId.B!dha
+Trojan/Win32.Agent.R249043
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Spy.IcedId.C
+malware (ai score=100)
+Trojan.Spy.IcedId.C
+Trojan.IcedID
+a variant of Win32/Spy.IcedId.H
+TROJ_GEN.R020C0DGR19
+Spyware.IcedId!8.F061 (TFE:4:kVxjJTGaufE)
+Trojan-Spy.Agent
+Trojan.Spy.IcedId.C
+Win32:BankerX-gen [Trj]
+malicious.14b753
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D79B.Malware.Gen
+Gen:Trojan.Heur.FU.buW@amREWMk
+Generic.mg.1c501caa5125906c
+Trojan.GenericPMF.S6489832
+Artemis!1C501CAA5125
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@amREWMk
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Dzka
+malicious (high confidence)
+Gen:Trojan.Heur.FU.buW@amREWMk (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=100)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EAB483
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@amREWMk
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan.Agent!DQyNREHs5X4
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@amREWMk
+Win32:Malware-gen
+malicious.a51259
+Trj/Genetic.gen
+HEUR/QVM20.1.D79B.Malware.Gen
+Trojan.Spy.IcedId.C
+Generic.mg.c9d241fc672724fd
+Trojan.Mauvaise.SL1
+GenericRXGP-YC!C9D241FC6727
+Trojan.IcedID
+Spyware ( 0053a3c61 )
+TrojanSpy:Win32/IcedId.bd43f068
+Spyware ( 0053a3c61 )
+malicious.c67272
+TROJ_GEN.R020C0DGR19
+W32/IcedId.C.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:BankerX-gen [Trj]
+Win.Dropper.IcedID-7051385-0
+HEUR:Trojan.Win32.Generic
+Trojan.Spy.IcedId.C
+Trojan.Win32.IcedID.fjyqob
+generic.ml
+Win32.Trojan.Generic.Tbsc
+malicious (high confidence)
+Trojan.Spy.IcedId.C (B)
+TrojWare.Win32.TrojanSpy.IcedId.HA@83pr5o
+Trojan.TR/Dropper.Gen
+Trojan.IcedID.15
+heuristic
+BehavesLike.Win32.VTFlooder.mc
+malicious.high.ml.score
+Troj/BokBot-F
+DFI - Malicious PE
+W32/IcedId.C.gen!Eldorado
+Trojan.Banker.IcedID.dy
+TR/Dropper.Gen
+W32/IcedId.H!tr
+Trojan.Spy.IcedId.C
+Trojan.Win32.Generic.4!c
+HEUR:Trojan.Win32.Generic
+TrojanSpy:Win32/IcedId.B!dha
+Trojan/Win32.Agent.R249043
+suspicious
+TScope.Malware-Cryptor.SB
+Trojan.Spy.IcedId.C
+malware (ai score=100)
+Trojan.Spy.IcedId.C
+Unsafe
+a variant of Win32/Spy.IcedId.H
+TROJ_GEN.R020C0DGR19
+Spyware.IcedId!8.F061 (TFE:4:kVxjJTGaufE)
+Trojan-Spy.Agent
+Trojan.Spy.IcedId.C
+Win32:BankerX-gen [Trj]
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D79B.Malware.Gen
+Gen:Variant.Adware.Lollipop.6
+Generic.mg.f9ec2717fa962ecc
+Trojan-FOEY!F9EC2717FA96
+Unsafe
+Trojan.Win32.Generic!BT
+TrojanDownloader:Win32/Nymaim.ed1235c3
+Trojan-Downloader ( 004d47d61 )
+Trojan-Downloader ( 004d47d61 )
+BKDR_MATSNU.SMJV
+ML.Attribute.HighConfidence
+Malicious
+Win32:Adware-gen [Adw]
+Win.Malware.Nymaim-7070018-0
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Adware.Lollipop.6
+Virus.Win32.Gen.ccmw
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Egye
+malicious (high confidence)
+Gen:Variant.Adware.Lollipop.6 (B)
+Heuristic.HEUR/AGEN.1015031
+Trojan.Nymaim.172
+Downloader.Nymaim.Win32.2026
+heuristic
+BehavesLike.Win32.RAHack.gh
+malicious.high.ml.score
+Mal/Generic-S
+DFI - Malicious PE
+Trojan.Generic.bkbmc
+HEUR/AGEN.1015031
+W32/Trojan.FOEY!tr
+Trojan/Win32.AGeneric
+Trojan.Adware.Lollipop.6
+HEUR:Trojan.Win32.Generic
+TrojanDownloader:Win32/Nymaim.K
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Variant.Adware.Lollipop.6
+malware (ai score=100)
+Gen:Variant.Adware.Lollipop.6
+a variant of Win32/TrojanDownloader.Nymaim.BA
+BKDR_MATSNU.SMJV
+Downloader.Silcon!8.2D0A (TFE:1:xYAvBw6lW3C)
+Trojan.Agent!LW8mdyRaFL8
+Virus.Win32.Xpaj
+Trojan.Malware.7164915.susgen
+Gen:Variant.Adware.Lollipop.6
+Win32:Adware-gen [Adw]
+malicious.7fa962
+win/malicious_confidence_90% (W)
+Win32/Trojan.RansomCryptoff.A
+Trojan.GenericKD.41514000
+Generic.mg.7ce35abe7d637ccc
+RDN/Generic.tfr
+Unsafe
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+Malicious
+generic.ml
+Trojan.Win32.VBKryjetor.ccbu
+Trojan.GenericKD.41514000
+Trojan.Multi.Generic.4!c
+Win32:Malware-gen
+malicious (high confidence)
+Trojan.GenericKD.41514000 (B)
+Trojan.Inject3.21589
+heuristic
+BehavesLike.Win32.Fareit.jh
+W32/Injector.EGWD!tr
+Win32.Outbreak
+malware (ai score=86)
+Trojan.Generic.D2797410
+Trojan.Win32.Z.Wacatac.704512.A
+Trojan.Win32.VBKryjetor.ccbu
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.VBKrypt.R283980
+suspicious
+Trojan.GenericKD.41514000
+Trojan.MalPack.VB
+a variant of Win32/GenKryptik.DORA
+Trojan.Injector!1.B459 (CLASSIC)
+DFI - Malicious PE
+Win32:Malware-gen
+win/malicious_confidence_100% (W)
+Win32/Trojan.f2b
+Gen:Variant.Cerbu.18603
+Generic.mg.22c858926c7d7060
+Trojan-FOEY!22C858926C7D
+TrojanDownloader:Win32/Nymaim.7636ab2a
+Trojan-Downloader ( 004d47d61 )
+Trojan-Downloader ( 004d47d61 )
+Trojan.Cerbu.D48AB
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+Win32:Adware-gen [Adw]
+Win.Malware.Nymaim-7070018-0
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Cerbu.18603
+Virus.Win32.Gen.ccmw
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Hrfk
+Gen:Variant.Cerbu.18603
+Gen:Variant.Cerbu.18603 (B)
+Trojan.Nymaim.172
+Downloader.Nymaim.Win32.2026
+BKDR_MATSNU.SMJV
+BehavesLike.Win32.RAHack.gh
+W32/MATSNU.SMJV!tr.bdr
+Mal/Generic-S
+DFI - Malicious PE
+Trojan.Generic.bkbmc
+HEUR/AGEN.1015031
+malware (ai score=100)
+Trojan/Win32.AGeneric
+malicious (high confidence)
+TrojanDownloader:Win32/Nymaim.K
+Trojan.Win32.Z.Nymaim.490496
+HEUR:Trojan.Win32.Generic
+suspicious
+Gen:Variant.Cerbu.18603
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/TrojanDownloader.Nymaim.BA
+BKDR_MATSNU.SMJV
+Downloader.Silcon!8.2D0A (TFE:1:xYAvBw6lW3C)
+Trojan.Agent!LW8mdyRaFL8
+Virus.Win32.Xpaj
+Gen:Variant.Cerbu.18603
+Win32:Adware-gen [Adw]
+malicious.26c7d7
+win/malicious_confidence_90% (W)
+Win32/Trojan.RansomCryptoff.A
+Gen:Trojan.Heur.FU.buW@ay2fhnf
+Generic.mg.689aeaa6fa07f92f
+Trojan.GenericPMF.S6489832
+Artemis!689AEAA6FA07
+Trojan.Agent
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+Trojan.Gen.MBT
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@ay2fhnf
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Gen:Trojan.Heur.FU.buW@ay2fhnf
+Gen:Trojan.Heur.FU.buW@ay2fhnf (B)
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+Mal/Generic-S
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=80)
+Trojan/Win32.Fuery
+malicious (high confidence)
+Trojan:Win32/Iceid!rfn
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Win32.Trojan.Generic.Wqdm
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@ay2fhnf
+Win32:Malware-gen
+malicious.6fa07f
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D7E1.Malware.Gen
+Gen:Trojan.Heur.FU.buW@a888Jd
+Generic.mg.ca8d33061c294376
+Trojan.GenericPMF.S6489832
+Artemis!CA8D33061C29
+Unsafe
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+TROJ_GEN.R002C0GGT19
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@a888Jd
+Trojan.Win32.IcedId.fqzhnu
+Trojan.Win32.Generic.4!c
+Win32:Malware-gen
+Win32.Trojan.Generic.Tafd
+malicious (high confidence)
+Mal/Generic-S
+Malware@#1w23nhoxbzvx
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+heuristic
+BehavesLike.Win32.Suspiciousatg.mc
+W32/IcedId.L!tr
+malicious.high.ml.score
+Gen:Trojan.Heur.FU.buW@a888Jd (B)
+Trojan-Spy.Agent
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+malware (ai score=84)
+Trojan/Win32.Fuery
+Trojan.Heur.FU.EDBE88
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Iceid!rfn
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+Gen:Trojan.Heur.FU.buW@a888Jd
+Trojan.Agent
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+DFI - Malicious PE
+Gen:Trojan.Heur.FU.buW@a888Jd
+Win32:Malware-gen
+malicious.61c294
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM20.1.D7E1.Malware.Gen
+Trojan.GenericKD.32199377
+Generic.mg.1f647095bfeab49c
+Artemis!1F647095BFEA
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Trojan-PSW.Win32.Coins.twv
+Trojan.GenericKD.32199377
+generic.ml
+Trojan.Multi.Generic.4!c
+malicious (high confidence)
+Trojan.TR/AD.MoksSteal.qmstw
+Trojan.PWS.Stealer.26517
+Backdoor.Win32.PARAZIT.SM
+BehavesLike.Win32.Generic.hc
+malicious.moderate.ml.score
+Trojan.GenericKD.32199377 (B)
+DFI - Suspicious PE
+TR/AD.MoksSteal.qmstw
+W32/GenKryptik.DORX!tr
+Trojan.Generic.D1EB52D1
+Trojan-PSW.Win32.Coins.twv
+Trojan:Win32/Sonbokli.A!cl
+Trojan/Win32.Sonbokli.C3360260
+suspicious
+BScope.TrojanPSW.Azorult
+malware (ai score=84)
+Trojan.GenericKD.32199377
+Win32/PSW.Delf.OSF
+Backdoor.Win32.PARAZIT.SM
+Trojan.Generic@ML.86 (RDML:iRUN+tcjTghZ9AFNIqPeVg)
+Trojan-Spy.Remcos
+Win32.Trojan-Stealer.Azorult.2155H1
+Win32:Malware-gen
+malicious.6ebf5c
+win/malicious_confidence_90% (W)
+Trojan.Generic
+HW32.Packed.
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi
+Artemis!4CEF9DE18AC1
+Unsafe
+Packed:Win32/VMProtect.6b924e35
+Trojan ( 004b0a511 )
+Trojan ( 004b0a511 )
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Trojan.Win32.Wecod.iylr
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi
+Trojan.Win32.Malicious.4!c
+Win32:Trojan-gen
+Win32.Trojan.Gen.Phrb
+malicious (high confidence)
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi (B)
+Trojan.TR/Black.Gen2
+Trojan.Win32.WACATAC.USXVPGT19
+BehavesLike.Win32.Ramnit.vc
+W32/VMProtBad.A!tr
+Mal/VMProtBad-A
+Trojan.Win32.VMProtect
+TR/Black.Gen2
+malware (ai score=81)
+Trojan.Heur.RP.EBECD1
+Trojan.Win32.Z.Wecod.3127296
+Trojan.Win32.Wecod.iylr
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Agent.C3360270
+suspicious
+BScope.Trojan.Wecod
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi
+a variant of Win32/Packed.VMProtect.ABO
+Trojan.Win32.WACATAC.USXVPGT19
+Trojan.Wacatac!8.10C01 (TFE:5:tnRu2u24TvP)
+DFI - Suspicious PE
+Gen:Trojan.Heur.RP.!EW@a8CsZ4bi
+Win32:Trojan-gen
+malicious.18ac1d
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM16.0.D525.Malware.Gen
+Artemis!388A978B95E7
+Unsafe
+Trojan ( 7000000f1 )
+Trojan ( 7000000f1 )
+UDS:DangerousObject.Multi.Generic
+generic.ml
+Trojan-Spy.Banker (A)
+BehavesLike.Win32.BadFile.tc
+malicious.moderate.ml.score
+Mal/Generic-S
+DFI - Suspicious PE
+UDS:DangerousObject.Multi.Generic
+suspicious
+a variant of Win32/Spy.Banker.ACZM
+Spyware.Banker!8.8D (TFE:4:mPoJo9lttOC)
+FileRepMalware
+win/malicious_confidence_60% (W)
+Trojan.GenericKD.41513363
+Generic.mg.f3dcf80b6251cfba
+RDN/Generic.dx
+Trojan.Win32.Generic!BT
+Trojan.Agent/Generic
+Trojan ( 00553dad1 )
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Trojan.Win32.Vimditator.acyh
+Trojan.GenericKD.41513363
+Trojan.Win32.Vimditator.4!c
+Win32:Dropper-gen [Drp]
+malicious (high confidence)
+Trojan.GenericKD.41513363 (B)
+RDN/Generic.dx
+W32/Vimditator.ACYH!tr
+suspicious.low.ml.score
+Mal/Generic-S
+Trojan.SuspectCRC
+W32.Pdf.Exploit
+Trojan.Generic.D2797193
+Trojan.Win32.Vimditator.acyh
+Trojan:Win32/Occamy.C
+Trojan/Win32.DownLoader.R284120
+Trojan.GenericKD.32198363
+Trojan.GenericKD.41513363
+a variant of Generik.GWWSQWM
+Trojan.Wacatac!8.10C01 (TFE:5:5qfO5zfhS3H)
+DFI - Malicious PE
+Win32.Worm.Phorpiex.3PWCNG
+Win32:Dropper-gen [Drp]
+win/malicious_confidence_60% (D)
+Win32/Trojan.IM.f2c
+Generic.mg.943241787403313a
+heuristic
+Malicious
+HEUR:Trojan.Win32.AutoIt.gen
+malicious (moderate confidence)
+BehavesLike.Win32.Downloader.tc
+malicious.high.ml.score
+Trojan.Autoit
+HEUR/AGEN.1042319
+AutoIt/Injector.EEA!tr
+Trojan/Generic.ASVCS3S.1E5
+HEUR:Trojan.Win32.AutoIt.gen
+Trojan:Win32/Wacatac.B!ml
+suspicious
+a variant of Win32/Injector.Autoit.EEC
+Trojan.Win32.Agent.jxu (CLASSIC)
+Trojan.Malware.300983.susgen
+Trj/Genetic.gen
+HEUR/QVM10.1.D9B7.Malware.Gen
+Trojan.GenericKD.32198436
+Generic.mg.7a190fda56b56dd6
+Fareit-FPN!7A190FDA56B5
+Trojan.MalPack.VB
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Backdoor.MSIL.NanoBot.atfw
+Trojan.GenericKD.32198436
+generic.ml
+malicious (high confidence)
+Trojan.GenericKD.32198436 (B)
+Trojan.Inject3.21564
+BehavesLike.Win32.Fareit.jh
+DFI - Suspicious PE
+W32/VBKrypt.VO.gen!Eldorado
+W32/GenKryptik.DORA!tr
+Trojan.Generic.D1EB4F24
+Trojan.Win32.Z.Highconfidence.700416.C
+Backdoor.MSIL.NanoBot.atfw
+Trojan:Win32/Dynamer!rfn
+Trojan/Win32.VBKrypt.R283980
+suspicious
+Trojan.GenericKD.32198436
+Unsafe
+a variant of Win32/GenKryptik.DORA
+Trojan.Injector!1.B459 (CLASSIC)
+Trojan.Win32.Krypt
+Trojan.GenericKD.32198436
+Win32:Malware-gen
+win/malicious_confidence_100% (W)
+HEUR/QVM03.0.D6A5.Malware.Gen
+Trojan.GenericKD.32199393
+BScope.Backdoor.Androm
+Generic.mg.8fcfac9ab19b4969
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+Trojan.Generic.D1EB52E1
+TROJ_FRS.VSNW1DG19
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Trojan-Spy.Win32.Stealer.nqg
+Trojan.GenericKD.32199393
+Trojan.Multi.Generic.4!c
+Win32:Malware-gen
+malicious (moderate confidence)
+Trojan.GenericKD.32199393 (B)
+Trojan.PWS.Siggen2.24831
+heuristic
+BehavesLike.Win32.Generic.dc
+W32/Kryptik.GVAU!tr
+Troj/Agent-BCEK
+Trojan.Inject
+Trojan:Win32/Tiggre!plock
+Trojan-Spy.Win32.Stealer.nqg
+Trojan/Win32.Sonbokli.C3360171
+RDN/Generic.cf
+Trojan.GenericKD.32199393
+a variant of Win32/Kryptik.GVAU
+TROJ_FRS.VSNW1DG19
+DFI - Suspicious PE
+Win32:Malware-gen
+win/malicious_confidence_60% (W)
+HEUR/QVM10.2.D74F.Malware.Gen
+Generic.mg.23b530ac2945d97c
+Trojan.MalPack.VB
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+Backdoor.MSIL.NanoBot.atfx
+Msil.Backdoor.Nanobot.Hrfh
+Trojan.Inject3.21581
+BehavesLike.Win32.Fareit.jh
+W32/Injector.EGWD!tr
+suspicious.low.ml.score
+DFI - Suspicious PE
+W32/VBKrypt.VO.gen!Eldorado
+malware (ai score=100)
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Backdoor.MSIL.NanoBot.atfx
+Trojan/Win32.VBKrypt.R283980
+suspicious
+Fareit-FPN!23B530AC2945
+Unsafe
+a variant of Win32/GenKryptik.DORA
+Trojan.Injector!1.B459 (CLASSIC)
+FileRepMalware
+win/malicious_confidence_100% (W)
+Win32/Backdoor.BO.4e2
+Gen:Trojan.Heur.FU.buW@aWgcxtl
+Generic.mg.f2f9442c146f74f3
+Trojan.GenericPMF.S6489832
+Artemis!F2F9442C146F
+Trojan.Agent
+win/malicious_confidence_100% (W)
+TrojanDropper:Win32/dropper.ali1003001
+Spyware ( 005500541 )
+heuristic
+W32/IcedId.F.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:Malware-gen
+Win.Dropper.IcedID-7049579-0
+HEUR:Trojan.Win32.Generic
+Gen:Trojan.Heur.FU.buW@aWgcxtl
+Trojan.Win32.IcedId.fqzhnu
+generic.ml
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Generic.Eeqz
+malicious (high confidence)
+Mal/Generic-S
+Trojan.TR/Dropper.Gen
+Trojan.Inject3.16722
+TROJ_GEN.R002C0GGT19
+BehavesLike.Win32.Suspiciousatg.mc
+malicious.high.ml.score
+Gen:Trojan.Heur.FU.buW@aWgcxtl (B)
+DFI - Malicious PE
+W32/IcedId.F.gen!Eldorado
+Trojan.Generic.dkven
+TR/Dropper.Gen
+W32/IcedId.L!tr
+Trojan/Win32.Fuery
+Trojan.Heur.FU.E8DA5F
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Ditertag.A
+Trojan/Win32.RL_Generic.R276433
+suspicious
+TScope.Malware-Cryptor.SB
+malware (ai score=100)
+Gen:Trojan.Heur.FU.buW@aWgcxtl
+Unsafe
+a variant of Win32/Spy.IcedId.L
+TROJ_GEN.R002C0GGT19
+Spyware.IcedId!8.F061 (TFE:3:kUlPMGQjw7O)
+Trojan-Spy.Agent
+Trojan.Malware.300983.susgen
+Gen:Trojan.Heur.FU.buW@aWgcxtl
+Win32:Malware-gen
+malicious.c146f7
+Trj/Genetic.gen
+HEUR/QVM20.1.D827.Malware.Gen
+Generic.mg.9b386e1247550331
+GenericRXCM-SJ!9B386E124755
+Unsafe
+Trojan.TrickBot.Win32.53
+Trojan.Win32.Generic.4!c
+Trojan:Win32/TrickBot.6c96828f
+Trojan ( 005159d31 )
+Trojan ( 005159d31 )
+TROJ_GEN.R002C0PGT19
+Trojan.Trickybot
+Malicious
+generic.ml
+Win.Trojan.Trickbot-6335790-0
+HEUR:Trojan.Win32.Generic
+Trojan.Win32.Trick.fndztn
+Trojan.Agent/Gen-TDSS[Pragma]
+Win32:Malware-gen
+Win32.Trojan.Generic.Htvs
+malicious (high confidence)
+Trojan.TR/ATRAPS.Gen
+Trojan.Trick.45135
+heuristic
+BehavesLike.Win32.Ransomware.nh
+malicious.high.ml.score
+Trojan-Banker.TrickBot
+Trojan.Generic.bkfio
+TR/ATRAPS.Gen
+W32/TrickBot.V!tr
+Trojan/Win32.AGeneric
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Occamy.C
+Trojan/Win32.Trickbot.C2798934
+suspicious
+BScope.Trojan.Downloader
+a variant of Win32/TrickBot.V
+TROJ_GEN.R002C0PGT19
+Trojan.Generic!8.C3 (TFE:5:7EmaYE9sBfU)
+DFI - Malicious PE
+Win32:Malware-gen
+malicious.46a978
+Trj/CI.A
+win/malicious_confidence_90% (W)
+HEUR/QVM10.2.D827.Malware.Gen
+Generic.DataStealer.1.7B38376B
+SScope.Malware-Cryptor.Ponik
+Generic.mg.c049db6c8b342962
+Trojanpws.Tepfer.20314
+Generic.DataStealer.1.7B38376B
+Spyware.Pony
+Trojan.Win32.Fareit.j (fs)
+Hack.Tool/Gen-Spyware
+TrojanPSW:Win32/Tepfer.2f639e72
+Password-Stealer ( 004b89e61 )
+Password-Stealer ( 004b89e61 )
+Generic.DataStealer.1.7B38376B
+TSPY_FAREIT.SMJR1
+Win32.Trojan-PSW.Fareit.a
+Downloader.Ponik!gm
+Malicious
+generic.ml
+Win.Trojan.Fareit-403
+Trojan-PSW.Win32.Tepfer.gen
+Generic.DataStealer.1.7B38376B
+Trojan.Win32.Tepfer.eaygfm
+Trojan.Win32.Generic.i!c
+Sf:Crypt-AQ [Trj]
+Trojan.Fareit!1.A343 (CLASSIC)
+malicious (high confidence)
+Generic.DataStealer.1.7B38376B (B)
+TrojWare.Win32.PWS.Fareit.GS@5t8zib
+Trojan.PWS.Stealer.17209
+heuristic
+Fareit-FBK!C049DB6C8B34
+W32/Fareit.G!tr
+malicious.moderate.ml.score
+Troj/DwnLdr-MJA
+Trojan.Crypt
+Trojan.PSW.Tepfer.byx
+TR/Kryptik.avp.8
+malware (ai score=100)
+Trojan[PSW]/Win32.Tepfer
+PWS:Win32/Fareit
+Backdoor.Win32.Pony.Gen.A
+Trojan-PSW.Win32.Tepfer.gen
+Trojan/Win32.Tepfer.R142848
+suspicious
+Fareit-FBK!C049DB6C8B34
+Generic.DataStealer.1.7B38376B
+Unsafe
+a variant of Win32/PSW.Fareit.A
+TSPY_FAREIT.SMJR1
+Win32.Trojan-qqpass.Qqrob.Suxd
+Trojan.PSteal.Gen.TO
+DFI - Malicious PE
+Unsafe.AI_Score_99%
+Generic.DataStealer.1.7B38376B
+Sf:Crypt-AQ [Trj]
+malicious.c8b342
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+Win32/Trojan.eee
+Generic.PWS.2.D0D42614
+Generic.mg.98139820fb40bad9
+Trojanpws.Tepfer.20314
+PWS-Zbot-FAVV!98139820FB40
+Unsafe
+win/malicious_confidence_100% (W)
+TrojanPSW:Win32/Tepfer.ed4d7c79
+Password-Stealer ( 004ca26e1 )
+Password-Stealer ( 004ca26e1 )
+heuristic
+Win32.Trojan-PSW.Fareit.a
+W32/Bloop.A.gen!Eldorado
+Downloader.Ponik!gm
+Malicious
+generic.ml
+Win.Trojan.Fareit-403
+Trojan-PSW.Win32.Tepfer.gen
+Generic.PWS.2.D0D42614
+Trojan.Win32.Tepfer.eaergx
+Trojan.Win32.Generic.mtwx
+Sf:Crypt-AQ [Trj]
+Win32.Trojan-qqpass.Qqrob.Hryh
+malicious (high confidence)
+Generic.PWS.2.D0D42614 (B)
+TrojWare.Win32.PWS.Fareit.GS@5t8zib
+Trojan.TR/Kryptik.avp.8
+Trojan.PWS.Stealer.4118
+Trojan.Win32.Fareit.j (fs)
+TSPY_FAREIT.SMJR1
+BehavesLike.Win32.Generic.nh
+W32/Fareit.G!tr
+Mal/Behav-116
+Trojan.Win32.Pony
+W32/Bloop.A.gen!Eldorado
+Trojan/PSW.PdPinch.aqv
+TR/Kryptik.avp.8
+malware (ai score=100)
+Trojan[PSW]/Win32.Tepfer
+Generic.PWS.2.D0D42614
+Trojan-PSW.Win32.Tepfer.gen
+PWS:Win32/Fareit
+Trojan/Win32.Tepfer.C799009
+suspicious
+SScope.Malware-Cryptor.Ponik
+Generic.PWS.2.D0D42614
+Generic.PWS.2.D0D42614
+a variant of Win32/PSW.Fareit.A
+TSPY_FAREIT.SMJR1
+Trojan.Fareit!1.A343 (CLASSIC)
+Trojan.PSteal.Gen.TO
+DFI - Malicious PE
+Unsafe.AI_Score_100%
+Win32.Trojan-Stealer.Zbot.AB
+Sf:Crypt-AQ [Trj]
+malicious.0fb40b
+Trj/Genetic.gen
+Win32/Trojan.PSW.c13
+Generic.Application.CoinMiner.1.A0D40CDD
+Artemis!6EEB34286954
+Unsafe
+win/malicious_confidence_60% (D)
+Trojan ( 0053a0551 )
+Trojan ( 0053a0551 )
+Coinminer.Win32.MALXMR.SMBM4
+Linux.Coinminer
+Malicious
+Multios.Coinminer.Miner-6781728-2
+not-a-virus:HEUR:RiskTool.Win32.BitMiner.gen
+Generic.Application.CoinMiner.1.A0D40CDD
+Riskware.Win32.BitCoinMiner.fourzn
+Win32:HarHarMiner-A [Trj]
+Win32.Risk.Bitminer.Wuhv
+malicious (moderate confidence)
+XMRig Miner (PUA)
+Tool.BtcMine.2009
+heuristic
+PUP-XIC-LN
+Generic.Application.CoinMiner.1.A0D40CDD
+Generic.Application.CoinMiner.1.A0D40CDD (B)
+DFI - Malicious PE
+RiskWare[RiskTool]/Win32.BitCoinMiner
+Generic.Application.CoinMiner.1.A0D40CDD
+not-a-virus:HEUR:RiskTool.Win32.BitMiner.gen
+PUA:Win32/CoinMiner
+Unwanted/Win32.CoinMiner.C3352343
+suspicious
+BScope.Trojan.Miner
+malware (ai score=100)
+Generic.Application.CoinMiner.1.A0D40CDD
+RiskWare.BitCoinMiner
+a variant of Win32/CoinMiner.EH potentially unwanted
+Coinminer.Win32.MALXMR.SMBM4
+PUA.CoinMiner
+Win32.Application.CoinMiner.T@gen
+Win32:HarHarMiner-A [Trj]
+malicious.869543
+Trj/Genetic.gen
+Win32/Virus.RiskTool.435
+Gen:Variant.Symmi.69249
+BScope.Trojan.KillFiles
+Generic.mg.5041a2867ca9091e
+Trojan.Qzonit.S196045
+Gen:Variant.Symmi.69249
+TrojanSpy:Win32/Qzonit.fa1e5f67
+Spyware ( 004f5b5a1 )
+Spyware ( 004f5b5a1 )
+Trojan.Symmi.D10E81
+TSPY_KRBANKER.SM4
+Win32.Trojan-Spy.Agent.ak
+W32/S-28fa4add!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Symmi.69249
+Trojan.Win32.Generic.4!c
+Win32:Evo-gen [Susp]
+Win32.Packed.Multipacked.Ssgn
+malicious (high confidence)
+Gen:Variant.Symmi.69249 (B)
+TrojWare.Win32.TrojanSpy.Banker.OV@6e1pyh
+Trojan.TR/Crypt.XPACK.Gen
+Trojan.Agent.Win32.721808
+heuristic
+BehavesLike.Win32.Generic.gc
+malicious.high.ml.score
+Mal/Generic-S
+Trojan.Win32.Injector
+W32/S-28fa4add!Eldorado
+Trojan.Generic.ajbpb
+TR/Crypt.XPACK.Gen
+malware (ai score=81)
+Trojan:Win32/Qzonit.A!bit
+Trojan.Win32.Banker.445972
+HEUR:Trojan.Win32.Generic
+Trojan/Win32.Banki.C1572606
+suspicious
+Artemis!5041A2867CA9
+Gen:Variant.Symmi.69249
+a variant of Win32/Spy.Agent.OXX
+TSPY_KRBANKER.SM4
+Malware.Undefined!8.C (TFE:3:OjHDYfpLViF)
+Trojan.Agent!lHbCuY+md9s
+DFI - Malicious PE
+Win32.Trojan-Spy.Banker.T
+Win32:Evo-gen [Susp]
+malicious.67ca90
+win/malicious_confidence_100% (W)
+HEUR/QVM17.0.D8D3.Malware.Gen
+Generic.PWS.2.04E3AD54
+BScope.Malware-Cryptor.Ponik
+Generic.mg.9d4da61ae05c38c6
+Fareit-FCH!9D4DA61AE05C
+Unsafe
+Trojan.Fareit.Win32.18354
+TrojanPSW:Win32/Fareit.e4621c9b
+Generic.PWS.2.04E3AD54
+TSPY_FAREIT.SMYY
+W32/S-e93a4acc!Eldorado
+Downloader.Ponik!gm
+Malicious
+Sf:Crypt-BI [Trj]
+Win.Trojan.Fareit-403
+Trojan-PSW.Win32.Tepfer.gen
+Generic.PWS.2.04E3AD54
+Trojan.Win32.Tepfer.enuaiz
+generic.ml
+Trojan.Win32.Generic.mtwx
+Win32.Trojan-qqpass.Qqrob.Huzl
+malicious (high confidence)
+Generic.PWS.2.04E3AD54 (B)
+TrojWare.Win32.PWS.Fareit.GS@5t8zib
+Trojan.PWS.Stealer.13052
+Trojan.Win32.Fareit.j (fs)
+heuristic
+BehavesLike.Win32.Generic.mm
+Troj/Kryptik-FN
+DFI - Malicious PE
+W32/S-e93a4acc!Eldorado
+Trojan.PSW.Tepfer.fwy
+W32.Malware.gen
+TR/Kryptik.avp.8
+W32/Fareit.A!tr
+Trojan[PSW]/Win32.Tepfer
+Trojan:Win32/Fareit.I
+Trojan-PSW.Win32.Tepfer.gen
+Trojan/Win32.Tepfer.C1741957
+suspicious
+Generic.PWS.2.04E3AD54
+malware (ai score=81)
+Generic.PWS.2.04E3AD54
+Spyware.Pony
+a variant of Win32/PSW.Fareit.A
+TSPY_FAREIT.SMYY
+Stealer.Fareit!1.B777 (CLASSIC)
+Trojan.PSteal.Gen.UL
+Trojan.Win32.Pony
+Generic.PWS.2.04E3AD54
+Sf:Crypt-BI [Trj]
+Trj/Genetic.gen
+win/malicious_confidence_100% (D)
+Win32/Trojan.PSW.c13
+Gen:Variant.Razy.508408
+Generic.mg.2b6d66c08b7beef3
+Trojan.Dupzom.100158
+Artemis!2B6D66C08B7B
+Unsafe
+Trojan.Magania.Win32.69086
+Backdoor:Win32/Magania.a73e8bc1
+Trojan ( 0053a0a51 )
+Trojan ( 0053a0a51 )
+Trojan.Razy.D7C1F8
+BKDR_ZEGOST.SM18
+SMG.Heur!gen
+Malicious
+Win32:Evo-gen [Susp]
+Win.Dropper.Gh0stRAT-6991569-0
+Trojan-GameThief.Win32.Magania.ubog
+Gen:Variant.Razy.508408
+Trojan.Win32.Magania.elnpnh
+generic.ml
+Trojan.Win32.Magania.4!c
+Win32.Backdoor.Gh0st.Mjue
+Gen:Variant.Razy.508408
+Gen:Variant.Razy.508408 (B)
+Malware@#3d6p07hg17o2u
+Trojan.TR/Dropper.Gen7
+Trojan.DownLoader21.35748
+heuristic
+GenericRXAA-YB!207EDF8DE146
+W32/Farfli.CAW!tr
+malicious.moderate.ml.score
+Mal/Generic-S
+Backdoor.Win32.Farfli
+W32/Trojan.XLTS-9363
+Backdoor.Farfli.ahg
+W32.Trojan.Gen
+TR/Dropper.Gen7
+malware (ai score=94)
+Trojan[GameThief]/Win32.Magania
+malicious (moderate confidence)
+Backdoor:Win32/Zegost.AD
+Trojan-GameThief.Win32.Magania.ubog
+Trojan/Win32.Magania.C3247638
+Backdoor.Farfli
+Gen:Variant.Razy.508408
+Win32/Farfli.CAW
+BKDR_ZEGOST.SM18
+Backdoor.Zegost!8.177 (TFE:5:qxFikPM4rjR)
+Trojan.PWS.Magania!Edlp3tQwFKE
+DFI - Malicious PE
+Gen:Variant.Razy.508408
+FileRepMalware
+malicious.08b7be
+Trj/CI.A
+win/malicious_confidence_90% (W)
+Win32/Trojan.BO.d74
+Gen:Variant.Zusy.191347
+Generic.mg.fd4ef07345df8d08
+Trojan.Dupzom.100158
+Gen:Variant.Zusy.191347
+Backdoor.Farfli
+Backdoor.Farfli.Win32.4829
+Backdoor.Farfli/Variant
+Backdoor:Win32/Magania.745e6c61
+Trojan ( 0053a0a51 )
+Trojan ( 0053a0a51 )
+Trojan.Zusy.D2EB73
+BKDR_FARFLI.SMFD
+W32/Farfli.AC.gen!Eldorado
+SMG.Heur!gen
+Malicious
+Win32:Trojan-gen
+Win.Dropper.Gh0stRAT-6991569-0
+Trojan-GameThief.Win32.Magania.ubog
+Gen:Variant.Zusy.191347
+Trojan.Win32.Magania.elnpnh
+generic.ml
+Trojan.Win32.Magania.tnqF
+Win32.Trojan-gamethief.Magania.Eere
+Gen:Variant.Zusy.191347
+Gen:Variant.Zusy.191347 (B)
+Backdoor.Win32.Zegost.HA@6isvc3
+Trojan.DownLoader21.35748
+heuristic
+GenericRXAA-YB!FD4EF07345DF
+Mal/Zegost-BQ
+DFI - Malicious PE
+W32/Farfli.AC.gen!Eldorado
+Backdoor.Farfli.ahg
+W32.Trojan.Gen
+TR/Farfli.qciqn
+W32/Farfli.CAW!tr
+malicious (high confidence)
+Backdoor:Win32/Zegost.AD
+Backdoor.Win32.Z.Farfli.221277.BM
+Trojan-GameThief.Win32.Magania.ubog
+Backdoor/W32.Farfli.221277
+Trojan/Win32.Magania.R188315
+suspicious
+GenericRXAA-YB!FD4EF07345DF
+malware (ai score=100)
+Backdoor.Farfli
+Unsafe
+Win32/Farfli.CAW
+BKDR_FARFLI.SMFD
+Backdoor.Zegost!8.177 (KTSE)
+Backdoor.Farfli!A6d6Zbv2QL8
+Backdoor.Win32.Farfli
+Win32.Trojan.Farfli.JWAB08
+Win32:Trojan-gen
+malicious.345df8
+win/malicious_confidence_100% (W)
+Win32/Trojan.BO.d74
+Trojan.PWS.Tepfer.AE
+Generic.mg.857f99da5d1df137
+PWS.Fareit.E3
+Trojan.PWS.Tepfer.AE
+Spyware.Pony
+Trojan.Tepfer.Win32.77950
+TrojanPSW:Win32/Tepfer.9e7ea896
+Password-Stealer ( 0040f4f51 )
+Password-Stealer ( 0040f4f51 )
+Trojan.PWS.Tepfer.AE
+BKDR_PONY.SM
+Win32.Trojan-PSW.Fareit.a
+W32/A-f0951580!Eldorado
+Infostealer!im
+Malicious
+Sf:Crypt-AS [Trj]
+Win.Trojan.Fareit-403
+Trojan-PSW.Win32.Tepfer.gen
+Trojan.PWS.Tepfer.AE
+Trojan.Win32.Siggen.evgeyh
+generic.ml
+Trojan.Win32.Generic.mtwx
+Win32.Trojan-qqpass.Qqrob.Eadr
+Trojan.PWS.Tepfer.AE
+Trojan.PWS.Tepfer.AE (B)
+TrojWare.Win32.PWS.Fareit.GS@5t8zib
+Trojan.TR/PSW.Fareit.iloen
+Trojan.PWS.Stealer.1932
+Trojan.Win32.Fareit.gi (v)
+heuristic
+BehavesLike.Win32.PWSZbot.mh
+Mal/Pony-A
+DFI - Malicious PE
+W32/A-f0951580!Eldorado
+Trojan/Generic.arpvx
+TR/PSW.Fareit.iloen
+W32/Agent.NTM!tr
+Trojan[PSW]/Win32.Tepfer
+malicious (high confidence)
+PWS:Win32/Fareit
+Backdoor.Win32.Pony.Gen.A
+Trojan-PSW.Win32.Tepfer.gen
+Trojan-PWS/W32.Tepfer.91648.AV
+Trojan/Win32.Ponik.R49463
+suspicious
+PWS-Zbot.gen.ate
+malware (ai score=87)
+BScope.Malware-Cryptor.Ponik
+Unsafe
+a variant of Win32/PSW.Fareit.A
+BKDR_PONY.SM
+Stealer.Fareit!1.B777 (CLASSIC)
+Trojan.PonyPass.Gen.LH
+Trojan-Spy.Fareit
+Unsafe.AI_Score_99%
+Win32.Trojan-Stealer.Zbot.AB
+Sf:Crypt-AS [Trj]
+malicious.a5d1df
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+Win32/Trojan.PSW.c13
+Fareit-FPN!29ADBDC76581
+Unsafe
+Trojan.Win32.Generic.4!c
+a variant of Win32/GenKryptik.DORA
+Malicious
+UDS:DangerousObject.Multi.Generic
+FileRepMalware
+Trojan.Injector!1.B459 (CLASSIC)
+malicious (high confidence)
+Mal/Generic-S
+heuristic
+BehavesLike.Win32.PWSSpyeye.bm
+malicious.moderate.ml.score
+Generic.mg.29adbdc76581a21f
+DFI - Suspicious PE
+W32/VBKrypt.VO.gen!Eldorado
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+Trojan/Win32.VBKrypt.R283980
+suspicious
+Trojan.MalPack.VB
+W32/Injector.EGWD!tr
+FileRepMalware
+win/malicious_confidence_90% (W)
+HEUR/QVM03.0.D937.Malware.Gen
+Generic.mg.f0345563ece05e44
+Artemis!F0345563ECE0
+Trojan.DanaBot
+TrojanSpy:Win32/Danabot.a5c6df71
+ML.Attribute.HighConfidence
+generic.ml
+UDS:DangerousObject.Multi.Generic
+heuristic
+BehavesLike.Win32.AdwareDealPly.tc
+W32/Danabot.P!tr
+Trojan.Banker.Danabot.pc
+TR/Drop.DanaBot.qhspm
+malicious (high confidence)
+TrojanSpy:Win32/Danabot.E!bit
+Trojan.Win32.Danabot.4!c
+UDS:DangerousObject.Multi.Generic
+Unsafe
+a variant of Win32/TrojanDropper.Danabot.P
+Trojan.Generic@ML.80 (RDML:gRRLXB2DKGxvw13HiNpZ9g)
+FileRepMalware
+malicious.faaae7
+win/malicious_confidence_90% (W)
+HEUR/QVM05.1.D8B3.Malware.Gen
+Gen:Variant.Ursu.368679
+Gen:Variant.Ursu.368679
+Trojan.MalPack.VB
+Trojan.Ursu.D5A027
+Packed.Generic.535
+Malicious
+UDS:DangerousObject.Multi.Generic
+Gen:Variant.Ursu.368679
+generic.ml
+Trojan.Multi.Generic.4!c
+Gen:Variant.Ursu.368679
+Gen:Variant.Ursu.368679 (B)
+heuristic
+BehavesLike.Win32.BadFile.tz
+W32/GenKryptik.DNXM!tr
+Generic.mg.4a4d1e1a11ff721f
+TR/Kryptik.bkeyc
+malware (ai score=80)
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+Fareit-FPN!4A4D1E1A11FF
+a variant of Win32/GenKryptik.DORN
+Trojan.Injector!1.B459 (CLASSIC)
+Gen:Variant.Ursu.368679
+FileRepMetagen [Malware]
+malicious.a11ff7
+win/malicious_confidence_100% (W)
+HEUR/QVM03.0.D937.Malware.Gen
+Trojan.GenericKD.32195471
+Generic.mg.37c763789ccbc3d3
+Artemis!37C763789CCB
+Unsafe
+TrojanSpy:Win32/Noon.c1aa2b31
+Trojan ( 005535bf1 )
+Trojan ( 005535bf1 )
+TROJ_GEN.R011C0WGT19
+Trojan.Gen.MBT
+Trojan-Spy.Win32.Noon.ajos
+Trojan.GenericKD.32195471
+generic.ml
+Trojan.Win32.Noon.l!c
+Win32.Trojan-spy.Noon.Lmbf
+Trojan.GenericKD.32195471 (B)
+Trojan.PWS.Banker1.34023
+heuristic
+BehavesLike.Win32.Trojan.gh
+Mal/Generic-S
+W32/Injector.EGNU!tr
+Trojan.Generic.D1EB438F
+Trojan-Spy.Win32.Noon.ajos
+TrojanSpy:Win32/Swotter.A!bit
+Trojan/Win32.Injector.R284114
+Trojan.GenericKD.32195471
+malware (ai score=100)
+Trojan.GenericKD.32195471
+a variant of Win32/Injector.EGNU
+TROJ_GEN.R011C0WGT19
+Trojan.Win32.Injector
+Trojan.GenericKD.32195471
+FileRepMalware
+Trj/GdSda.A
+win/malicious_confidence_90% (W)
+HEUR/QVM03.0.CE7F.Malware.Gen
+HEUR/QVM03.0.D892.Malware.Gen
+Fareit-FPN!C6EC38200518
+Trojan.MalPack.VB
+a variant of Win32/GenKryptik.DORN
+Malicious
+FileRepMalware
+UDS:DangerousObject.Multi.Generic
+generic.ml
+malicious (high confidence)
+Troj/Zbot-NLG
+heuristic
+BehavesLike.Win32.Trojan.dm
+W32.Trojan.Gen
+Trojan:Win32/Wacatac.B!ml
+Trojan.Multi.Generic.4!c
+UDS:DangerousObject.Multi.Generic
+Win32.Trojan.Injector.S6T0VV
+suspicious
+Unsafe
+Trojan.Injector!1.B459 (CLASSIC)
+W32/GenKryptik.DORN!tr
+FileRepMalware
+win/malicious_confidence_100% (W)
+Trojan.GenericKD.41503548
+Generic.mg.52f8bd5bd59abdf7
+Artemis!52F8BD5BD59A
+Unsafe
+Trojan.Win32.Generic!BT
+Trojan.Win32.Autoit.4!c
+Trojan:Win32/Starter.ali2000005
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+TROJ_GEN.R04AC0WGQ19
+Trojan Horse
+Malicious
+generic.ml
+Win.Malware.Autoit-7082918-0
+Trojan.Win32.Autoit.fnv
+Trojan.GenericKD.41503548
+Trojan.Win32.Autoit.fufyer
+Win32:Trojan-gen
+Win32.Trojan.Autoit.Sxeu
+malicious (high confidence)
+Trojan.GenericKD.41503548 (B)
+Trojan.TR/Autoit.ymgge
+heuristic
+BehavesLike.Win32.Backdoor.tc
+Mal/Generic-S
+W32/Trojan.LBGD-1506
+TR/Autoit.ymgge
+AutoIt/Injector.EDS!tr
+Trojan.Generic.D2794B3C
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Occamy.C
+Trojan/Win32.RL_Agent.R273974
+Trojan.GenericKD.41503548
+malware (ai score=100)
+Trojan.GenericKD.41503548
+Probably RARAutorun
+Win32/Injector.Autoit.EDS
+TROJ_GEN.R04AC0WGQ19
+Trojan.Inject
+Trojan.Malware.74447052.susgen
+Trojan.GenericKD.41503548
+Win32:Trojan-gen
+malicious.4c24bb
+Trj/CI.A
+win/malicious_confidence_80% (W)
+Win32/Trojan.e8b
+Fareit-FPN!DC282260FC57
+Trojan.MalPack.VB
+a variant of Win32/GenKryptik.DORN
+Malicious
+generic.ml
+UDS:DangerousObject.Multi.Generic
+FileRepMalware
+Win32.Backdoor.Lokibot.Auto
+Mal/Generic-S
+Trojan.PWS.Siggen2.24864
+heuristic
+BehavesLike.Win32.Trojan.tz
+Generic.mg.dc282260fc57313b
+Trojan.Agent (A)
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+Win32.Trojan.Injector.LV27RP
+Trojan.Injector!1.B459 (CLASSIC)
+Malicious_Behavior.SB
+FileRepMalware
+win/malicious_confidence_90% (W)
+BScope.TrojanPSW.Azorult
+Generic.mg.296a7f4422c24f6c
+Trojan.Ransom.Sodinokibi
+Trojan.Win32.Malicious.4!c
+heuristic
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+UDS:DangerousObject.Multi.Generic
+Win32:Malware-gen
+Win32.Trojan.Raas.Auto
+malicious (high confidence)
+Troj/Sodino-AG
+Trojan.Inject3.21607
+Backdoor.Win32.PARAZIT.SM
+BehavesLike.Win32.Ramnit.bc
+malicious.high.ml.score
+Trojan-Ransom.Sodinokibi (A)
+DFI - Malicious PE
+TR/AD.SodinoRansom.fwl
+Trojan:Win32/Occamy.B
+UDS:DangerousObject.Multi.Generic
+Trojan/Win32.Agent.C3360271
+suspicious
+Artemis!296A7F4422C2
+Backdoor.Win32.PARAZIT.SM
+Trojan.Generic@ML.81 (RDML:zpJq9YdTvnY0ivurOqB+6Q)
+Trojan-Ransom.GandCrab
+W32.Malware.Gen
+Win32:Malware-gen
+win/malicious_confidence_90% (W)
+HEUR/QVM10.2.D827.Malware.Gen
+Gen:Variant.MSIL.Krypt.19
+Generic.mg.23dac2c42313c82d
+Gen:Variant.MSIL.Krypt.19
+Trojan:MSIL/Kryptik.21310770
+Trojan.MSIL.Krypt.19
+W32/MSIL_Troj.LJ.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+UDS:DangerousObject.Multi.Generic
+Gen:Variant.MSIL.Krypt.19
+Trojan.Win32.Generic.4!c
+Gen:Variant.MSIL.Krypt.19
+Gen:Variant.MSIL.Krypt.19 (B)
+heuristic
+Artemis
+W32/MSIL_Troj.LJ.gen!Eldorado
+none
+malware (ai score=100)
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+suspicious
+Artemis!23DAC2C42313
+Unsafe
+a variant of MSIL/Kryptik.SFX
+DFI - Suspicious PE
+Gen:Variant.MSIL.Krypt.19
+FileRepMetagen [Malware]
+malicious.42313c
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM03.0.D977.Malware.Gen
+Generic.mg.6c48d47fd5cbdc3e
+Trojan.KeyLogger
+win/malicious_confidence_100% (W)
+TrojanSpy:Win32/KeyLogger.86e31a85
+Spyware ( 0000f1581 )
+Spyware ( 0000f1581 )
+heuristic
+W32/Agent.BBK.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+UDS:DangerousObject.Multi.Generic
+Trojan.Multi.Generic.4!c
+Win32:Trojan-gen
+Trojan.TR/Dropper.Gen
+TSPY_VBKEYLOG.SM
+BehavesLike.Win32.Generic.hc
+W32/VBKEYLOG.SM!tr
+malicious.moderate.ml.score
+Trojan-Spy.KeyLogger (A)
+W32/Agent.BBK.gen!Eldorado
+TR/Dropper.Gen
+malicious (high confidence)
+Trojan:Win32/Fuerboos.D!cl
+UDS:DangerousObject.Multi.Generic
+suspicious
+RDN/Generic PWS.y
+Unsafe
+a variant of Win32/Spy.KeyLogger.ODN
+TSPY_VBKEYLOG.SM
+DFI - Malicious PE
+Unsafe.AI_Score_62%
+Win32.Trojan.Agent.1K3ROM
+Win32:Trojan-gen
+malicious.544bed
+Generic.mg.1834c827814c980b
+Trojan:Win32/Starter.ali2000005
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+Malicious
+Win32:Malware-gen
+UDS:DangerousObject.Multi.Generic
+generic.ml
+Trojan.BAT.Crypter.tqa8
+heuristic
+BehavesLike.Win32.Backdoor.tc
+AutoIt/Injector.EDF!tr
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+Trojan/Win32.RL_Agent.R273974
+Artemis!1834C827814C
+Probably RARAutorun
+TROJ_GEN.F0D1C00GT19
+Win32:Malware-gen
+malicious.353bf4
+win/malicious_confidence_80% (W)
+BScope.Trojan.AET.281105
+Generic.mg.105cf23b2dd4fa04
+heuristic
+Malicious
+UDS:DangerousObject.Multi.Generic
+generic.ml
+malicious (high confidence)
+TrojWare.Win32.Fakecsrss.AV@88nqyj
+Artemis
+malicious.high.ml.score
+DFI - Malicious PE
+W32.Trojan.Gen
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+suspicious
+Artemis!105CF23B2DD4
+Exploit.UAC!8.107CD (TFE:6:U3DKQk4Ha2C)
+Unsafe.AI_Score_93%
+malicious.3e28c4
+win/malicious_confidence_90% (W)
+HEUR/QVM10.2.D977.Malware.Gen
+Trojan.VBCryptVMF.S2724670
+Artemis!16B2534BF54C
+Unsafe
+Backdoor:JAVA/Ratty.846194b2
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+Trojan.Java.Rat.A
+Multi.Threats.InArchive
+W32/VBTrojan.19F2!Maximus
+Trojan Horse
+Win32/BadJoke.FakeDel.G potentially unsafe
+generic.ml
+Html.Trojan.ClickerChimoz-1
+Hoax.VBS.BadJoke.e
+Application.Joke.ChangeTime.A
+Trojan.Win32.Barys.fedjci
+Hacktool.VBS.BadJoke.3!c
+Win32:Malware-gen
+Vbs.Trojan-psw.Badjoke.Dzkc
+Application.Joke.ChangeTime.A (B)
+Backdoor.MSIL.Bladabindi.A@566ygc
+Backdoor.BDS/Hupigon.Gen
+Trojan.DownLoader19.38166
+heuristic
+BackDoor-DOQ.gen.w
+Generic.mg.16b2534bf54c2343
+Generic PUA EL (PUA)
+Hoax.Win32.BadJoke.Krepper
+W32/Trojan.BALJ-2982
+Trojan/Generic.bbbog
+HEUR/AGEN.1007851
+malware (ai score=100)
+HackTool[Hoax]/Win32.Delf
+malicious (moderate confidence)
+Joke:Win32/PasswordPrank
+Hoax.VBS.BadJoke.e
+Trojan.Bluteal
+Trojan.Joke
+Backdoor.Nosrawec!8.7E4 (TFE:4:7Mhkv1WTJ2S)
+Trojan.CL.Chimoz!V87gATk1q/o
+Generic.Malware
+Win32.Riskware.Vamti.A
+Win32:Malware-gen
+malicious.bf54c2
+HEUR/QVM20.1.D581.Malware.Gen
+Gen:Variant.Graftor.626116
+Generic.mg.1dc9e936da79c32e
+GenericRXHY-XS!1DC9E936DA79
+Trojan.Azorult.Win32.4
+Trojan:Win32/Lokibot.f6bb55db
+Riskware ( 0040eff71 )
+Riskware ( 0040eff71 )
+W32/Trojan.HXGJ-0448
+ML.Attribute.HighConfidence
+generic.ml
+UDS:DangerousObject.Multi.Generic
+Gen:Variant.Graftor.626116
+Trojan.Win32.Propagate.ftuidv
+Trojan.Multi.Generic.4!c
+Win32:RATX-gen [Trj]
+malicious (high confidence)
+Gen:Variant.Graftor.626116 (B)
+Trojan.DownLoader29.49459
+heuristic
+BehavesLike.Win32.Ursnif.jc
+W32/Kryptik.GUPZ!tr
+W32/Trojan2.PZRH
+Trojan.PSW.Azorult.cst
+W32.Trojan.Gen
+malware (ai score=85)
+Trojan[Downloader]/Win32.Dofoil
+Trojan.Graftor.D98DC4
+UDS:DangerousObject.Multi.Generic
+Trojan:Win32/Lokibot.BC!MTB
+Trojan/Win32.Cerber.R283366
+suspicious
+Trojan.Downloader
+Gen:Variant.Graftor.626116
+Unsafe
+a variant of Win32/Kryptik.GUWK
+Dropper.Generic!8.35E (TFE:5:IdYJhNqYAUS)
+DFI - Malicious PE
+Gen:Variant.Graftor.626116
+Win32:RATX-gen [Trj]
+malicious.f48528
+win/malicious_confidence_90% (W)
+Win32/Trojan.ae8
+Trojan.VBCryptVMF.S2724670
+Artemis!CD263A0FC03F
+Unsafe
+Backdoor:JAVA/Ratty.c79a7f47
+Trojan.Java.Rat.A
+Multi.Threats.InArchive
+W32/MSIL_Bladabindi.AU.gen!Eldorado
+ML.Attribute.HighConfidence
+a variant of MSIL/Bladabindi.AS
+generic.ml
+Win.Trojan.B-468
+Trojan.MSIL.Disfa.bop
+Java.Trojan.Jrat.A
+Trojan.Win32.Disfa.dfrpzb
+Msil.Trojan.Disfa.Szbi
+Java.Trojan.Jrat.A (B)
+Backdoor.MSIL.Bladabindi.A@566ygc
+Backdoor.BDS/Hupigon.Gen
+Trojan.DownLoader25.14863
+heuristic
+BackDoor-DOQ.gen.w
+Generic.mg.cd263a0fc03f49d5
+Mal/Generic-S
+W32/MSIL_Bladabindi.AU.gen!Eldorado
+Trojan/Generic.bbbog
+Unsafe.AI_Score_93%
+HEUR/AGEN.1007851
+MSIL/Agent.LI!tr
+Trojan[Backdoor]/MSIL.Bladabindi.as
+malicious (moderate confidence)
+Backdoor:MSIL/Bladabindi.B
+Trojan.MSIL.Disfa.bop
+Trojan/Win32.Disfa.C3357995
+malware (ai score=81)
+Trojan.Bluteal
+Backdoor.NJRat.Generic
+Backdoor.Nosrawec!8.7E4 (TFE:4:7Mhkv1WTJ2S)
+Trojan.Agent!YFHq9L5KuUI
+Trojan.MSIL.Bladabindi
+Trojan.Malware.8327629.susgen
+Win32.Trojan.Agent.XBQX80
+MSIL:Agent-DRD [Trj]
+malicious.fc03f4
+Win32/Trojan.BO.c3c
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.bcf55fd4bddf27c1
+Trojan.Agent
+W32/Autorun.worm.aao
+Virus.Lamer
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.RGMP-5580
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+generic.ml
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Win32:Stihat [Wrm]
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.dh
+W32/Mepaow.HWL
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.QYJ
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=100)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Win32.Lamer.cb
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.4bddf2
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer!O
+W32.Autorun.N10
+Trojan.GenericKD.30594223
+Unsafe
+Trojan.Mepaow.Win32.18
+Virus:Win32/Lamer.494be55b
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.th
+W32/Mepaow.HWL
+Generic.mg.c6241ba8a1d4a734
+W32/AutoRun-AQR
+Trojan.Win32.Mepaow
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=86)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+W32/Autorun.worm.aao
+Worm.Autorun.2013
+Virus.Lamer
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.8a1d4a
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+W32.OnGamesLTKVPOV.Trojan
+Trojan.Generic.3842741
+Generic.mg.a6650af099576781
+W32.Lamer.ZZ8
+Artemis!A6650AF09957
+Worm.AutoRun
+Virus:Win32/Lamer.2454b3c3
+P2PWorm ( 004d32291 )
+P2PWorm ( 004d32291 )
+Trojan.Generic.D3AA2B5
+heuristic
+W32/Trojan2.MJYK
+SMG.Heur!gen
+Win32/SillyAutorun.ETA
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725392-0
+Virus.Win32.Lamer.cb
+Trojan.Generic.3842741
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cf
+Trojan.Generic.3842741
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.~A@uagfp
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.2
+Trojan.Mepaow.Win32.18
+BehavesLike.Win32.Autorun.tt
+Virus.Win32.Lamer!O
+Trojan.Generic.3842741 (B)
+DFI - Malicious PE
+W32/Trojan.MPVD-5563
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Lamer.VB!tr
+Virus/Win32.Lamer.cb
+Win32.Troj.StiHatT.a.506478
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Virus.Win32.Lamer.cb
+Trojan/Win32.Stonelv.R2831
+suspicious
+Worm.Autorun.2013
+Trojan.Generic.3842741
+malware (ai score=85)
+Unsafe
+Win32/AutoRun.Delf.RO
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Win32.Mepaow
+Unsafe.AI_Score_69%
+Trojan.Generic.3842741
+Win32:Stihat [Wrm]
+malicious.099576
+Generic Malware
+win/malicious_confidence_100% (W)
+QVM41.1.Malware.Gen
+W32.HelpMe.PE
+Win32/SillyAutorun.BUI
+Trojan.GenericKD.30594223
+Generic.mg.a18cda4a6ed635d9
+W32.Autorun.N10
+Trojan.GenericKD.30594223
+Unsafe
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/AutoRun.Stihat.A
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+heuristic
+BehavesLike.Win32.Autorun.th
+W32/Mepaow.HWL
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=87)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+W32/Autorun.worm.aao
+Worm.Autorun.2013
+Virus.Lamer
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.a6ed63
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+W32.FamVT.DelfHV.PE
+Trojan.GenericKD.40528594
+Generic.mg.004e1670b3224fdc
+W32.Lamer.CB8
+Artemis!004E1670B322
+Unsafe
+Trojan.Agent/Gen-Ausiv
+Virus:Win32/Lamer.b4cf3c4a
+P2PWorm ( 004d32291 )
+P2PWorm ( 004d32291 )
+Virus.Win32.LAMER.A
+Win32.Virus.Lamer.d
+W32/Trojan2.MJYK
+SMG.Heur!gen
+Win32/SillyAutorun.ETA
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.40528594
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cf
+malicious (high confidence)
+Trojan.GenericKD.40528594 (B)
+TrojWare.Win32.Trojan.Mepaow.~A@uagfp
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.2
+heuristic
+BehavesLike.Win32.Autorun.ch
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Trojan.MPVD-5563
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Lamer.VB!tr
+Virus/Win32.Lamer.cb
+Trojan.Generic.D26A6AD2
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Virus:Win32/Autorun.NE
+Win32/Lamer.F
+suspicious
+Worm.Autorun.2013
+malware (ai score=86)
+Trojan.GenericKD.40528594
+Worm.AutoRun
+Win32/AutoRun.Delf.RO
+Virus.Win32.LAMER.A
+Virus.Autorun!1.9B5D (CLASSIC)
+Worm.AutoRun!hPO7X1R60X4
+Trojan.Win32.Mepaow
+Unsafe.AI_Score_87%
+Trojan.GenericKD.40528594
+Win32:Stihat [Wrm]
+malicious.0b3224
+Generic Malware
+win/malicious_confidence_100% (W)
+HEUR/QVM41.1.D9B7.Malware.Gen
+Artemis!F8DCF54AA841
+Unsafe
+Trojan.Agent/Generic
+ML.Attribute.HighConfidence
+a variant of Win32/GenKryptik.DORE
+Malicious
+Win32:Dropper-gen [Drp]
+UDS:DangerousObject.Multi.Generic
+generic.ml
+Trojan.Wacatac!8.10C01 (TFE:5:5qfO5zfhS3H)
+malicious (high confidence)
+Mal/Generic-S
+heuristic
+Artemis!Trojan
+malicious.moderate.ml.score
+Generic.mg.f8dcf54aa841455d
+DFI - Malicious PE
+W32.Pdf.Exploit
+TR/Kryptik.iyoiy
+Trojan:Win32/Conteban.B!ml
+Trojan.Multi.Generic.4!c
+UDS:DangerousObject.Multi.Generic
+Trojan/Win32.DownLoader.R284120
+malware (ai score=100)
+W32/GenKryptik.DORE!tr
+Win32:Dropper-gen [Drp]
+win/malicious_confidence_70% (D)
+Generic.mg.b217c5a47666429f
+Malicious
+UDS:DangerousObject.Multi.Generic
+generic.ml
+malicious (high confidence)
+Trojan.Inject3.21612
+heuristic
+malicious.moderate.ml.score
+Trojan-Dropper.Win32.Agent!O
+UDS:DangerousObject.Multi.Generic
+Unsafe
+malicious.66511d
+win/malicious_confidence_90% (D)
+Gen:Variant.Symmi.78788
+Gen:Variant.Symmi.78788
+Gen:Variant.Symmi.78788
+Unsafe
+Trojan.Symmi.D133C4
+Trojan.Win32.WACATAC.USXVPGT19
+W32/VBKrypt.MF.gen!Eldorado
+ML.Attribute.HighConfidence
+generic.ml
+Backdoor.Win32.Androm.sywl
+Gen:Variant.Symmi.78788
+Win32:Malware-gen
+Win32.Trojan.Falsesign.Efbe
+Gen:Variant.Symmi.78788
+Gen:Variant.Symmi.78788 (B)
+Trojan.TR/Kryptik.dozty
+Trojan.PWS.Siggen2.24829
+Artemis
+W32/VBKrypt.MF.gen!Eldorado
+TR/Kryptik.dozty
+W32/GenKryptik.DOQL!tr
+malicious (high confidence)
+Trojan:Win32/Wacatac.A!ml
+Trojan.Multi.Generic.4!c
+Backdoor.Win32.Androm.sywl
+Trojan/Win32.VBKrypt.C2057509
+Fareit-FPN!8BE26C9F2001
+malware (ai score=100)
+Trojan.MalPack.VB
+a variant of Win32/GenKryptik.DOQL
+Trojan.Win32.WACATAC.USXVPGT19
+Trojan.Injector!1.B459 (CLASSIC)
+PE.Heur.InvalidSig
+Gen:Variant.Symmi.78788
+Win32:Malware-gen
+malicious.f20017
+win/malicious_confidence_80% (W)
+HEUR/QVM03.0.D685.Malware.Gen
+Trojan.GenericKDZ.57246
+GenericRXID-ZK!E8C56AFCC9F7
+Unsafe
+Trojan:Win32/Starter.ali2000005
+Trojan ( 005501c51 )
+Trojan ( 005501c51 )
+TROJ_FRS.VSNW1DG19
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+HEUR:Backdoor.MSIL.Androm.gen
+Trojan.GenericKDZ.57246
+Win32:CrypterX-gen [Trj]
+Trojan.GenericKDZ.57246 (B)
+Trojan.Packed2.41837
+heuristic
+BehavesLike.Win32.Generic.fc
+Generic.mg.e8c56afcc9f7a01b
+Troj/MSILKlg-BE
+Trojan.Inject
+Backdoor.MSIL.bjej
+W32.Trojan.Gen
+HEUR/AGEN.1035809
+MSIL/Kryptik.QME!tr
+Trojan.Generic.DDF9E
+Trojan.MSIL.Androm.m!c
+HEUR:Backdoor.MSIL.Androm.gen
+Trojan:Win32/Tiggre!rfn
+Trojan/Win32.Androm.C3359012
+suspicious
+Trojan.GenericKDZ.57246
+malware (ai score=100)
+Trojan.GenericKDZ.57246
+Spyware.HawkEyeKeyLogger
+a variant of MSIL/Kryptik.QME
+TROJ_FRS.VSNW1DG19
+Dropper.Generic!8.35E (TFE:C:q6pABlz8FJJ)
+DFI - Malicious PE
+Trojan.GenericKDZ.57246
+Win32:CrypterX-gen [Trj]
+malicious.f8ad2f
+Trj/CI.A
+win/malicious_confidence_100% (W)
+Win32/Backdoor.9cf
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer!O
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Agent/Gen-Ausiv
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+Trojan.Gen.6
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+heuristic
+BehavesLike.Win32.Autorun.dh
+W32/Mepaow.HWL
+Generic.mg.bfbcfa9c20725fd6
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=81)
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Virus:Win32/Autorun.NE
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.c20725
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+Gen:Variant.Ransom.Blackout.2
+Artemis!2C05023B189B
+Trojan:MSIL/Miner.d46d04f0
+malicious.b189b4
+W32/AutoIt.IJ.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+HEUR:Trojan.MSIL.Miner.gen
+Gen:Variant.Ransom.Blackout.2
+Trojan.MSIL.Miner.4!c
+Msil.Trojan-downloader.Agent.Hqlp
+malicious (high confidence)
+Gen:Variant.Ransom.Blackout.2 (B)
+heuristic
+BehavesLike.Win32.Generic.tc
+Generic.mg.2c05023b189b46fa
+W32/AutoIt.IJ.gen!Eldorado
+W32/Miner.FOV!tr
+Trojan.Ransom.Blackout.2
+HEUR:Trojan.MSIL.Miner.gen
+Trojan:Win32/CoinMiner.C!cl
+Trojan/Win32.RL_AutoInj.R272810
+suspicious
+CIL.StupidCryptor.Heur
+Gen:Variant.Ransom.Blackout.2
+malware (ai score=100)
+Gen:Variant.Ransom.Blackout.2
+Unsafe
+a variant of MSIL/TrojanDownloader.Agent.FOV
+Trojan.Win32.Agent.jxu (CLASSIC)
+Trojan.Autoit
+Gen:Variant.Ransom.Blackout.2 (2x)
+Trojan.Malware.300983.susgen
+FileRepMalware
+Trj/Genetic.gen
+win/malicious_confidence_100% (W)
+HEUR/QVM41.1.D9B7.Malware.Gen
+Artemis!E84D5CFB719D
+generic.ml
+HEUR:Trojan.Win32.Generic
+Win32:RATX-gen [Trj]
+BehavesLike.Win32.Generic.tt
+malicious.moderate.ml.score
+MSIL/Kryptik.PWJ!tr
+malicious (moderate confidence)
+HEUR:Trojan.Win32.Generic
+Unsafe
+Win32:RATX-gen [Trj]
+HEUR/QVM03.0.D9B7.Malware.Gen
+W32.HelpMe.PE
+Win32/SillyAutorun.BUI
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer!O
+W32.Autorun.N10
+W32/Autorun.worm.aao
+Virus.Lamer
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+Trojan.Gen.6
+Win32/AutoRun.Stihat.A
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.th
+malicious.moderate.ml.score
+Generic.mg.a501b3f89203f572
+Trojan.GenericKD.30594223 (B)
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Virus:Win32/Autorun.NE
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=86)
+Trojan.GenericKD.30594223
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.89203f
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.00f21bd7e8b5bc67
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Agent/Gen-Autorun
+Trojan ( 000fa6611 )
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+malicious.7e8b5b
+Trojan.Generic.D1D2D4AF
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.RGMP-5580
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+generic.ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.dc
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+Trojan.Win32.Mepaow
+W32/Spybot.QYJ
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Virus:Win32/Autorun.NE
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=89)
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+Gen:Variant.Graftor.Elzob.7674
+Generic.mg.a3bd9be795f3bb86
+RDN/Generic.grp
+Unsafe
+Trojan:Win32/Zlader.ee015f97
+malicious.795f3b
+TROJ_GEN.R007C0DGP19
+Win32.Trojan-PSW.Fareit.a
+ML.Attribute.HighConfidence
+Malicious
+Sf:Crypt-BI [Trj]
+Win.Trojan.Fareit-403
+HEUR:Trojan.Win32.Generic
+Gen:Variant.Graftor.Elzob.7674
+Virus.Win32.Gen.ccmw
+Trojan.Win32.Generic.4!c
+Win32.Trojan.Filecoder.Lmun
+malicious (high confidence)
+Gen:Variant.Graftor.Elzob.7674 (B)
+Worm.WORM/Zhelatin.Gen
+Trojan.Encoder.2843
+Trojan.Win32.Fareit.j (fs)
+heuristic
+BehavesLike.Win32.Worm.mh
+W32/Kryptik.GKSO!tr
+malicious.high.ml.score
+Troj/Kryptik-FN
+DFI - Malicious PE
+WORM/Zhelatin.Gen
+malware (ai score=84)
+Trojan.Graftor.Elzob.D1DFA
+HEUR:Trojan.Win32.Generic
+Trojan:Win32/Zlader.A
+Trojan/Win32.Scatter.C1702116
+suspicious
+SScope.Malware-Cryptor.Ponik
+Gen:Variant.Graftor.Elzob.7674
+Gen:Variant.Graftor.Elzob.7674
+a variant of Win32/Filecoder.FH
+TROJ_GEN.R007C0DGP19
+Trojan.Zlader!8.F13 (TFE:4:pB1ewcV8vyS)
+Trojan.Win32.Pony
+Unsafe.AI_Score_99%
+Gen:Variant.Graftor.Elzob.7674
+Sf:Crypt-BI [Trj]
+HEUR/QVM20.1.D9B7.Malware.Gen
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer!O
+W32.Autorun.N10
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Mepaow.Win32.18
+Virus:Win32/Lamer.494be55b
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+Trojan.Gen.6
+Win32/SillyAutorun.BUI
+Malicious
+generic.ml
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.th
+malicious.moderate.ml.score
+Generic.mg.b271b05635ced6d3
+Trojan.GenericKD.30594223 (B)
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=81)
+Virus.Lamer
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.635ced
+Generic Malware
+win/malicious_confidence_100% (W)
+Worm.Win32.Delf.A
+Gen:Variant.VB.Crypt.2
+Generic.mg.fd1ea89240274e2e
+Fareit-FPN!FD1EA8924027
+Trojan.MalPack.VB
+Trojan.VB.Crypt.2
+TROJ_FRS.VSNW1DG19
+W32/VBInject.ZS.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+generic.ml
+UDS:DangerousObject.Multi.Generic
+Gen:Variant.VB.Crypt.2
+Trojan.Multi.Generic.4!c
+Gen:Variant.VB.Crypt.2
+Gen:Variant.VB.Crypt.2 (B)
+Trojan.PWS.Banker1.34055
+heuristic
+BehavesLike.Win32.PWSSpyeye.bm
+DFI - Suspicious PE
+TR/AD.Fareit.oovyn
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+UDS:DangerousObject.Multi.Generic
+suspicious
+Gen:Variant.VB.Crypt.2
+malware (ai score=93)
+Unsafe
+TROJ_FRS.VSNW1DG19
+Win32.Outbreak
+Gen:Variant.VB.Crypt.2
+FileRepMetagen [Malware]
+malicious.240274
+win/malicious_confidence_100% (W)
+Win32/Trojan.03d
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+Generic.mg.1ec001b8f7f06b12
+GenericRXIA-PQ!1EC001B8F7F0
+Unsafe
+Exploit:Win32/Nekto.d25489fd
+Trojan ( 0054f2831 )
+Trojan ( 0054f2831 )
+heuristic
+Downloader
+Malicious
+Win32:Malware-gen
+Win.Ransomware.Sodinokibi-7013612-0
+Exploit.Win32.Nekto.px
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+Exploit.Win32.Nekto.ftnnva
+generic.ml
+Win32.Exploit.Nekto.Ecuq
+malicious (high confidence)
+DeepScan:Generic.Ransom.Sodinokibi.952E025B (B)
+Trojan.Encoder.28004
+Ransom.Win32.SODINOKIB.SMTH
+BehavesLike.Win32.Generic.cc
+malicious.moderate.ml.score
+Trojan-Ransom.Sodinokibi
+Exploit.Nekto.ai
+W32.Malware.Gen
+HEUR/AGEN.1005913
+Trojan[Exploit]/Win32.Nekto
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+Exploit.Win32.Nekto.px
+Trojan:Win32/Wacatac.B!ml
+Malware/Win32.Ransom.C3348806
+suspicious
+BScope.Trojan.DelShad
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+malware (ai score=86)
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+a variant of Win32/Filecoder.Sodinokibi.B
+Ransom.Win32.SODINOKIB.SMTH
+Ransom.Sodin!8.10CD8 (TFE:2:tgu5Cp8rQfB)
+DFI - Malicious PE
+DeepScan:Generic.Ransom.Sodinokibi.952E025B
+Win32:Malware-gen
+malicious.8f7f06
+Trj/GdSda.A
+win/malicious_confidence_80% (W)
+HEUR/QVM20.1.D9B7.Malware.Gen
+Trojan.MSIL.Agent.DUX
+Generic.mg.0455ddf0ebf96ab7
+Spyware.AgentTesla
+Trojan.MSIL.Agent.DUX
+W32/Trojan.SW.gen!Eldorado
+ML.Attribute.HighConfidence
+Malicious
+Win32:PWSX-gen [Trj]
+HEUR:Trojan.MSIL.Injects.gen
+Trojan.MSIL.Agent.DUX
+generic.ml
+Trojan.MSIL.Agent.DUX
+Trojan.MSIL.Agent.DUX (B)
+Trojan.PWS.Siggen2.24827
+heuristic
+BehavesLike.Win32.Generic.hc
+MSIL/GenKryptik.DORK!tr
+W32/Trojan.SW.gen!Eldorado
+malware (ai score=80)
+HEUR:Trojan.MSIL.Injects.gen
+Malware/Win32.RL_Generic.R284123
+Artemis!0455DDF0EBF9
+Unsafe
+a variant of MSIL/GenKryptik.DORK
+DFI - Malicious PE
+Trojan.MSIL.Agent.DUX
+Win32:PWSX-gen [Trj]
+malicious.c1424c
+Trj/GdSda.A
+win/malicious_confidence_70% (D)
+HEUR/QVM03.0.D9B7.Malware.Gen
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.0be5b35c61673513
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+win/malicious_confidence_100% (D)
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.cc
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=85)
+Virus/Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan.Generic.D1D2D4AF
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+W32/Mepaow.HWL
+Win32:Stihat [Wrm]
+malicious.c61673
+Generic Malware
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.38223a35ec65f9a0
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.GenericKD.30594223
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer.cb
+Virus:Win32/Lamer.72c3bbd5
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Virus.Autorun!1.9B5D (CLASSIC)
+malicious (high confidence)
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+heuristic
+BehavesLike.Win32.Autorun.jc
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+Trojan.GenericKD.30594223 (B)
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=86)
+Virus/Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan.Generic.D1D2D4AF
+Trojan.Agent/Gen-Autorun
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223
+Generic Malware
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Win32.Lamer.cb
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+W32/Mepaow.HWL
+Win32:Stihat [Wrm]
+malicious.5ec65f
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.771e21ad0bd880f9
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+heuristic
+BehavesLike.Win32.Autorun.jc
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+Virus/Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=87)
+Trojan.GenericKD.30594223
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+W32/Mepaow.HWL
+Win32:Stihat [Wrm]
+malicious.d0bd88
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+Trojan.Agent.EBEP
+Generic.mg.2c483e36d5f70914
+Trojan.Agent
+GenericRXID-ZV!2C483E36D5F7
+Unsafe
+Trojan.Agent/Gen-TrickBot
+Trojan ( 005539b61 )
+Trojan ( 005539b61 )
+Trojan.Agent.EBEP
+TrojanSpy.Win32.ICEDID.SMKA
+Win.Trojan.TrickBot-7083675-0
+Trojan.Agent.EBEP
+Trojan.Win32.Dapato.fudqwn
+Win32:BankerX-gen [Trj]
+Trojan.Agent.EBEP
+TrojWare.Win32.Totbrick.AA@8bmt9z
+Trojan.Inject3.21109
+heuristic
+W32/GenKryptik.DONU!tr
+Trojan.Agent.EBEP (B)
+Virus.Win32.Poison.HJ
+W32.Trojan.Gen
+malware (ai score=82)
+Trojan[Dropper]/Win32.Dapato
+malicious (moderate confidence)
+Malware/Win32.RL_Trojanspy.R283764
+Trojan.Agent.EBEP
+Win32/TrickBot.CJ
+TrojanSpy.Win32.ICEDID.SMKA
+Trojan.Agent.EBEP
+Win32:BankerX-gen [Trj]
+malicious.1d3b3f
+Trj/GdSda.A
+win/malicious_confidence_80% (D)
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.2d5917fd3fa7a58d
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.bh
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=85)
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.d3fa7a
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.291559f67c176a4b
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+Virus.Win32.Mepaow.btvwx
+W32/Spybot.RGMP-5580
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+heuristic
+BehavesLike.Win32.Autorun.dh
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.QYJ
+Trojan/Mepaow.d
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=82)
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.67c176
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.cc1db40351d67737
+Trojan.Agent
+Trojan.GenericKD.30594223
+Trojan.Mepaow.Win32.18
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725393-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.gh
+W32/Mepaow.HWL
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=84)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+W32/Autorun.worm.aao
+Worm.Autorun.2013
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.351d67
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer!O
+Trojan.Agent
+W32/Autorun.worm.aao
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.jh
+W32/Mepaow.HWL
+Generic.mg.3928d566d8f497ad
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=83)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Trojan:Win32/Wacatac.B!ml
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Unsafe
+Generic Malware
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.6d8f49
+Win32:Stihat [Wrm]
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.c9c44db42d0fc52c
+Trojan.Agent
+Trojan.GenericKD.30594223
+Unsafe
+Trojan.Agent/Gen-Ausiv
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+TROJ_AGENT_048416.TOMB
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+Trojan.Gen.NPE.2
+Win32/SillyAutorun.BUI
+Malicious
+Win.Malware.Mepaow-6725391-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+heuristic
+BehavesLike.Win32.Autorun.bc
+W32/Mepaow.HWL
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+Trojan.Win32.Mepaow
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=89)
+Virus/Win32.Lamer.cb
+malicious (high confidence)
+Virus:Win32/Autorun.NE
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+W32/Autorun.worm.aao
+Worm.Autorun.2013
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.42d0fc
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.48bcb8dcf8410aa1
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.bh
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=80)
+Trojan.GenericKD.30594223
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Virus.Win32.Lamer.CB
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.cf8410
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Worm.Autorun.2013
+Generic.mg.1e5c06316d851fc2
+Trojan.Agent
+Trojan.GenericKD.30594223
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+Trojan.Generic.D1D2D4AF
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Win32:Stihat [Wrm]
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+Trojan.GenericKD.30594223 (B)
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.bh
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+W32/AutoRun-AQR
+Trojan.Win32.Mepaow
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+W32/Mepaow.HWL
+Virus/Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+Trojan/Win32.Mepaow.R9232
+suspicious
+W32/Autorun.worm.aao
+malware (ai score=89)
+Trojan.GenericKD.30594223
+Unsafe
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.16d851
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.b60a654c44dd9d51
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Agent/Gen-Autorun
+Virus:Win32/Lamer.72c3bbd5
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.QYJ
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Virus.Win32.Lamer.cb
+Trojan.GenericKD.30594223
+Virus.Win32.Mepaow.btvwx
+Virus.Win32.Lamer.kYMu
+Virus.Win32.Lamer.cb
+malicious (high confidence)
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Trojan.TR/Dropper.Gen
+Win32.HLLP.Stone.1
+Trojan.Mepaow.Win32.18
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.bh
+W32/Mepaow.HWL
+Virus.Win32.Lamer!O
+Trojan.GenericKD.30594223 (B)
+DFI - Malicious PE
+W32/Spybot.RGMP-5580
+Trojan/Mepaow.d
+TR/Dropper.Gen
+malware (ai score=81)
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Win32.HelpMe.A
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+Trojan.GenericKD.30594223
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Autorun!1.9B5D (CLASSIC)
+Trojan.Mepaow!1DzxGyaBLtc
+Trojan.Win32.Mepaow
+Trojan.GenericKD.30594223
+Win32:Stihat [Wrm]
+malicious.c44dd9
+Generic Malware
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
+W32.HelpMe.PE
+Trojan.GenericKD.30594223
+Generic.mg.c104602ff224c035
+Trojan.Agent
+W32/Autorun.worm.aao
+Unsafe
+Trojan.Mepaow.Win32.18
+Trojan.GenericKD.30594223
+Trojan ( 000fa6611 )
+Trojan ( 000fa6611 )
+heuristic
+Win32.Virus.Lamer.e
+W32/Spybot.RGMP-5580
+SMG.Heur!gen
+Win32/SillyAutorun.BUI
+Malicious
+Win32:Stihat [Wrm]
+Win.Malware.Mepaow-6725397-0
+Trojan.GenericKD.30594223
+Virus.Win32.Lamer.cb
+Virus.Win32.Mepaow.btvwx
+Win32.HelpMe.A
+Virus.Win32.Lamer.kYMu
+Virus.Autorun!1.9B5D (CLASSIC)
+malicious (high confidence)
+W32/AutoRun-AQR
+TrojWare.Win32.Trojan.Mepaow.hwl0@1c5hff
+Win32.HLLP.Stone.1
+TROJ_AGENT_048416.TOMB
+BehavesLike.Win32.Autorun.bc
+malicious.moderate.ml.score
+Virus.Win32.Lamer!O
+Trojan.GenericKD.30594223 (B)
+Trojan.Win32.Mepaow
+W32/Spybot.QYJ
+Trojan/Mepaow.d
+Virus.Win32.Lamer.CB
+TR/Dropper.Gen
+Virus/Win32.Lamer.cb
+Trojan.Generic.D1D2D4AF
+Trojan.Agent/Gen-Autorun
+Virus.Win32.Lamer.cb
+Trojan:Win32/Wacatac.B!ml
+Trojan/Win32.Mepaow.R9232
+suspicious
+Worm.Autorun.2013
+Trojan.GenericKD.30594223
+malware (ai score=81)
+Trojan.GenericKD.30594223
+Generic Malware
+Win32/AutoRun.Stihat.A
+TROJ_AGENT_048416.TOMB
+Virus.Win32.Lamer.cb
+Trojan.Mepaow!1DzxGyaBLtc
+DFI - Malicious PE
+W32/Mepaow.HWL
+Win32:Stihat [Wrm]
+malicious.ff224c
+win/malicious_confidence_100% (D)
+Worm.Win32.Delf.A
