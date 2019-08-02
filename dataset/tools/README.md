@@ -18,6 +18,7 @@ The configuration file that specifies file paths and API keys.  Here's a descrip
 * malware_folder: folder to which malware samples will be downloaded
 * csv_path: path to csv file (can be an absolute path or just the csv file name if csv is in same directory as python files)
 * labels: path to labels file
+* hash_list: path to hash_list file (for keeping track of malwares that have produced pcaps)
 * run_type: how to run malshare_download.py.  If set to 0, a new csv file will be produced; if 1, then an existing csv file will be used.
 * MalShare api_key: API key for MalShare
 * file_type: type of files to download from MalShare.  Set to pe32 by default since these run the best on any.run
