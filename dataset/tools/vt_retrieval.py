@@ -34,7 +34,7 @@ def main():
             except requests.exceptions.SSLError:
                 logging.error(f'Error connecting with VirusTotal on file {md5_hash}')
                 malwares.to_csv(csv_path)  # Export progress
-                return
+                raise requests.exceptions.SSLError
 
             if response.status_code == 200 and response.json()['response_code'] == 1:       # Scan has finished; get report
                 malwares.loc[md5_hash, 'scan_results'] = response.json()['positives']        # Number of detections for sample

@@ -11,6 +11,7 @@ def main():
 
     # Parse config file and store values
     csv_path = config['Folders']['csv_path']
+    hash_list = config['Folders']['hash_list']
 
     malwares = pd.read_csv(csv_path, index_col=0)       # Read in csv file
     logging.info('CSV file imported...')
@@ -35,6 +36,8 @@ def main():
         if pcap == 'y':
             n_pcap = n_pcap + 1
             malwares.loc[md5_hash, 'pcap_success'] = True
+            with open(hash_list, 'a') as f:     # Update pcap hash list
+                f.write('%s\n' % md5_hash)
 
         print(f'\n{n_analyzed} files analyzed\n{n_pcap} pcaps produced\n')
 

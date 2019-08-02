@@ -24,12 +24,9 @@ def main():
     file_type = config['MalShare']['file_type']
 
     limit = get_api_limit(api_key)  # API requests remaining (1000 per day)
-    if limit == -1:
-        logging.error("UNABLE TO RETRIEVE API LIMIT.  MAKE SURE YOUR API KEY IS ENTERED CORRECTLY.")
-        return
-    elif limit <= 0:
+    if limit <= 0:
         logging.error("OVER DAILY API LIMIT")
-        return
+        raise LimitError
     else:
         logging.info(f'{limit} API requests remaining')  # Display number of API requests remaining
 
@@ -43,7 +40,7 @@ def main():
         new_malwares = update_csv(api_key, file_type, malwares)
     else:
         logging.error(f'ERROR: INVALID RUNTYPE {run_type}')
-        return
+        raise RunTypeError
 
     n_downloads = min(len(new_malwares), limit)     # Number of files to be downloaded
     if n_downloads != len(new_malwares):        # More files to download than API requests remaining
@@ -62,11 +59,9 @@ def main():
 
     # Check each downloaded file to make sure its md5 hash matches its name (since MalShare labels each sample with its
     # md5 hash)
-    file_names = listdir(malware_folder)  # Get all file names in malware sample directory
+    file_names = listdir(malware_folder)        # Get all file names in malware sample directory
     for name in file_names:
-        if check_hash(name, malware_folder) == -1:  # Something has gone wrong with the download.  Return without saving
-            logging.error(f'{name} does not match given hash')
-            return
+        check_hash(name, malware_folder)        # Something has gone wrong with the download.  Return without saving
 
     logging.info('Exporting to CSV...')
     new_malwares.to_csv(csv_path)  # Export csv file
@@ -82,8 +77,10 @@ def get_api_limit(key):
 
     url = f'https://malshare.com/api.php?api_key={key}&action=getlimit'  # API endpoint
     response = requests.get(url)
-
-    return int(response.json()['REMAINING']) if response.status_code == 200 else -1
+    if response.status_code == 200:
+        return int(response.json()['REMAINING'])
+    else:
+        raise RetrievalError
 
 
 def update_csv(api_key, file_type, malwares=None):
@@ -143,7 +140,7 @@ def check_hash(file_name, malware_folder):
 
     md5_hash = md5(file_name, malware_folder)  # Calculate hash of file
     if md5_hash != file_name:  # Return error code
-        return -1
+        raise HashError
 
     return 0
 
@@ -163,6 +160,22 @@ def md5(f_name, in_file):
             hasher.update(buf)
             buf = f.read(BLOCK_SIZE)
     return hasher.hexdigest()
+
+
+class RetrievalError(Exception):
+    """Problem processing web request"""
+
+
+class LimitError(Exception):
+    """No API requests remaining"""
+
+
+class RunTypeError(Exception):
+    """Invalid runtype"""
+
+
+class HashError(Exception):
+    """Wrong hash for downloaded file"""
 
 
 if __name__ == "__main__":
