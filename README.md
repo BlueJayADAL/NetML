@@ -1,4 +1,9 @@
 # NetML
+
+__Cite our paper-->__
+``D. Manning, P. Li, X. Wu, Y. Luo, T. Zhang and W. Li, "ACETA: Accelerating Encrypted Traffic Analytics on Network Edge," in ICC 2020 - 2020 IEEE International Conference on Communications (ICC), Dublin, Ireland, 2020``
+
+
 The NetML project using the Intel Distribution for Python.
 
 ## Walkthrough Guide
